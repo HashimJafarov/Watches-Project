@@ -1,0 +1,297 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "company_id": 1,
+      "title": "Tommy Hilfiger Men's Stainless Steel Case and Mesh Bracelet Watch",
+      "model": "TH 1792018",
+      "price": "272",
+      "color": "Boz",
+      "dial": "Göy",
+      "frontimage": "https://m.media-amazon.com/images/I/81xGqj4Z7aL._AC_UY879_.jpg",
+      "sideimage": "https://m.media-amazon.com/images/I/81zRneWgJkL._AC_UX679_.jpg",
+      "backimage": "https://m.media-amazon.com/images/I/81OAeDIqXBL._AC_UX679_.jpg",
+      "handimage": "https://m.media-amazon.com/images/I/81GKE5aE8cL._AC_UY741_.jpg",
+      "video": "https://m.media-amazon.com/images/S/aplus-media/vc/bd5e1337-5096-43bd-bc9f-93bf7f2ad7bd.mp4",
+      "description": "Qorxmaz və Cəsarətli: Tam günəş şüası ilə siferblat və lumi indeksləri, həkk olunmuş saat əqrəb və yeni dalğa bayrağı olan bu saat Tommy macəra ruhunu təcəssüm etdirir. ",
+      "quality": "Keyfiyyətli Materiallar: “Paslanmayan polad korpus və ilgək qolbaq, mavi siferblat. Saatı cızıqlardan qoruyan möhkəm mineral kristaldan hazırlanıb.",
+      "category_id": 1
+    },
+    {
+      "id": 2,
+      "company_id": 4,
+      "title": "Tissot Seastar GTS AUT SS BL",
+      "model": "T1204071104103",
+      "price": "630",
+      "color": "Boz",
+      "dial": "Göy",
+      "frontimage": "https://m.media-amazon.com/images/I/61VGz0gz4iS._AC_UX679_.jpg",
+      "sideimage": "https://m.media-amazon.com/images/I/41l+GY4pFRS._AC_UX522_.jpg",
+      "backimage": "https://m.media-amazon.com/images/I/61S-5KAsZFS._AC_UX522_.jpg",
+      "handimage": "https://m.media-amazon.com/images/I/718UkVZvcWS._AC_UX522_.jpg",
+      "video": "",
+      "description": "Our ultimate, high performance diving watch is at home under water and on dry land. Designed for those with confident style who want a watch they can rely on.",
+      "category_id": 1
+    },
+    {
+      "id": 3,
+      "company_id": 1,
+      "title": "Tommy Hilfiger Men's Quartz Stainless Steel Case and Leather Strap",
+      "model": "TH 1791066",
+      "price": "342",
+      "color": "Qəhvəli",
+      "dial": "Göy",
+      "frontimage": "https://m.media-amazon.com/images/I/71TfGGdzPqL._AC_UY741_.jpg",
+      "sideimage": "https://watchesprime.com/wp-content/uploads/2020/03/2-16.jpg",
+      "backimage": "https://www.chic-time.fr/178048/tommy-hilfiger-1791066-mens-watchbracelet-color-brown-movement-quartz-waterproofing-50-m-5-atm-dial-color-blue-bracelet-material.jpg",
+      "handimage": "http://www.greenwich.az/catalog/12/6204/vyriskas-laikrodis-tommy-hilfiger-1791066_30069603529_2675020.jpg",
+      "video": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/a0502afd-5ffb-5e3e-aa51-83e34ceb6038/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4",
+      "description": "Daxilinizdə bir təqiqatçını kəşf edin. Möhkəm və ətraflı. Lumi ərəb markerləri ilə çoxfunksiyalı və çox teksturalı siferblat.",
+      "category_id": 1
+    },
+    {
+      "id": 4,
+      "company_id": 1,
+      "title": "Tommy Hilfiger Men's Stainless Steel Case and Link Bracelet Watch",
+      "model": "TH 1710492",
+      "price": "562",
+      "color": "Boz",
+      "dial": "Göy",
+      "frontimage": "https://m.media-amazon.com/images/I/81F14MJhLLL._AC_UY741_.jpg",
+      "sideimage": "https://m.media-amazon.com/images/I/81kRZj1yVPL._AC_UX385_.jpg",
+      "backimage": "https://m.media-amazon.com/images/I/715HRtAU9pL._AC_UX385_.jpg",
+      "handimage": "https://m.media-amazon.com/images/I/71jnQdbQw9L._AC_UY500_.jpg",
+      "video": "",
+      "description": "Fərqli və cəsarətli: Cəsarətli, açıq, ölçülü siferblat və vida detalları ilə Tommy brendinin elementləri bu saatı fərqləndirir.",
+      "category_id": 1
+    },
+    {
+      "id": 5,
+      "company_id": 2,
+      "title": "Rolex Deepsea Deep Blue Dial Sea-Dweller Men's Luxury Watch",
+      "model": "116660",
+      "price": "18295",
+      "color": "Boz",
+      "dial": "Göy",
+      "frontimage": "https://m.media-amazon.com/images/I/7102kbNCosL._AC_UX679_.jpg",
+      "sideimage": "https://m.media-amazon.com/images/I/71jNj68DGnL._AC_UX679_.jpg",
+      "backimage": "https://m.media-amazon.com/images/I/71Q3RlEuLML._AC_UX679_.jpg",
+      "handimage": "https://m.media-amazon.com/images/I/71S9i7J9eML._AC_UX679_.jpg",
+      "video": "/public/video/Rolex Submariner.mp4",
+      "description": "OYSTER PERPETUAL ROLEX DEEPSEA D-BLUE DIAL Stainless Steel Case & Oyster Bracelet Case Diameter: 44mm Self Winding Automatic Movement 3900 Meters / 12800 Feet Water Resistant",
+      "category_id": 1
+    },
+    {
+      "id": 6,
+      "company_id": 12,
+      "title": "Anne Klein Women's Bracelet Watch",
+      "model": "AK/2159SVSV",
+      "price": "146",
+      "color": "Boz",
+      "dial": "Göy",
+      "frontimage": "https://m.media-amazon.com/images/I/714vEQff0RL._AC_SY741._SX._UX._SY._UY_.jpg",
+      "sideimage": "https://m.media-amazon.com/images/I/51l6NxAST0L._AC_SY741._SX._UX._SY._UY_.jpg",
+      "backimage": "https://m.media-amazon.com/images/I/71OGOWTqQaL._AC_SX679._SX._UX._SY._UY_.jpg",
+      "handimage": "https://m.media-amazon.com/images/I/51Kll7zxFiL._AC_SX679._SX._UX._SY._UY_.jpg",
+      "video": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/e92894e2-2437-4629-983c-a9e73f096906/default.jobtemplate.mp4.480.mp4",
+      "description": "Fırçalanmış daxili siferblat, qısa saat əqrəbləri və 30 mm-lik metal korpusda loqosu olan gümüş saat, mineral şüşə ilə və rum rəqəmləri tətbiq olunan siferblat. Yapon analoq ekranı və kvars hərəkəti, zərgərlik qapağı ilə yüngül lehimli bilərzik",
+      "category_id": 2
+    },
+    {
+      "id": 7,
+      "company_id": 11,
+      "title": "BVLGARI Lady watch with stainless steel watch",
+      "model": "102925",
+      "price": "17000",
+      "color": "Ağ",
+      "dial": "Ağ",
+      "frontimage": "https://media2.bulgari.com/f_auto,q_auto,c_pad,h_520,w_520/production/dw5b5046d5/images/images/481652.png",
+      "sideimage": "https://media2.bulgari.com/f_auto,q_auto,c_pad,h_520,w_520/production/dw2040b6dc/images/images/481651.png",
+      "backimage": "",
+      "handimage": "https://media2.bulgari.com/f_auto,q_auto,c_pad,h_520,w_520/production/dwf9fa77d8/images/images/worn/1249704.png",
+      "video": "",
+      "description": "Fırçalanmış daxili siferblat, qısa saat əqrəbləri və 30 mm-lik metal korpusda loqosu olan gümüş saat, mineral şüşə ilə və rum rəqəmləri tətbiq olunan siferblat. Yapon analoq ekranı və kvars hərəkəti, zərgərlik qapağı ilə yüngül lehimli bilərzik",
+      "category_id": 2
+    },
+    {
+      "id": 8,
+      "company_id": 1,
+      "title": "Tommy Hilfiger Men's Ionic Plated Black Steel Case and Calfskin Strap Watch",
+      "model": "TH 1792004",
+      "price": "253",
+      "color": "Qara",
+      "dial": "Qara",
+      "frontimage": "https://m.media-amazon.com/images/I/81PRL2d74BL._AC_UY741_.jpg",
+      "sideimage": "https://m.media-amazon.com/images/I/81iMtKGbCWL._AC_UX679_.jpg",
+      "backimage": "https://m.media-amazon.com/images/I/81zKaWtEScL._AC_UX679_.jpg",
+      "handimage": "https://m.media-amazon.com/images/I/81tqw65i80L._AC_UY741_.jpg",
+      "video": "",
+      "description": "Daxilinizdə bir təqiqatçını kəşf edin. Möhkəm və ətraflı. Lumi ərəb markerləri ilə çoxfunksiyalı və çox teksturalı siferblat.",
+      "category_id": 1
+    },
+    {
+      "id": 9,
+      "company_id": 16,
+      "title": "Swarovski Octea Lux Crystal Watch",
+      "model": "5452498",
+      "price": "317",
+      "color": "Yaşıl",
+      "dial": "Yaşıl",
+      "frontimage": "https://m.media-amazon.com/images/I/8142-BJLwgL._AC_UX679_.jpg",
+      "sideimage": "https://m.media-amazon.com/images/I/71qspQMyL+L._AC_UX466_.jpg",
+      "backimage": "https://m.media-amazon.com/images/I/81M3lhlh9WL._AC_UX466_.jpg",
+      "handimage": "https://m.media-amazon.com/images/I/71BHd91WHXL._AC_UX466_.jpg",
+      "video": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/d893fc15-1012-4614-b7cd-4cc6b6d78c2a/default.jobtemplate.mp4.480.mp4",
+      "description": "Bizim ən çox satılan 'Octea' saat kolleksiyamızın yeni dəbdəbəli xronoqraf saatı ilə yeni dəqiqlik və sənətkarlıq səviyyəsinə çatır. Gündəlik istifadə üçün idealdır, yığılmış və interval vaxtı ilə saniyəölçən funksiyasına malikdir. Korpus çəhrayı qızılı ilə örtülmüş paslanmayan poladdan hazırlanmışdır, Swarovski saatlarına xas olan üzlü kristal bezel, günəş şüaları ilə işləyən siferblat və timsah effektli həqiqi dəri kəmər zümrüd yaşıl tonları ilə parlayır.",
+      "category_id": 2
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Men",
+      "title": "Men Collection",
+      "image": "/public/images/mens.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Woman",
+      "title": "Women Collection",
+      "image": "/public/images/womens.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Kids",
+      "title": "Kids Collection",
+      "image": "/public/images/kids.jpg"
+    }
+  ],
+  "company": [
+    {
+      "id": 1,
+      "name": "Tommy Hilfiger",
+      "title": "TommyHilfiger",
+      "category_id": 1,
+      "bgimage": "/public/images/tommyhilfigerBG.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Rolex",
+      "title": "Rolex",
+      "category_id": 1,
+      "bgimage": "https://wallpapers.com/images/featured/64sb459b21tamot8.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Casio",
+      "title": "Casio",
+      "category_id": 1,
+      "bgimage": "https://www.teahub.io/photos/full/103-1033664_casio-watches-g-shock-wallpaper-g-shock-watch.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Tissot",
+      "title": "Tissot",
+      "category_id": 1,
+      "bgimage": "https://i.pinimg.com/originals/9c/a5/40/9ca5407d1867f63667e28730fbd3b813.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Gucci",
+      "title": "Gucci",
+      "category_id": 1,
+      "bgimage": "https://cdn.wallpapersafari.com/33/52/r7OQmH.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Oris",
+      "title": "Oris",
+      "category_id": 1,
+      "bgimage": "https://watchclicker.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Oris-Aquis-3-1-e1549990429461.jpg?bwg=1573675447"
+    },
+    {
+      "id": 7,
+      "name": "Longines",
+      "title": "Longines",
+      "category_id": 1,
+      "bgimage": "https://logos-download.com/wp-content/uploads/2016/09/Longines_logo_black_background.png"
+    },
+    {
+      "id": 8,
+      "name": "Hamilton",
+      "title": "Hamilton",
+      "category_id": 1,
+      "bgimage": "https://helenkirchhofer.ch/media/catalog/category/brand-logo-hamilton.png"
+    },
+    {
+      "id": 9,
+      "name": "Tag Heuer",
+      "title": "TagHeuer",
+      "category_id": 2,
+      "bgimage": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b0e79a53314287.592fd83f3f7b4.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Cartier",
+      "title": "Cartier",
+      "category_id": 2,
+      "bgimage": "https://cdn.shopify.com/s/files/1/0549/2057/7070/files/Cartier_Website_Banner_1728x_8f5cbe38-0b35-4abc-9e3f-004499efd882.webp?v=1660745488"
+    },
+    {
+      "id": 11,
+      "name": "BVLGARI",
+      "title": "BVLGARI",
+      "category_id": 2,
+      "bgimage": "https://wallpapers.com/images/hd/simple-bvlgari-logo-7p1z8x0r9k4ld278.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Anne Klein",
+      "title": "AnneKlein",
+      "category_id": 2,
+      "bgimage": "https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/7/AmazonStores/ATVPDKIKX0DER/f23634cc92d3b2f3d97ce3193daf36bc.w3000.h600.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Larsson & Jennings",
+      "title": "LarssonJennings",
+      "category_id": 2,
+      "bgimage": "https://data2.manualslib.com/first-image/i28/140/13983/1398217/larsson-jennings-rally-series.png"
+    },
+    {
+      "id": 14,
+      "name": "Abbot Lyon",
+      "title": "AbbotLyon",
+      "category_id": 2,
+      "bgimage": "https://www.klarna.com/assets/sites/3/2021/03/06091206/Abbott-Lyon.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Michael Kors",
+      "title": "MichaelKors",
+      "category_id": 2,
+      "bgimage": "https://wallpaperaccess.com/full/2023195.png"
+    },
+    {
+      "id": 16,
+      "name": "Swarovski",
+      "title": "Swarovski",
+      "category_id": 2,
+      "bgimage": "https://wallpapercave.com/wp/wp8545732.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Fossil",
+      "title": "Fossil",
+      "category_id": 2,
+      "bgimage": "https://cdna.artstation.com/p/assets/images/images/028/524/776/large/aditya-maurya-comp-1-00355.jpg?1594731525"
+    },
+    {
+      "id": 18,
+      "name": "Vivienne Westwood",
+      "title": "VivienneWestwood",
+      "category_id": 2,
+      "bgimage": "https://d1rkccsb0jf1bk.cloudfront.net/landingpages/vivienne-westwood/VW_AW22_WatchShop_1920x700_Primary.jpg"
+    }
+  ]
+}
