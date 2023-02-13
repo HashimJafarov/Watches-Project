@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "concurrently \"react-scripts start\" \"npm run json-server\"",
     "build": "vite build",
     "preview": "vite preview"
   },
