@@ -7,7 +7,32 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-function Home({ category, dispatch }) {
+function Home({ category, products, company, favorite, basket, dispatch }) {
+  const featuredProducts = products.filter((t) => t.featured === true);
+  const addBasket = (id) => {
+    dispatch({
+      type: "SET_BASKET",
+      payload: [...basket, { id: id, count: 1 }],
+    });
+  };
+  const removeBasket = (id) => {
+    dispatch({
+      type: "SET_BASKET",
+      payload: [...basket.filter((t) => t.id !== id)],
+    });
+  };
+  const addFavorite = (id) => {
+    dispatch({
+      type: "SET_FAVORITE",
+      payload: [...favorite, { id: id }],
+    });
+  };
+  const removeFavorite = (id) => {
+    dispatch({
+      type: "SET_FAVORITE",
+      payload: [...favorite.filter((t) => t.id !== id)],
+    });
+  };
   return (
     <>
       <section
@@ -48,18 +73,6 @@ function Home({ category, dispatch }) {
                 <h2>{a.title}</h2>
               </Link>
             ))}
-            {/* <Link className="watches_collection">
-              <img src="/images/mens.jpg" alt="" />
-              <h2>Men's Collection</h2>
-            </Link>
-            <Link className="watches_collection">
-              <img src="/images/womens.jpg" alt="" />
-              <h2>Women's Collection</h2>
-            </Link>
-            <Link className="watches_collection">
-              <img src="/images/kids.jpg" alt="" />
-              <h2>Kid's Collection</h2>
-            </Link> */}
           </div>
         </div>
       </section>
@@ -108,17 +121,72 @@ function Home({ category, dispatch }) {
           </div>
         </div>
       </section>
-      <section className="feature">
+      <section className="menwatches" id="feature">
         <div className="container">
-          <div className="feature_titles">
+          <div id="feature_titles">
             <h2>Feature Product</h2>
             <p>
               Hurry up to own our best products on the occasion of discounts to
               give to friends and relatives
             </p>
           </div>
-          <div className="feature_wrap">
-            <div className="feature_product">
+          <div className="menwatches_wrapper">
+            {featuredProducts.map((product) => {
+              const comp = company.find((c) => product.company_id === c.id);
+              const checkBasket = basket.find((t) => t.id === product.id);
+              const checkFavorite = favorite.find((f) => f.id === product.id);
+              return (
+                <div className="product" key={product.id}>
+                  <div className="product_img">
+                    <div className="front_img">
+                      <img src={product.frontimage} alt="" />
+                    </div>
+                    <div className="side_img">
+                      <img src={product.sideimage} alt="" />
+                    </div>
+                    <div className="product_img_btns">
+                      {!checkFavorite ? (
+                        <button onClick={() => addFavorite(product.id)}>
+                          <i className="fa-regular fa-heart"></i>
+                        </button>
+                      ) : (
+                        <button onClick={() => removeFavorite(product.id)}>
+                          <i className="fa-solid fa-heart-crack"></i>
+                        </button>
+                      )}
+                      {!checkBasket ? (
+                        <button onClick={() => addBasket(product.id)}>
+                          <i className="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      ) : (
+                        <button onClick={() => removeBasket(product.id)}>
+                          <i className="fa-solid fa-x"></i>
+                        </button>
+                      )}
+                      <button>
+                        <Link to={`/product/${product.id}`}>
+                          <i className="fa-regular fa-eye"></i>
+                        </Link>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="product_descr">
+                    <h2>{comp && comp.name}</h2>
+                    <p>
+                      {product.title && product.title.slice(0, 35)}
+                      ...
+                    </p>
+                    <span>
+                      <p>
+                        {product.price}
+                        <i className="fa-solid fa-manat-sign"></i>
+                      </p>
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+            {/* <div className="feature_product">
               <div className="product_img">
                 <img
                   src="http://lenos.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2022/03/14-300x300.jpg"
@@ -189,7 +257,7 @@ function Home({ category, dispatch }) {
                 <h2>Timex Easy Reader White</h2>
                 <p>$225</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

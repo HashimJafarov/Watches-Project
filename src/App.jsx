@@ -11,12 +11,19 @@ import ProductBasket from "./components/ProductBasket";
 import ProductDetail from "./components/ProductDetail";
 import { connect } from "react-redux";
 import ProductCard from "./pages/ProductCard";
-function App({ basket, dispatch }) {
+import ProductFavorites from "./pages/ProductFavorites";
+function App({ basket, favorite, dispatch }) {
   const [asidebasket, setAsidebasket] = useState(false);
   const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   localStorage.setItem("basket", JSON.stringify(basket));
-  // }, [basket]);
+  const [user, setUser] = useState(false);
+  const [showPicture, setShowPicture] = useState(false);
+  useEffect(() => {
+    localStorage.setItem("basket", JSON.stringify(basket));
+  }, [basket]);
+  useEffect(() => {
+    localStorage.setItem("favorite", JSON.stringify(favorite));
+  }, [favorite]);
+
   useEffect(() => {
     fetch("http://localhost:1225/products")
       .then((a) => a.json())
@@ -52,7 +59,7 @@ function App({ basket, dispatch }) {
   }, []);
   return (
     <>
-      <Header setAsidebasket={setAsidebasket} />
+      <Header setAsidebasket={setAsidebasket} setUser={setUser} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -61,8 +68,17 @@ function App({ basket, dispatch }) {
           element={<ProductsByCategory />}
         />
         <Route path="/:name_id" element={<ProductsByName />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route
+          path="/product/:id"
+          element={
+            <ProductDetail
+              setShowPicture={setShowPicture}
+              showPicture={showPicture}
+            />
+          }
+        />
         <Route path="/card" element={<ProductCard />} />
+        <Route path="/favorites" element={<ProductFavorites />} />
       </Routes>
       {asidebasket && <ProductBasket setAsidebasket={setAsidebasket} />}
       <Footer />
@@ -72,6 +88,7 @@ function App({ basket, dispatch }) {
 const t = (a) => {
   return {
     basket: a.basket,
+    favorite: a.favorite,
   };
 };
 export default connect(t)(App);

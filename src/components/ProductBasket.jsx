@@ -15,7 +15,7 @@ function ProductBasket({
   const total = basket.length
     ? basket.reduce(
         (acc, item) =>
-          acc + products.find((a) => a.id === item.id).price * item.count,
+          acc + products.find((a) => a.id === item.id)?.price * item.count,
         0
       )
     : null;
@@ -35,21 +35,20 @@ function ProductBasket({
             products.length ? (
               basket.map((a) => {
                 const product = products.find((t) => t.id === a.id);
-                console.log(product);
                 return (
                   <>
                     <div className="basket_product" key={a.id}>
                       <div className="basket_img">
-                        <img src={product.frontimage} alt="" />
+                        <img src={product?.frontimage} alt="" />
                       </div>
                       <div className="basket_titles">
-                        <p>{product.title.slice(0, 45)}...</p>
+                        <p>{product?.title.slice(0, 45)}...</p>
                         <div className="basket_title">
                           <p>
                             Count: <span>{a.count}</span>
                           </p>
                           <p>
-                            {product.price * a.count}{" "}
+                            {product?.price * a.count}{" "}
                             <i className="fa-solid fa-manat-sign"></i>
                           </p>
                         </div>

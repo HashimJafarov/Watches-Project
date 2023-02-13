@@ -1,7 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import Cardbg from "../components/Cardbg";
-function ProductCard({ basket, products, dispatch }) {
+import { Link } from "react-router-dom";
+function ProductCard({ basket, products, loading, dispatch }) {
   const removeFromCard = (id) => {
     dispatch({
       type: "SET_BASKET",
@@ -31,14 +32,11 @@ function ProductCard({ basket, products, dispatch }) {
       payload: [...basket],
     });
   };
-  const total = basket.length
-    ? basket.reduce(
-        (acc, item) =>
-          acc + products.find((a) => a.id === item.id).price * item.count,
-        0
-      )
-    : null;
-  console.log(total);
+  const total = basket.reduce(
+    (acc, item) =>
+      acc + products.find((a) => a.id === item.id)?.price * item.count,
+    0
+  );
   return (
     <>
       <Cardbg />
@@ -62,15 +60,19 @@ function ProductCard({ basket, products, dispatch }) {
                 const product = products.find((b) => a.id === b.id);
                 return (
                   <>
-                    <div className="card_product" key={a.id}>
+                    <div className="card_product" key={a?.id}>
                       <div className="card_img">
-                        <img src={product.frontimage} alt="" />
+                        <img src={product?.frontimage} alt="" />
                       </div>
                       <div className="card_titles">
-                        <p>{product.title}</p>
+                        <p>
+                          <Link to={`/product/${product?.id}`}>
+                            {product?.title}
+                          </Link>
+                        </p>
                         <div className="card_title">
                           <button onClick={() => decreaseCount(a.id)}>-</button>
-                          <p>{a.count}</p>
+                          <p>{a?.count}</p>
                           <button onClick={() => increaseCount(a.id)}>+</button>
                         </div>
                         <div className="card_btns">
@@ -82,7 +84,7 @@ function ProductCard({ basket, products, dispatch }) {
                       </div>
                       <div className="card_price">
                         <p>
-                          {product.price * a.count}{" "}
+                          {product?.price * a?.count}{" "}
                           <i className="fa-solid fa-manat-sign"></i>
                         </p>
                       </div>

@@ -1,10 +1,12 @@
-// const localBasket = localStorage.getItem("basket");
+const localBasket = localStorage.getItem("basket");
+const localFavorite = localStorage.getItem("favorite");
 const init = {
   products: [],
   category: [],
   company: [],
-  basket: [],
-  // basket: localBasket ? JSON.stringify(localBasket) : [],
+  basket: localBasket ? JSON.parse(localBasket) : [],
+  favorite: localBasket ? JSON.parse(localFavorite) : [],
+  // favorite: [],
 };
 export default function Reducer(state = init, action) {
   switch (action.type) {
@@ -16,6 +18,8 @@ export default function Reducer(state = init, action) {
       return { ...state, company: action.payload };
     case "SET_BASKET":
       return { ...state, basket: action.payload };
+    case "SET_FAVORITE":
+      return { ...state, favorite: action.payload };
     default:
       return state;
   }

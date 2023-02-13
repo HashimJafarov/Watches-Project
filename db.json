@@ -15,7 +15,8 @@
       "video": "https://m.media-amazon.com/images/S/aplus-media/vc/bd5e1337-5096-43bd-bc9f-93bf7f2ad7bd.mp4",
       "description": "Qorxmaz və Cəsarətli: Tam günəş şüası ilə siferblat və lumi indeksləri, həkk olunmuş saat əqrəb və yeni dalğa bayrağı olan bu saat Tommy macəra ruhunu təcəssüm etdirir. ",
       "quality": "Keyfiyyətli Materiallar: “Paslanmayan polad korpus və ilgək qolbaq, mavi siferblat. Saatı cızıqlardan qoruyan möhkəm mineral kristaldan hazırlanıb.",
-      "category_id": 1
+      "category_id": 1,
+      "featured": false
     },
     {
       "id": 2,
@@ -31,7 +32,8 @@
       "handimage": "https://m.media-amazon.com/images/I/718UkVZvcWS._AC_UX522_.jpg",
       "video": "",
       "description": "Our ultimate, high performance diving watch is at home under water and on dry land. Designed for those with confident style who want a watch they can rely on.",
-      "category_id": 1
+      "category_id": 1,
+      "featured": false
     },
     {
       "id": 3,
@@ -47,7 +49,8 @@
       "handimage": "http://www.greenwich.az/catalog/12/6204/vyriskas-laikrodis-tommy-hilfiger-1791066_30069603529_2675020.jpg",
       "video": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/a0502afd-5ffb-5e3e-aa51-83e34ceb6038/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4",
       "description": "Daxilinizdə bir təqiqatçını kəşf edin. Möhkəm və ətraflı. Lumi ərəb markerləri ilə çoxfunksiyalı və çox teksturalı siferblat.",
-      "category_id": 1
+      "category_id": 1,
+      "featured": false
     },
     {
       "id": 4,
@@ -63,7 +66,8 @@
       "handimage": "https://m.media-amazon.com/images/I/71jnQdbQw9L._AC_UY500_.jpg",
       "video": "",
       "description": "Fərqli və cəsarətli: Cəsarətli, açıq, ölçülü siferblat və vida detalları ilə Tommy brendinin elementləri bu saatı fərqləndirir.",
-      "category_id": 1
+      "category_id": 1,
+      "featured": false
     },
     {
       "id": 5,
@@ -79,7 +83,8 @@
       "handimage": "https://m.media-amazon.com/images/I/71S9i7J9eML._AC_UX679_.jpg",
       "video": "/public/video/Rolex Submariner.mp4",
       "description": "OYSTER PERPETUAL ROLEX DEEPSEA D-BLUE DIAL Stainless Steel Case & Oyster Bracelet Case Diameter: 44mm Self Winding Automatic Movement 3900 Meters / 12800 Feet Water Resistant",
-      "category_id": 1
+      "category_id": 1,
+      "featured": true
     },
     {
       "id": 6,
@@ -95,7 +100,8 @@
       "handimage": "https://m.media-amazon.com/images/I/51Kll7zxFiL._AC_SX679._SX._UX._SY._UY_.jpg",
       "video": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/e92894e2-2437-4629-983c-a9e73f096906/default.jobtemplate.mp4.480.mp4",
       "description": "Fırçalanmış daxili siferblat, qısa saat əqrəbləri və 30 mm-lik metal korpusda loqosu olan gümüş saat, mineral şüşə ilə və rum rəqəmləri tətbiq olunan siferblat. Yapon analoq ekranı və kvars hərəkəti, zərgərlik qapağı ilə yüngül lehimli bilərzik",
-      "category_id": 2
+      "category_id": 2,
+      "featured": true
     },
     {
       "id": 7,
@@ -111,7 +117,8 @@
       "handimage": "https://media2.bulgari.com/f_auto,q_auto,c_pad,h_520,w_520/production/dwf9fa77d8/images/images/worn/1249704.png",
       "video": "",
       "description": "Fırçalanmış daxili siferblat, qısa saat əqrəbləri və 30 mm-lik metal korpusda loqosu olan gümüş saat, mineral şüşə ilə və rum rəqəmləri tətbiq olunan siferblat. Yapon analoq ekranı və kvars hərəkəti, zərgərlik qapağı ilə yüngül lehimli bilərzik",
-      "category_id": 2
+      "category_id": 2,
+      "featured": false
     },
     {
       "id": 8,
@@ -127,7 +134,8 @@
       "handimage": "https://m.media-amazon.com/images/I/81tqw65i80L._AC_UY741_.jpg",
       "video": "",
       "description": "Daxilinizdə bir təqiqatçını kəşf edin. Möhkəm və ətraflı. Lumi ərəb markerləri ilə çoxfunksiyalı və çox teksturalı siferblat.",
-      "category_id": 1
+      "category_id": 1,
+      "featured": false
     },
     {
       "id": 9,
@@ -143,7 +151,8 @@
       "handimage": "https://m.media-amazon.com/images/I/71BHd91WHXL._AC_UX466_.jpg",
       "video": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/d893fc15-1012-4614-b7cd-4cc6b6d78c2a/default.jobtemplate.mp4.480.mp4",
       "description": "Bizim ən çox satılan 'Octea' saat kolleksiyamızın yeni dəbdəbəli xronoqraf saatı ilə yeni dəqiqlik və sənətkarlıq səviyyəsinə çatır. Gündəlik istifadə üçün idealdır, yığılmış və interval vaxtı ilə saniyəölçən funksiyasına malikdir. Korpus çəhrayı qızılı ilə örtülmüş paslanmayan poladdan hazırlanmışdır, Swarovski saatlarına xas olan üzlü kristal bezel, günəş şüaları ilə işləyən siferblat və timsah effektli həqiqi dəri kəmər zümrüd yaşıl tonları ilə parlayır.",
-      "category_id": 2
+      "category_id": 2,
+      "featured": true
     },
     {
       "id": 10,
@@ -159,7 +168,8 @@
       "handimage": "https://m.media-amazon.com/images/I/61ELRn-MpyL._AC_UY741_.jpg",
       "video": "",
       "description": "",
-      "category_id": 1
+      "category_id": 1,
+      "featured": false
     },
     {
       "id": 11,
@@ -175,7 +185,8 @@
       "handimage": "https://m.media-amazon.com/images/I/61n++EvCDrL._AC_UX679_.jpg",
       "video": "",
       "description": "Stainless steel watch featuring round black dial with day/date display at 12 o'clock, sword-shape hands, and 24-hour time on inner dial 40 mm stainless steel case with anti-reflective sapphire dial window Automatic self-wind movement with analog display Leather band with contrast stitching and buckle closure Water resistant to 50 m (165 ft): In general, suitable for short periods of recreational swimming, but not diving or snorkeling",
-      "category_id": 1
+      "category_id": 1,
+      "featured": false
     },
     {
       "id": 12,
@@ -191,7 +202,8 @@
       "handimage": "https://m.media-amazon.com/images/I/61Y7iV24daL._AC_UX679_.jpg",
       "video": "",
       "description": "Stainless steel dive watch featuring bold black dial with coin-edge bezel and protected crown 40-mm stainless steel case with anti-reflective sapphire dial window Swiss quartz movement with analog display Stainless steel bracelet with deployant clasp with double push button closure Water resistant to 200 m (660 ft): In general, suitable for professional marine activity and serious surface water sports, but not scuba diving",
-      "category_id": 1
+      "category_id": 1,
+      "featured": true
     },
     {
       "id": 13,
@@ -207,7 +219,8 @@
       "handimage": "https://m.media-amazon.com/images/I/71VlaH1GtEL._AC_UX679_.jpg",
       "video": "",
       "description": "Case Size: 39.00 mm, Band Width: 18, Case Thickness: 5.15 mm Swiss quartz movement, 316L stainless steel case, Index + Roman dial type Leather strap, butterfly clasp closure Water-resistant up to a pressure of 3 bar (30 m / 100 ft): suitable for short periods of recreational swimming and showering, but no diving or snorkeling.",
-      "category_id": 1
+      "category_id": 1,
+      "featured": false
     },
     {
       "id": 14,
@@ -223,7 +236,8 @@
       "handimage": "https://m.media-amazon.com/images/I/51qJ3nlgEgL._AC_UX679_.jpg",
       "video": "",
       "description": "Case Size: 39.00 mm, Band Width: 18, Case Thickness: 5.15 mm Swiss quartz movement, 316L stainless steel case, Index + Roman dial type Leather strap, butterfly clasp closure Water-resistant up to a pressure of 3 bar (30 m / 100 ft): suitable for short periods of recreational swimming and showering, but no diving or snorkeling.",
-      "category_id": 2
+      "category_id": 2,
+      "featured": false
     },
     {
       "id": 15,
@@ -239,7 +253,8 @@
       "handimage": "",
       "video": "",
       "description": "Green and Red Web Nylon (Bee Embroidered) dial. Yellow Gold PVD stainless steel case with a white (calfskin) leather band. Quartz movement. 50 meters / 165 feet water resistance. Fixed bezel. Tang clasp. Case size 38 mm. Gucci YA1264128 G-Timeless Watch.",
-      "category_id": 2
+      "category_id": 2,
+      "featured": false
     }
   ],
   "category": [
@@ -247,19 +262,19 @@
       "id": 1,
       "name": "Men",
       "title": "Men Collection",
-      "image": "/public/images/mens.jpg"
+      "image": "https://media.istockphoto.com/id/1065329058/photo/premium-mens-watch-on-hand-close-up.jpg?s=170667a&w=0&k=20&c=z8_-2o_7DwP0jIGtJvnlt1jkqO0iCdGNOpQW5Fs-pUw="
     },
     {
       "id": 2,
       "name": "Woman",
       "title": "Women Collection",
-      "image": "/public/images/womens.jpg"
+      "image": "https://www.mvmt.com/on/demandware.static/-/Sites-MVMTUS-Library/default/dw6aaa2b7c/content-assets/CrossCategory/WomensWatches.jpg"
     },
     {
       "id": 3,
       "name": "Kids",
       "title": "Kids Collection",
-      "image": "/public/images/kids.jpg"
+      "image": "https://media.istockphoto.com/id/885350126/photo/smart-watch-on-the-boys-hand.jpg?s=612x612&w=0&k=20&c=iyc_Ww8phvn7-iyC1ELalsQDCmcrqu-PrnTMRCvpd-U="
     }
   ],
   "company": [

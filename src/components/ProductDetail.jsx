@@ -16,8 +16,9 @@ import "swiper/css/thumbs";
 
 // import required modules
 import { FreeMode, Thumbs } from "swiper";
+import PictureModal from "./PictureModal";
 
-function Product({ basket, dispatch }) {
+function Product({ basket, dispatch, setShowPicture, showPicture }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { id } = useParams();
   const [product, setProduct] = useState({});
@@ -64,6 +65,13 @@ function Product({ basket, dispatch }) {
       {product.category_id === 2 && <Womenbg />}
       {!loading ? (
         <>
+          {showPicture && (
+            <PictureModal
+              setShowPicture={setShowPicture}
+              id={id}
+              product={product}
+            />
+          )}
           <section className="details">
             <div className="container">
               <div className="details_wrapper">
@@ -80,8 +88,12 @@ function Product({ basket, dispatch }) {
                     ></video>
                   </div>
                 ) : null}
-                <div className="details_img">
+                <div
+                  className="details_img"
+                  style={showPicture ? { zIndex: "-1" } : { zIndex: "1" }}
+                >
                   <Swiper
+                    onClick={() => setShowPicture(true)}
                     spaceBetween={10}
                     navigation={true}
                     thumbs={{ swiper: thumbsSwiper }}

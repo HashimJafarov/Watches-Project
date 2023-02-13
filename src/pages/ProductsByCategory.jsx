@@ -4,9 +4,17 @@ import Mensbg from "../components/Mensbg";
 import Womenbg from "../components/Womenbg";
 import { connect } from "react-redux";
 import { useParams } from "react-router-dom";
-function Blog({ products, company, category, loading, basket, dispatch }) {
+import { faHourglass1 } from "@fortawesome/free-solid-svg-icons";
+function Blog({
+  products,
+  company,
+  category,
+  favorite,
+  loading,
+  basket,
+  dispatch,
+}) {
   const { category_name, category_id } = useParams();
-  console.log(category_name, category_id);
   const filteredProducts = products.filter(
     (a) => a.category_id === +category_id
   );
@@ -22,7 +30,19 @@ function Blog({ products, company, category, loading, basket, dispatch }) {
       payload: [...basket.filter((t) => t.id !== id)],
     });
   };
-
+  const addFavorite = (id) => {
+    dispatch({
+      type: "SET_FAVORITE",
+      payload: [...favorite, { id: id }],
+    });
+  };
+  const removeFavorite = (id) => {
+    dispatch({
+      type: "SET_FAVORITE",
+      payload: [...favorite.filter((t) => t.id !== id)],
+    });
+  };
+  console.log(favorite);
   return (
     <>
       {+category_id === 1 ? <Mensbg /> : null}
@@ -34,8 +54,10 @@ function Blog({ products, company, category, loading, basket, dispatch }) {
               {filteredProducts.length ? (
                 filteredProducts.map((product) => {
                   const comp = company.find((c) => c.id === product.company_id);
-                  const check = basket.find((t) => t.id === product.id);
-
+                  const checkBasket = basket.find((t) => t.id === product.id);
+                  const checkFavorite = favorite.find(
+                    (f) => f.id === product.id
+                  );
                   return (
                     <div className="product" key={product.id}>
                       <div className="product_img">
@@ -46,10 +68,16 @@ function Blog({ products, company, category, loading, basket, dispatch }) {
                           <img src={product.sideimage} alt="" />
                         </div>
                         <div className="product_img_btns">
-                          <button>
-                            <i className="fa-regular fa-heart"></i>
-                          </button>
-                          {!check ? (
+                          {!checkFavorite ? (
+                            <button onClick={() => addFavorite(product.id)}>
+                              <i className="fa-regular fa-heart"></i>
+                            </button>
+                          ) : (
+                            <button onClick={() => removeFavorite(product.id)}>
+                              <i className="fa-solid fa-heart-crack"></i>
+                            </button>
+                          )}
+                          {!checkBasket ? (
                             <button onClick={() => addBasket(product.id)}>
                               <i className="fa-solid fa-cart-shopping"></i>
                             </button>

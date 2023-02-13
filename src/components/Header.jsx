@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 import { connect } from "react-redux";
-function Header({ basket, company, category, setAsidebasket, dispatch }) {
+function Header({ basket, favorite, company, category, setAsidebasket }) {
   return (
     <section
       className="header"
@@ -72,8 +72,13 @@ function Header({ basket, company, category, setAsidebasket, dispatch }) {
             </div>
             <div className="heart">
               <button>
-                <i className="fa-regular fa-heart"></i>
+                <Link to="/favorites">
+                  <i className="fa-regular fa-heart"></i>
+                </Link>
               </button>
+              {favorite.length ? (
+                <div className="heart_count">{favorite.length}</div>
+              ) : null}
             </div>
             <div className="basket">
               <button onClick={() => setAsidebasket(true)}>
