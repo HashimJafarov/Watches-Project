@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Mensbg from "../components/Mensbg";
 import Womenbg from "../components/Womenbg";
 import { connect } from "react-redux";
 import { useParams } from "react-router-dom";
-import { faHourglass1 } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 function Blog({
   products,
   company,
@@ -14,10 +16,15 @@ function Blog({
   basket,
   dispatch,
 }) {
+  const [inputSearch, setInputSearch] = useState(false);
   const { category_name, category_id } = useParams();
-  const filteredProducts = products.filter(
-    (a) => a.category_id === +category_id
-  );
+  const [inputValue, setInputValue] = useState("");
+  const filteredProducts = products.filter((a) => {
+    return (
+      a.category_id === +category_id &&
+      a.title.toLowerCase().includes(inputValue.toLowerCase())
+    );
+  });
   const addBasket = (id) => {
     dispatch({
       type: "SET_BASKET",
@@ -42,7 +49,6 @@ function Blog({
       payload: [...favorite.filter((t) => t.id !== id)],
     });
   };
-  console.log(favorite);
   return (
     <>
       {+category_id === 1 ? <Mensbg /> : null}
@@ -50,6 +56,22 @@ function Blog({
       {!loading ? (
         <section className="menwatches">
           <div className="container">
+            <div className="search">
+              <div className="btn">
+                <button onClick={() => setInputSearch(!inputSearch)}>
+                  <i className="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              {inputSearch && (
+                <div data-aos="fade-rigth" className="input">
+                  <input
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                    type="text"
+                  />
+                </div>
+              )}
+            </div>
             <div className="menwatches_wrapper">
               {filteredProducts.length ? (
                 filteredProducts.map((product) => {

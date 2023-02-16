@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
 AOS.init();
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 function ProductBasket({
   products,
   basket,
   setAsidebasket = { setAsidebasket },
-  company,
-  dispatch,
 }) {
   const total = basket.length
     ? basket.reduce(
