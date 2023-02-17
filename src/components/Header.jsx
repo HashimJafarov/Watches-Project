@@ -58,7 +58,7 @@ function Header({ basket, favorite, company, category, setAsidebasket }) {
               </div>
             </li>
             <li>
-              <NavLink>Blog</NavLink>
+              <NavLink to="/blog">Blog</NavLink>
             </li>
             <li>
               <NavLink>Contacts</NavLink>

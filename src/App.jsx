@@ -12,6 +12,8 @@ import ProductDetail from "./components/ProductDetail";
 import { connect } from "react-redux";
 import ProductCard from "./pages/ProductCard";
 import ProductFavorites from "./pages/ProductFavorites";
+import Blog from "./pages/Blog";
+import BlogDetails from "./pages/BlogDetails";
 function App({ basket, favorite, dispatch }) {
   const [asidebasket, setAsidebasket] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -57,6 +59,17 @@ function App({ basket, favorite, dispatch }) {
         setLoading(false);
       });
   }, []);
+  useEffect(() => {
+    fetch("http://localhost:1225/blog")
+      .then((a) => a.json())
+      .then((a) => {
+        dispatch({
+          type: "SET_BLOG",
+          payload: [...a],
+        });
+        setLoading(false);
+      });
+  }, []);
   return (
     <>
       <Header setAsidebasket={setAsidebasket} setUser={setUser} />
@@ -79,6 +92,8 @@ function App({ basket, favorite, dispatch }) {
         />
         <Route path="/card" element={<ProductCard />} />
         <Route path="/favorites" element={<ProductFavorites />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
       </Routes>
       {asidebasket && <ProductBasket setAsidebasket={setAsidebasket} />}
       <Footer />

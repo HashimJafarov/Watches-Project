@@ -965,7 +965,8 @@ header ul li:nth-of-type(3):hover .dropdown {
 .menbg,
 .womenbg,
 .cardbg,
-.favoritebg {
+.favoritebg,
+.blogbg {
   min-height: 250px;
   background-position: bottom;
   background-size: cover;
@@ -990,10 +991,15 @@ header ul li:nth-of-type(3):hover .dropdown {
 .favoritebg {
   background-image: url(https://storage.googleapis.com/pr-newsroom-wp/1/2020/09/My-Forever-Favorites-1920x733.png);
 }
+.blogbg {
+  background-image: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+  background-position: top !important;
+}
 .menbg h1,
 .womenbg h1,
 .cardbg h1,
-.favoritebg h1 {
+.favoritebg h1,
+.blogbg h1 {
   text-align: center;
   padding-top: 100px;
   font-size: 40px;
@@ -1375,4 +1381,153 @@ header ul li:nth-of-type(3):hover .dropdown {
   .picture_swiper
   .swiper-button-next::after {
   color: var(--main-color);
+}
+.blog {
+  min-height: 800px;
+  padding: 70px 0;
+}
+.blog_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 40px;
+}
+.blog_product {
+  width: 400px;
+  min-height: 380px;
+}
+.blog_product:first-of-type {
+  width: 800px;
+  min-height: 380px;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.blog_product:first-of-type .blog_img,
+.blog_product:first-of-type .blog_img img {
+  width: 850px;
+  height: 350px;
+}
+.blog_product:first-of-type .blog_title,
+.blog_product:first-of-type .blog_title p {
+  width: 400px;
+}
+.blog_img,
+.blog_img img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+.blog_product .blog_title p:first-of-type {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.blog_product:first-of-type .blog_title p:nth-child(2) {
+  font-size: 30px !important;
+}
+.blog_product .blog_title p:nth-child(2) {
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+.blog_product .blog_title p:last-of-type {
+  font-size: 19px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.blog_product .blog_title p:last-of-type a {
+  font-size: 16px;
+}
+.blog_detail {
+  min-height: 400px;
+  padding: 80px 0;
+}
+.blog_detail .container > p {
+  text-align: center;
+}
+.blog_detail .container > p:first-of-type {
+  font-size: 21px;
+  font-weight: 300;
+  color: var(--main-color);
+}
+.blog_detail .container > p:last-of-type {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 5px 0 40px 0;
+  color: rgb(53, 55, 58);
+}
+.blog_detail .blog_detail_img,
+.blog_detail .blog_detail_img img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+.blog_detail .blog_detail_text {
+  width: 800px;
+  margin-top: 25px;
+}
+.blog_detail .blog_detail_text p,
+.blog_detail .blog_detail_text ol li {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  color: rgb(53, 55, 58);
+}
+.blog_detail .blog_detail_text .blog_detail_text_img,
+.blog_detail .blog_detail_text .blog_detail_text_img img {
+  width: 655px;
+  height: 655px;
+}
+.blog_detail .blog_detail_text .blog_detail_text_img {
+  margin: 20px 0;
+}
+.blog_detail .blog_detail_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.blog_detail .blog_detail_text ol li {
+  list-style: number;
+  padding-left: 5px;
+  margin: 10px 0;
+}
+.blog_detail .blog_detail_text ol {
+  padding-left: 25px;
+  margin: 20px 0;
+}
+.blog_detail .blog_recent,
+.blog_detail .blog_recent .blog_recent_product {
+  width: 500px;
+  margin-top: 15px;
+}
+.blog_detail .blog_recent {
+  margin-top: 20px;
+}
+.blog_detail .blog_recent .blog_recent_product {
+  display: flex;
+  align-items: center;
+}
+.blog_detail .blog_recent .blog_recent_product .blog_recent_img,
+.blog_detail .blog_recent .blog_recent_product .blog_recent_img img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+.blog_detail
+  .blog_recent
+  .blog_recent_product
+  .blog_recent_title
+  p:first-of-type {
+  font-size: 16px;
+  color: var(--main-color);
+}
+.blog_detail
+  .blog_recent
+  .blog_recent_product
+  .blog_recent_title
+  p:last-of-type {
+  font-size: 20px;
+  margin-top: 10px;
+  color: rgb(53, 55, 58);
 }

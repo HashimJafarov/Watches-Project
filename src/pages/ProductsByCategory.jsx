@@ -68,13 +68,14 @@ function Blog({
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     type="text"
+                    placeholder="Search..."
                   />
                 </div>
               )}
             </div>
             <div className="menwatches_wrapper">
               {filteredProducts.length ? (
-                filteredProducts.map((product) => {
+                filteredProducts.reverse().map((product) => {
                   const comp = company.find((c) => c.id === product.company_id);
                   const checkBasket = basket.find((t) => t.id === product.id);
                   const checkFavorite = favorite.find(
