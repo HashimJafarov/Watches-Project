@@ -204,21 +204,6 @@ function Product({ basket, dispatch, setShowPicture, showPicture }) {
               </div>
             </div>
           </section>
-          <section className="details_comments">
-            <div className="container">
-              <div className="comments_wrapper">
-                <div className="comments_list"></div>
-                <div className="comments_inputs">
-                  <div className="input_name">
-                    <input type="text" />
-                  </div>
-                  <div className="input_text">
-                    <textarea name="comment"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </>
       ) : (
         <div className="loading">

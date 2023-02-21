@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -14,7 +14,14 @@ import ProductCard from "./pages/ProductCard";
 import ProductFavorites from "./pages/ProductFavorites";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
+import Contact from "./pages/Contact";
 function App({ basket, favorite, dispatch }) {
+  let loc = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, [loc.pathname]);
   const [asidebasket, setAsidebasket] = useState(false);
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(false);
@@ -94,6 +101,7 @@ function App({ basket, favorite, dispatch }) {
         <Route path="/favorites" element={<ProductFavorites />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       {asidebasket && <ProductBasket setAsidebasket={setAsidebasket} />}
       <Footer />

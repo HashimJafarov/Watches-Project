@@ -30,18 +30,16 @@ function Footer() {
                 <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <NavLink to="">Shop</NavLink>
-              </li>
-              <li>
-                <NavLink to="">Blog</NavLink>
+                <NavLink to="/blog">Blog</NavLink>
               </li>
             </ul>
           </div>
+
           <div className="footer_support">
             <ul>
               <li>Support</li>
               <li>
-                <NavLink to="">Contact US</NavLink>
+                <NavLink to="/contact">Contact US</NavLink>
               </li>
             </ul>
           </div>

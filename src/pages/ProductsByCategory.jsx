@@ -16,15 +16,33 @@ function Blog({
   basket,
   dispatch,
 }) {
-  const [inputSearch, setInputSearch] = useState(false);
+  // const [filteredProducts, setFilteredProducts] = useState([]);
   const { category_name, category_id } = useParams();
-  const [inputValue, setInputValue] = useState("");
+  const [inputSearch, setInputSearch] = useState(false);
+  const [inputValue, setInputValue] = useState({
+    name: "",
+    minPrice: 0,
+    maxPrice: 0,
+  });
+  useEffect(() => {
+    const findPrice = products.length
+      ? Math.max(...products.map((a) => +a.price))
+      : 1000000;
+    console.log(findPrice);
+    setInputValue({ ...inputValue, maxPrice: findPrice });
+  }, []);
   const filteredProducts = products.filter((a) => {
     return (
       a.category_id === +category_id &&
-      a.title.toLowerCase().includes(inputValue.toLowerCase())
+      a.title.toLowerCase().includes(inputValue.name.toLowerCase()) &&
+      +a.price >= +inputValue.minPrice &&
+      +a.price <= +inputValue.maxPrice
     );
   });
+  const changePrice = (e) => {
+    setInputValue({ ...inputValue, [e.target.name]: e.target.value });
+  };
+
   const addBasket = (id) => {
     dispatch({
       type: "SET_BASKET",
@@ -56,7 +74,7 @@ function Blog({
       {!loading ? (
         <section className="menwatches">
           <div className="container">
-            <div className="search">
+            <div className="filter_wrapper">
               <div className="btn">
                 <button onClick={() => setInputSearch(!inputSearch)}>
                   <i className="fa-solid fa-magnifying-glass"></i>
@@ -65,73 +83,101 @@ function Blog({
               {inputSearch && (
                 <div data-aos="fade-rigth" className="input">
                   <input
-                    value={inputValue}
-                    onChange={(e) => setInputValue(e.target.value)}
+                    onChange={(e) =>
+                      setInputValue({
+                        ...inputValue,
+                        [e.target.name]: e.target.value,
+                      })
+                    }
+                    value={inputValue.name}
+                    name="name"
                     type="text"
                     placeholder="Search..."
+                  />
+                  <input
+                    type="number"
+                    name="minPrice"
+                    placeholder="Min"
+                    value={inputValue.minPrice}
+                    onChange={changePrice}
+                  />
+                  <input
+                    type="number"
+                    name="maxPrice"
+                    placeholder="Max"
+                    value={inputValue.maxPrice}
+                    onChange={changePrice}
                   />
                 </div>
               )}
             </div>
             <div className="menwatches_wrapper">
-              {filteredProducts.length ? (
-                filteredProducts.reverse().map((product) => {
-                  const comp = company.find((c) => c.id === product.company_id);
-                  const checkBasket = basket.find((t) => t.id === product.id);
-                  const checkFavorite = favorite.find(
-                    (f) => f.id === product.id
-                  );
-                  return (
-                    <div className="product" key={product.id}>
-                      <div className="product_img">
-                        <div className="front_img">
-                          <img src={product.frontimage} alt="" />
+              {products.length ? (
+                filteredProducts.length ? (
+                  filteredProducts.map((product) => {
+                    const comp = company.find(
+                      (c) => c.id === product.company_id
+                    );
+                    const checkBasket = basket.find((t) => t.id === product.id);
+                    const checkFavorite = favorite.find(
+                      (f) => f.id === product.id
+                    );
+                    return (
+                      <div className="product" key={product.id}>
+                        <div className="product_img">
+                          <div className="front_img">
+                            <img src={product.frontimage} alt="" />
+                          </div>
+                          <div className="side_img">
+                            <img src={product.sideimage} alt="" />
+                          </div>
+                          <div className="product_img_btns">
+                            {!checkFavorite ? (
+                              <button onClick={() => addFavorite(product.id)}>
+                                <i className="fa-regular fa-heart"></i>
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() => removeFavorite(product.id)}
+                              >
+                                <i className="fa-solid fa-heart-crack"></i>
+                              </button>
+                            )}
+                            {!checkBasket ? (
+                              <button onClick={() => addBasket(product.id)}>
+                                <i className="fa-solid fa-cart-shopping"></i>
+                              </button>
+                            ) : (
+                              <button onClick={() => removeBasket(product.id)}>
+                                <i className="fa-solid fa-x"></i>
+                              </button>
+                            )}
+                            <button>
+                              <Link to={`/product/${product.id}`}>
+                                <i className="fa-regular fa-eye"></i>
+                              </Link>
+                            </button>
+                          </div>
                         </div>
-                        <div className="side_img">
-                          <img src={product.sideimage} alt="" />
-                        </div>
-                        <div className="product_img_btns">
-                          {!checkFavorite ? (
-                            <button onClick={() => addFavorite(product.id)}>
-                              <i className="fa-regular fa-heart"></i>
-                            </button>
-                          ) : (
-                            <button onClick={() => removeFavorite(product.id)}>
-                              <i className="fa-solid fa-heart-crack"></i>
-                            </button>
-                          )}
-                          {!checkBasket ? (
-                            <button onClick={() => addBasket(product.id)}>
-                              <i className="fa-solid fa-cart-shopping"></i>
-                            </button>
-                          ) : (
-                            <button onClick={() => removeBasket(product.id)}>
-                              <i className="fa-solid fa-x"></i>
-                            </button>
-                          )}
-                          <button>
-                            <Link to={`/product/${product.id}`}>
-                              <i className="fa-regular fa-eye"></i>
-                            </Link>
-                          </button>
-                        </div>
-                      </div>
-                      <div className="product_descr">
-                        <h2>{comp && comp.name}</h2>
-                        <p>
-                          {product.title && product.title.slice(0, 35)}
-                          ...
-                        </p>
-                        <span>
+                        <div className="product_descr">
+                          <h2>{comp && comp.name}</h2>
                           <p>
-                            {product.price}
-                            <i className="fa-solid fa-manat-sign"></i>
+                            {product.title && product.title.slice(0, 35)}
+                            ...
                           </p>
-                        </span>
+                          <span>
+                            <p>
+                              {product.price}
+                              <i className="fa-solid fa-manat-sign"></i>
+                            </p>
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })
+                    );
+                  })
+                ) : (
+                  <h2>Axtarish Netice vermedi</h2>
+                )
               ) : (
                 <h2>Mal yoxdur</h2>
               )}

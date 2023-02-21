@@ -14,21 +14,21 @@ function Header({ basket, favorite, company, category, setAsidebasket }) {
     >
       <div className="container">
         <header>
-          <div className="logo">
+          <NavLink to="/" className="logo">
             <img src="/logo/WatchesMoonLast.png" alt="" />
-          </div>
+          </NavLink>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">Ana səhifə</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about">Haqqımızda</NavLink>
             </li>
             <li>
-              Shop
+              Mağaza
               <div className="dropdown">
                 <ul>
-                  <li>All Products</li>
+                  <li>Məhsullar</li>
                   {category.map((a) => (
                     <li key={a.id}>
                       <NavLink to={`/${a.name.toLowerCase()}/${a.id}`}>
@@ -38,17 +38,7 @@ function Header({ basket, favorite, company, category, setAsidebasket }) {
                   ))}
                 </ul>
                 <ul>
-                  <li>Companies</li>
-                  {/* {company.map((comp) => {
-                    const check = category.find(
-                      (cat) => cat.id === comp.category_id
-                    );
-                    return check ? (
-                      <li key={comp.id}>
-                        <NavLink>{comp.name}</NavLink>
-                      </li>
-                    ) : null;
-                  })} */}
+                  <li>Brendlər</li>
                   {company.map((a) => (
                     <li key={a.id}>
                       <NavLink to={`${a.id}`}>{a.name}</NavLink>
@@ -61,7 +51,7 @@ function Header({ basket, favorite, company, category, setAsidebasket }) {
               <NavLink to="/blog">Blog</NavLink>
             </li>
             <li>
-              <NavLink>Contacts</NavLink>
+              <NavLink to="/contact">Əlaqə</NavLink>
             </li>
           </ul>
           <div className="favorites">

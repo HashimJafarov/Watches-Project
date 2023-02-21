@@ -2,11 +2,19 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function About() {
   return (
     <>
-      <section className="about">
+      <section
+        className="about"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div className="container">
           <div className="about_promo">
             <div className="about_titles">
@@ -18,7 +26,12 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="explore">
+      <section
+        className="explore"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div className="container">
           <div className="about_explore">
             <div className="explore_titles">

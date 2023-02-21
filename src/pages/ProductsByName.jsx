@@ -64,7 +64,7 @@ function ProductByName({
           <div className="container">
             <div className="menwatches_wrapper">
               {filteredProducts.length ? (
-                filteredProducts.reverse().map((product) => {
+                filteredProducts.map((product) => {
                   const comp = company.find((c) => c.id === product.company_id);
                   const checkBasket = basket.find((t) => t.id === product.id);
                   const checkFavorite = favorite.find(
