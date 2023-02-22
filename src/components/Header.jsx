@@ -4,7 +4,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 import { connect } from "react-redux";
-function Header({ basket, favorite, company, category, setAsidebasket }) {
+function Header({
+  basket,
+  favorite,
+  company,
+  category,
+  movement,
+  functionality,
+  setAsidebasket,
+}) {
   return (
     <section
       className="header"
@@ -28,22 +36,64 @@ function Header({ basket, favorite, company, category, setAsidebasket }) {
               Mağaza
               <div className="dropdown">
                 <ul>
-                  <li>Məhsullar</li>
-                  {category.map((a) => (
-                    <li key={a.id}>
-                      <NavLink to={`/${a.name.toLowerCase()}/${a.id}`}>
-                        {a.title}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-                <ul>
-                  <li>Brendlər</li>
-                  {company.map((a) => (
-                    <li key={a.id}>
-                      <NavLink to={`${a.id}`}>{a.name}</NavLink>
-                    </li>
-                  ))}
+                  <li>
+                    Məhsullar
+                    <ul className="dropdown_category">
+                      {category.map((a) => (
+                        <NavLink
+                          key={a.id}
+                          to={`/${a.name.toLowerCase()}/${a.id}`}
+                        >
+                          <li>{a.title}</li>
+                        </NavLink>
+                      ))}
+                    </ul>
+                  </li>
+                  <li>
+                    Brendlər
+                    <ul className="dropdown_company">
+                      {company.map((a) => (
+                        <NavLink
+                          key={a.id}
+                          to={`/products/${a.title.toLowerCase()}/${a.id}`}
+                        >
+                          <li>{a.name}</li>
+                        </NavLink>
+                      ))}
+                    </ul>
+                  </li>
+                  <li>
+                    Mexanizm
+                    <ul className="dropdown_movement">
+                      {movement.map((a) => (
+                        <NavLink
+                          key={a.id}
+                          to={`/movement/${a.name.toLowerCase()}/${a.id}`}
+                        >
+                          <li>{a.title}</li>
+                        </NavLink>
+                      ))}
+                    </ul>
+                  </li>
+                  <li>
+                    Funksionallıq
+                    <ul className="dropdown_func">
+                      {functionality.map((a) => (
+                        <NavLink
+                          key={a.id}
+                          to={`/functionality/${a.name.toLowerCase()}/${a.id}`}
+                        >
+                          <li>{a.title}</li>
+                        </NavLink>
+                      ))}
+                    </ul>
+                  </li>
+                  <ul className="dropdown_img">
+                    <img
+                      src="https://images.unsplash.com/photo-1526648856597-c2b6745ad7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0Y2glMjB3YWxscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80"
+                      alt=""
+                    />
+                  </ul>
                 </ul>
               </div>
             </li>

@@ -5,6 +5,8 @@ const init = {
   category: [],
   company: [],
   blog: [],
+  movement: [],
+  functionality: [],
   basket: localBasket ? JSON.parse(localBasket) : [],
   favorite: localBasket ? JSON.parse(localFavorite) : [],
   // favorite: [],
@@ -23,6 +25,10 @@ export default function Reducer(state = init, action) {
       return { ...state, favorite: action.payload };
     case "SET_BLOG":
       return { ...state, blog: action.payload };
+    case "SET_MOVEMENT":
+      return { ...state, movement: action.payload };
+    case "SET_FUNCTIONALITY":
+      return { ...state, functionality: action.payload };
     default:
       return state;
   }

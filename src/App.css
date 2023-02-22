@@ -92,14 +92,12 @@ header ul li:nth-of-type(3) {
   position: relative;
 }
 .dropdown {
-  display: flex;
-  gap: 20px;
   position: absolute;
   background-color: #f7f7f7;
-  width: 625px;
-  height: 300px;
-  top: 100%;
-  left: 0;
+  width: 825px;
+  height: 350px;
+  top: 30%;
+  left: -250px;
   transition: 0.4s;
   padding: 5px;
   opacity: 0;
@@ -109,21 +107,117 @@ header ul li:nth-of-type(3) {
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   z-index: 1;
 }
-.dropdown ul {
-  height: 100%;
+.dropdown > ul {
+  height: 140px;
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
   flex-direction: column;
+  position: relative;
 }
-.dropdown ul li a {
+.dropdown > ul > li {
+  padding: 8px;
+  position: relative;
   font-size: 15px;
+  font-weight: 300;
   color: #000;
 }
-.dropdown ul li {
+.dropdown ul > li > ul > a li {
+  font-size: 16px;
   padding: 5px;
+  transition: 0.4s;
 }
+.dropdown ul > li > ul > a li:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.dropdown_img {
+  position: absolute;
+  top: 0px;
+  left: 245px;
+  height: 340px;
+  width: 568px;
+  transition: 0.4s;
+}
+.dropdown_img:hover {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.dropdown_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dropdown > ul:hover .dropdown_img {
+  opacity: 0;
+  visibility: hidden;
+}
+.dropdown ul > li > ul {
+  position: absolute;
+  width: 564px;
+  background-color: inherit;
+  height: 340px;
+}
+.dropdown_category {
+  top: 0;
+  left: 240px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+.dropdown_company {
+  top: -35px !important;
+  left: 240px;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: 0.4s;
+}
+.dropdown_movement {
+  top: -69px !important;
+  left: 240px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+.dropdown_func {
+  top: -103px !important;
+  left: 240px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+.dropdown > ul > li:first-of-type:hover .dropdown_img {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+.dropdown > ul > li:first-of-type:hover .dropdown_category {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown > ul > li:nth-child(2):hover .dropdown_company {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown > ul > li:nth-child(3):hover .dropdown_movement {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown > ul > li:nth-child(4):hover .dropdown_func {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown > ul > li:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
 .dropdown ul li a:hover {
+  color: var(--main-color);
+}
+.dropdown > ul > li:hover {
   color: var(--main-color);
 }
 header ul li:nth-of-type(3):hover {
@@ -827,16 +921,30 @@ header ul li:nth-of-type(3):hover .dropdown {
   font-weight: 700;
   font-family: "Dancing Script";
 }
-.details_description p {
+.details_description p,
+.details_prodescr p {
   font-size: 15px;
   font-weight: 300;
 }
-.details_description {
+.details_prodescr p span {
+  font-size: 16px;
+}
+.details_prodescr p {
+  margin-top: 7px;
+}
+.details_description,
+.details_prodescr {
   border: 1px solid var(--main-color);
   border-left: none;
   border-right: none;
   padding: 10px 0;
   margin-top: 15px;
+}
+.details_description {
+  margin-top: 0 !important;
+}
+.details_prodescr {
+  border-bottom: none !important;
 }
 .details_descr_social {
   display: flex;

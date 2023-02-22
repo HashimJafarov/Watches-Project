@@ -18,7 +18,14 @@ import "swiper/css/thumbs";
 import { FreeMode, Thumbs } from "swiper";
 import PictureModal from "./PictureModal";
 
-function Product({ basket, dispatch, setShowPicture, showPicture }) {
+function Product({
+  basket,
+  movement,
+  functionality,
+  dispatch,
+  setShowPicture,
+  showPicture,
+}) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { id } = useParams();
   const [product, setProduct] = useState({});
@@ -59,6 +66,10 @@ function Product({ basket, dispatch, setShowPicture, showPicture }) {
     });
   };
   const check = basket.find((a) => a.id === +id);
+  const findMovement = movement.find((a) => a.id === product.movement_id);
+  const findFunc = functionality.find((a) => a.id === product.functionality_id);
+  console.log(findMovement);
+  console.log(findFunc);
   return (
     <>
       {product.category_id === 1 && <Mensbg />}
@@ -157,10 +168,38 @@ function Product({ basket, dispatch, setShowPicture, showPicture }) {
                   <h3>
                     {product.price} <i className="fa-solid fa-manat-sign"></i>
                   </h3>
-                  <div className="details_description">
-                    <p>{product.description}</p>
-                    <p>{product.quality}</p>
+                  <div className="details_prodescr">
+                    {product.model ? (
+                      <p>
+                        Model: <span>{product.model}</span>
+                      </p>
+                    ) : null}
+                    {product.color ? (
+                      <p>
+                        Rəng: <span>{product.color}</span>{" "}
+                      </p>
+                    ) : null}
+                    {product.dial ? (
+                      <p>
+                        Siferblat: <span>{product.dial}</span>{" "}
+                      </p>
+                    ) : null}
+                    {findMovement ? (
+                      <p>
+                        Mexanizm: <span>{findMovement.title}</span>{" "}
+                      </p>
+                    ) : null}
+                    {findFunc ? (
+                      <p>
+                        Funksionallıq: <span>{findFunc.title}</span>{" "}
+                      </p>
+                    ) : null}
                   </div>
+                  {product.description ? (
+                    <div className="details_description">
+                      <p>{product.description}</p>
+                    </div>
+                  ) : null}
                   <div className="details_descr_social">
                     Share:
                     <Link className="details_social">
@@ -191,11 +230,11 @@ function Product({ basket, dispatch, setShowPicture, showPicture }) {
                     <div className="details_operations_btn">
                       {!check ? (
                         <button onClick={() => addBasket(product.id)}>
-                          Add to card
+                          Səbətə at
                         </button>
                       ) : (
                         <button onClick={() => removeFromCard(product.id)}>
-                          Remove from card
+                          Səbətdən sil
                         </button>
                       )}
                     </div>
@@ -217,9 +256,10 @@ function Product({ basket, dispatch, setShowPicture, showPicture }) {
     </>
   );
 }
-const t = (a) => {
-  return {
-    basket: a.basket,
-  };
-};
+// const t = (a) => {
+//   return {
+//     basket: a.basket,
+//   };
+// };
+const t = (a) => a;
 export default connect(t)(Product);

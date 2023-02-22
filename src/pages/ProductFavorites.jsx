@@ -15,7 +15,6 @@ function ProductFavorites({ favorite, basket, products, dispatch }) {
       payload: [...basket, { id: id, count: 1 }],
     });
   };
-  console.log(basket);
   return (
     <>
       <Favoritebg />

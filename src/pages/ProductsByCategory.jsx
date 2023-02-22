@@ -16,7 +16,6 @@ function Blog({
   basket,
   dispatch,
 }) {
-  // const [filteredProducts, setFilteredProducts] = useState([]);
   const { category_name, category_id } = useParams();
   const [inputSearch, setInputSearch] = useState(false);
   const [inputValue, setInputValue] = useState({
@@ -42,7 +41,6 @@ function Blog({
   const changePrice = (e) => {
     setInputValue({ ...inputValue, [e.target.name]: e.target.value });
   };
-
   const addBasket = (id) => {
     dispatch({
       type: "SET_BASKET",

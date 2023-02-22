@@ -15,6 +15,8 @@ import ProductFavorites from "./pages/ProductFavorites";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
+import ProductsByMovement from "./pages/ProductsByMovement";
+import ProductsByFunctionality from "./pages/ProductsByFunctionality";
 function App({ basket, favorite, dispatch }) {
   let loc = useLocation();
   useEffect(() => {
@@ -33,28 +35,50 @@ function App({ basket, favorite, dispatch }) {
     localStorage.setItem("favorite", JSON.stringify(favorite));
   }, [favorite]);
 
-  useEffect(() => {
-    fetch("http://localhost:1225/products")
-      .then((a) => a.json())
-      .then((a) => {
-        dispatch({
-          type: "SET_PRODUCTS",
-          payload: [...a],
-        });
-        setLoading(false);
-      });
-  }, []);
-  useEffect(() => {
-    fetch("http://localhost:1225/company")
-      .then((a) => a.json())
-      .then((a) => {
-        dispatch({
-          type: "SET_COMPANY",
-          payload: [...a],
-        });
-        setLoading(false);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:1225/products")
+  //     .then((a) => a.json())
+  //     .then((a) => {
+  //       dispatch({
+  //         type: "SET_PRODUCTS",
+  //         payload: [...a],
+  //       });
+  //       setLoading(false);
+  //     });
+  // }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:1225/company")
+  //     .then((a) => a.json())
+  //     .then((a) => {
+  //       dispatch({
+  //         type: "SET_COMPANY",
+  //         payload: [...a],
+  //       });
+  //       setLoading(false);
+  //     });
+  // }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:1225/category")
+  //     .then((a) => a.json())
+  //     .then((a) => {
+  //       dispatch({
+  //         type: "SET_CATEGORY",
+  //         payload: [...a],
+  //       });
+  //       setLoading(false);
+  //     });
+  // }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:1225/blog")
+  //     .then((a) => a.json())
+  //     .then((a) => {
+  //       dispatch({
+  //         type: "SET_BLOG",
+  //         payload: [...a],
+  //       });
+  //       setLoading(false);
+  //     });
+  // }, []);
   useEffect(() => {
     fetch("http://localhost:1225/category")
       .then((a) => a.json())
@@ -63,18 +87,57 @@ function App({ basket, favorite, dispatch }) {
           type: "SET_CATEGORY",
           payload: [...a],
         });
-        setLoading(false);
-      });
-  }, []);
-  useEffect(() => {
-    fetch("http://localhost:1225/blog")
-      .then((a) => a.json())
-      .then((a) => {
-        dispatch({
-          type: "SET_BLOG",
-          payload: [...a],
-        });
-        setLoading(false);
+      })
+      .then(() => {
+        fetch("http://localhost:1225/movement")
+          .then((a) => a.json())
+          .then((a) => {
+            dispatch({
+              type: "SET_MOVEMENT",
+              payload: [...a],
+            });
+          });
+      })
+      .then(() => {
+        fetch("http://localhost:1225/functionality")
+          .then((a) => a.json())
+          .then((a) => {
+            dispatch({
+              type: "SET_FUNCTIONALITY",
+              payload: [...a],
+            });
+          });
+      })
+      .then(() => {
+        fetch("http://localhost:1225/company")
+          .then((a) => a.json())
+          .then((a) => {
+            dispatch({
+              type: "SET_COMPANY",
+              payload: [...a],
+            });
+          });
+      })
+      .then(() => {
+        fetch("http://localhost:1225/products")
+          .then((a) => a.json())
+          .then((a) => {
+            dispatch({
+              type: "SET_PRODUCTS",
+              payload: [...a],
+            });
+          });
+      })
+      .then(() => {
+        fetch("http://localhost:1225/blog")
+          .then((a) => a.json())
+          .then((a) => {
+            dispatch({
+              type: "SET_BLOG",
+              payload: [...a],
+            });
+            setLoading(false);
+          });
       });
   }, []);
   return (
@@ -87,7 +150,12 @@ function App({ basket, favorite, dispatch }) {
           path="/:category_name/:category_id"
           element={<ProductsByCategory />}
         />
-        <Route path="/:name_id" element={<ProductsByName />} />
+        <Route path="/products/:name/:name_id" element={<ProductsByName />} />
+        <Route path="/movement/:name/:id" element={<ProductsByMovement />} />
+        <Route
+          path="/functionality/:name/:id"
+          element={<ProductsByFunctionality />}
+        />
         <Route
           path="/product/:id"
           element={

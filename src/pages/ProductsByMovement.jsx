@@ -1,16 +1,18 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { connect } from "react-redux";
-function ProductByName({
-  company,
+function ProductsByMovement({
   products,
-  loading,
-  favorite,
   basket,
+  movement,
+  category,
+  loading,
+  company,
+  favorite,
   dispatch,
 }) {
-  const { name, name_id } = useParams();
-  const filteredProducts = products.filter((a) => a.company_id === +name_id);
+  const { name, id } = useParams();
+  const filteredMovemets = products.filter((a) => a.movement_id === +id);
   const addBasket = (id) => {
     dispatch({
       type: "SET_BASKET",
@@ -37,8 +39,8 @@ function ProductByName({
   };
   return (
     <>
-      {company.map((a) => {
-        const check = a.id === +name_id;
+      {movement.map((a) => {
+        const check = a.id === +id;
         return (
           check && (
             <section
@@ -50,6 +52,7 @@ function ProductByName({
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 height: "350px",
+                backgroundAttachment: "fixed",
               }}
             ></section>
           )
@@ -59,8 +62,8 @@ function ProductByName({
         <section className="menwatches">
           <div className="container">
             <div className="menwatches_wrapper">
-              {filteredProducts.length ? (
-                filteredProducts.map((product) => {
+              {filteredMovemets.length ? (
+                filteredMovemets.map((product) => {
                   const comp = company.find((c) => c.id === product.company_id);
                   const checkBasket = basket.find((t) => t.id === product.id);
                   const checkFavorite = favorite.find(
@@ -136,4 +139,4 @@ function ProductByName({
   );
 }
 const t = (a) => a;
-export default connect(t)(ProductByName);
+export default connect(t)(ProductsByMovement);
