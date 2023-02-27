@@ -374,20 +374,25 @@ header ul li:nth-of-type(3):hover .dropdown {
   margin-top: 15px;
   font-weight: 300;
 }
-.explore_titles button {
+.explore_titles .explore_btn {
   width: 150px;
   height: 45px;
   background-color: transparent;
   border: 2px solid var(--main-color);
-  color: var(--main-color);
-  font-size: 13px;
   text-transform: uppercase;
   transition: 0.4s;
   margin-top: 25px;
+  cursor: pointer;
 }
-.explore_titles button:hover {
-  background-color: #000;
+.explore_titles .explore_btn a {
+  color: var(--main-color);
+  font-size: 13px;
+}
+.explore_titles .explore_btn:hover .explore_btn a {
   color: #fff;
+}
+.explore_titles .explore_btn:hover {
+  background-color: #000;
   border: none;
 }
 .explore_img,
@@ -1790,4 +1795,28 @@ header ul li:nth-of-type(3):hover .dropdown {
 .contact_form .contact_btn button:hover {
   background-color: #000;
   color: var(--main-color);
+}
+.pagination {
+  min-width: 100px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.pagination .active {
+  background-color: #000 !important;
+  color: var(--main-color);
+}
+.pagination button {
+  width: 35px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 14px;
+}
+.pagination button:disabled {
+  background-color: #7a7a7a;
 }

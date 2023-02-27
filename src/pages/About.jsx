@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,7 +31,7 @@ function About() {
         className="explore"
         data-aos="fade-up"
         data-aos-easing="linear"
-        data-aos-duration="1500"
+        data-aos-duration="800"
       >
         <div className="container">
           <div className="about_explore">
@@ -41,7 +42,9 @@ function About() {
                 This is the best in class elegant watches from the luxury brand
                 Swiss Eagle Watches. Take a peek look at it. Making History!
               </p>
-              <button>View Full Story</button>
+              <button className="explore_btn">
+                <Link to="/blog">View Full Story</Link>
+              </button>
             </div>
             <div className="explore_position">
               <div className="explore_img">

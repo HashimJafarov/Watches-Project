@@ -6,6 +6,9 @@ import { connect } from "react-redux";
 import { useParams } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Pagination from "../components/Pagination";
+import Swal from "sweetalert2";
+
 AOS.init();
 function Blog({
   products,
@@ -23,6 +26,12 @@ function Blog({
     minPrice: 0,
     maxPrice: 0,
   });
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const [postsPerPage, setPostsPerPage] = useState(16);
+  // const lastPostIndex = currentPage * postsPerPage;
+  // const firstPostIndex = lastPostIndex - postsPerPage;
+  const [page, setPage] = useState(1);
+  const itemPerPage = 16;
   useEffect(() => {
     const findPrice = products.length
       ? Math.max(...products.map((a) => +a.price))
@@ -46,11 +55,43 @@ function Blog({
       type: "SET_BASKET",
       payload: [...basket, { id: id, count: 1 }],
     });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul səbətə əlavə olundu",
+    });
   };
   const removeBasket = (id) => {
     dispatch({
       type: "SET_BASKET",
       payload: [...basket.filter((t) => t.id !== id)],
+    });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul səbətdən silindi",
     });
   };
   const addFavorite = (id) => {
@@ -58,11 +99,43 @@ function Blog({
       type: "SET_FAVORITE",
       payload: [...favorite, { id: id }],
     });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul sevimlilərə əlavə olundu",
+    });
   };
   const removeFavorite = (id) => {
     dispatch({
       type: "SET_FAVORITE",
       payload: [...favorite.filter((t) => t.id !== id)],
+    });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul sevimlilərdən silindi",
     });
   };
   return (
@@ -112,67 +185,76 @@ function Blog({
             <div className="menwatches_wrapper">
               {products.length ? (
                 filteredProducts.length ? (
-                  filteredProducts.map((product) => {
-                    const comp = company.find(
-                      (c) => c.id === product.company_id
-                    );
-                    const checkBasket = basket.find((t) => t.id === product.id);
-                    const checkFavorite = favorite.find(
-                      (f) => f.id === product.id
-                    );
-                    return (
-                      <div className="product" key={product.id}>
-                        <div className="product_img">
-                          <div className="front_img">
-                            <img src={product.frontimage} alt="" />
+                  filteredProducts
+                    .slice(
+                      itemPerPage * (page - 1),
+                      itemPerPage * (page - 1) + itemPerPage
+                    )
+                    .map((product) => {
+                      const comp = company.find(
+                        (c) => c.id === product.company_id
+                      );
+                      const checkBasket = basket.find(
+                        (t) => t.id === product.id
+                      );
+                      const checkFavorite = favorite.find(
+                        (f) => f.id === product.id
+                      );
+                      return (
+                        <div className="product" key={product.id}>
+                          <div className="product_img">
+                            <div className="front_img">
+                              <img src={product.frontimage} alt="" />
+                            </div>
+                            <div className="side_img">
+                              <img src={product.sideimage} alt="" />
+                            </div>
+                            <div className="product_img_btns">
+                              {!checkFavorite ? (
+                                <button onClick={() => addFavorite(product.id)}>
+                                  <i className="fa-regular fa-heart"></i>
+                                </button>
+                              ) : (
+                                <button
+                                  onClick={() => removeFavorite(product.id)}
+                                >
+                                  <i className="fa-solid fa-heart-crack"></i>
+                                </button>
+                              )}
+                              {!checkBasket ? (
+                                <button onClick={() => addBasket(product.id)}>
+                                  <i className="fa-solid fa-cart-shopping"></i>
+                                </button>
+                              ) : (
+                                <button
+                                  onClick={() => removeBasket(product.id)}
+                                >
+                                  <i className="fa-solid fa-x"></i>
+                                </button>
+                              )}
+                              <button>
+                                <Link to={`/product/${product.id}`}>
+                                  <i className="fa-regular fa-eye"></i>
+                                </Link>
+                              </button>
+                            </div>
                           </div>
-                          <div className="side_img">
-                            <img src={product.sideimage} alt="" />
-                          </div>
-                          <div className="product_img_btns">
-                            {!checkFavorite ? (
-                              <button onClick={() => addFavorite(product.id)}>
-                                <i className="fa-regular fa-heart"></i>
-                              </button>
-                            ) : (
-                              <button
-                                onClick={() => removeFavorite(product.id)}
-                              >
-                                <i className="fa-solid fa-heart-crack"></i>
-                              </button>
-                            )}
-                            {!checkBasket ? (
-                              <button onClick={() => addBasket(product.id)}>
-                                <i className="fa-solid fa-cart-shopping"></i>
-                              </button>
-                            ) : (
-                              <button onClick={() => removeBasket(product.id)}>
-                                <i className="fa-solid fa-x"></i>
-                              </button>
-                            )}
-                            <button>
-                              <Link to={`/product/${product.id}`}>
-                                <i className="fa-regular fa-eye"></i>
-                              </Link>
-                            </button>
-                          </div>
-                        </div>
-                        <div className="product_descr">
-                          <h2>{comp && comp.name}</h2>
-                          <p>
-                            {product.title && product.title.slice(0, 35)}
-                            ...
-                          </p>
-                          <span>
+                          <div className="product_descr">
+                            <h2>{comp && comp.name}</h2>
                             <p>
-                              {product.price}
-                              <i className="fa-solid fa-manat-sign"></i>
+                              {product.title && product.title.slice(0, 35)}
+                              ...
                             </p>
-                          </span>
+                            <span>
+                              <p>
+                                {product.price}
+                                <i className="fa-solid fa-manat-sign"></i>
+                              </p>
+                            </span>
+                          </div>
                         </div>
-                      </div>
-                    );
-                  })
+                      );
+                    })
                 ) : (
                   <h2>Axtarish Netice vermedi</h2>
                 )
@@ -180,6 +262,14 @@ function Blog({
                 <h2>Mal yoxdur</h2>
               )}
             </div>
+            {filteredProducts.length ? (
+              <Pagination
+                setPage={setPage}
+                page={page}
+                itemCount={filteredProducts.length}
+                itemPerPage={itemPerPage}
+              />
+            ) : null}
           </div>
         </section>
       ) : (

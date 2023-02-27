@@ -17,6 +17,7 @@ import "swiper/css/thumbs";
 // import required modules
 import { FreeMode, Thumbs } from "swiper";
 import PictureModal from "./PictureModal";
+import Swal from "sweetalert2";
 
 function Product({
   basket,
@@ -43,11 +44,43 @@ function Product({
       type: "SET_BASKET",
       payload: [...basket, { id: +id, count: 1 }],
     });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul səbətə əlavə olundu",
+    });
   };
   const removeFromCard = (id) => {
     dispatch({
       type: "SET_BASKET",
       payload: [...basket.filter((t) => t.id !== id)],
+    });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul səbətdən silindi",
     });
   };
   const changeCount = (c) => {
@@ -68,8 +101,6 @@ function Product({
   const check = basket.find((a) => a.id === +id);
   const findMovement = movement.find((a) => a.id === product.movement_id);
   const findFunc = functionality.find((a) => a.id === product.functionality_id);
-  console.log(findMovement);
-  console.log(findFunc);
   return (
     <>
       {product.category_id === 1 && <Mensbg />}

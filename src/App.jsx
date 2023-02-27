@@ -34,51 +34,6 @@ function App({ basket, favorite, dispatch }) {
   useEffect(() => {
     localStorage.setItem("favorite", JSON.stringify(favorite));
   }, [favorite]);
-
-  // useEffect(() => {
-  //   fetch("http://localhost:1225/products")
-  //     .then((a) => a.json())
-  //     .then((a) => {
-  //       dispatch({
-  //         type: "SET_PRODUCTS",
-  //         payload: [...a],
-  //       });
-  //       setLoading(false);
-  //     });
-  // }, []);
-  // useEffect(() => {
-  //   fetch("http://localhost:1225/company")
-  //     .then((a) => a.json())
-  //     .then((a) => {
-  //       dispatch({
-  //         type: "SET_COMPANY",
-  //         payload: [...a],
-  //       });
-  //       setLoading(false);
-  //     });
-  // }, []);
-  // useEffect(() => {
-  //   fetch("http://localhost:1225/category")
-  //     .then((a) => a.json())
-  //     .then((a) => {
-  //       dispatch({
-  //         type: "SET_CATEGORY",
-  //         payload: [...a],
-  //       });
-  //       setLoading(false);
-  //     });
-  // }, []);
-  // useEffect(() => {
-  //   fetch("http://localhost:1225/blog")
-  //     .then((a) => a.json())
-  //     .then((a) => {
-  //       dispatch({
-  //         type: "SET_BLOG",
-  //         payload: [...a],
-  //       });
-  //       setLoading(false);
-  //     });
-  // }, []);
   useEffect(() => {
     fetch("http://localhost:1225/category")
       .then((a) => a.json())
