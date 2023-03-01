@@ -24,9 +24,7 @@ function BlogDetails({ blog }) {
         });
     }, []);
   };
-  console.log(id);
   const filteredBlog = blog.filter((a) => a.id !== +id);
-  console.log(filteredBlog);
   return (
     <>
       <Blogbg />

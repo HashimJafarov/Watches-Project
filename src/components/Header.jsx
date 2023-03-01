@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 AOS.init();
 import { connect } from "react-redux";
 function Header({
+  setNavMenu,
+  navMenu,
   basket,
   favorite,
   company,
@@ -128,6 +130,11 @@ function Header({
                 <div className="basket_count">{basket.length}</div>
               ) : null}
             </div>
+          </div>
+          <div onClick={() => setNavMenu(!navMenu)} className="bars">
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
           </div>
         </header>
       </div>

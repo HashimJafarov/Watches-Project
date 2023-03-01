@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import Pagination from "../components/Pagination";
 import Swal from "sweetalert2";
 function ProductsByMovement({
+  asidebasket,
+  navMenu,
   products,
   basket,
   movement,
@@ -147,10 +149,28 @@ function ProductsByMovement({
                     return (
                       <div className="product" key={product.id}>
                         <div className="product_img">
-                          <div className="front_img">
+                          <div
+                            style={
+                              navMenu
+                                ? { zIndex: "-1" }
+                                : { zIndex: "1" } || asidebasket
+                                ? { zIndex: "-1" }
+                                : { zIndex: "1" }
+                            }
+                            className="front_img"
+                          >
                             <img src={product.frontimage} alt="" />
                           </div>
-                          <div className="side_img">
+                          <div
+                            style={
+                              navMenu
+                                ? { zIndex: "-1" }
+                                : { zIndex: "1" } || asidebasket
+                                ? { zIndex: "-1" }
+                                : { zIndex: "1" }
+                            }
+                            className="side_img"
+                          >
                             <img src={product.sideimage} alt="" />
                           </div>
                           <div className="product_img_btns">

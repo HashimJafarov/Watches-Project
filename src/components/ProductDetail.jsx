@@ -20,6 +20,8 @@ import PictureModal from "./PictureModal";
 import Swal from "sweetalert2";
 
 function Product({
+  asidebasket,
+  navMenu,
   basket,
   movement,
   functionality,
@@ -132,7 +134,15 @@ function Product({
                 ) : null}
                 <div
                   className="details_img"
-                  style={showPicture ? { zIndex: "-1" } : { zIndex: "1" }}
+                  style={
+                    showPicture
+                      ? { zIndex: "-1" }
+                      : { zIndex: "1" } && navMenu
+                      ? { zIndex: "-1" }
+                      : { zIndex: "1" } && asidebasket
+                      ? { zIndex: "-1" }
+                      : { zIndex: "1" }
+                  }
                 >
                   <Swiper
                     onClick={() => setShowPicture(true)}

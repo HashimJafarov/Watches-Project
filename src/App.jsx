@@ -17,6 +17,7 @@ import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
 import ProductsByMovement from "./pages/ProductsByMovement";
 import ProductsByFunctionality from "./pages/ProductsByFunctionality";
+import NavMenu from "./components/NavMenu";
 function App({ basket, favorite, dispatch }) {
   let loc = useLocation();
   useEffect(() => {
@@ -25,6 +26,7 @@ function App({ basket, favorite, dispatch }) {
     });
   }, [loc.pathname]);
   const [asidebasket, setAsidebasket] = useState(false);
+  const [navMenu, setNavMenu] = useState(false);
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(false);
   const [showPicture, setShowPicture] = useState(false);
@@ -97,19 +99,46 @@ function App({ basket, favorite, dispatch }) {
   }, []);
   return (
     <>
-      <Header setAsidebasket={setAsidebasket} setUser={setUser} />
+      <Header
+        setAsidebasket={setAsidebasket}
+        setNavMenu={setNavMenu}
+        navMenu={navMenu}
+        setUser={setUser}
+      />
+      {navMenu && <NavMenu setNavMenu={setNavMenu} />}
+      {asidebasket && <ProductBasket setAsidebasket={setAsidebasket} />}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Home navMenu={navMenu} asidebasket={asidebasket} />}
+        />
         <Route path="/about" element={<About />} />
         <Route
           path="/:category_name/:category_id"
-          element={<ProductsByCategory />}
+          element={
+            <ProductsByCategory navMenu={navMenu} asidebasket={asidebasket} />
+          }
         />
-        <Route path="/products/:name/:name_id" element={<ProductsByName />} />
-        <Route path="/movement/:name/:id" element={<ProductsByMovement />} />
+        <Route
+          path="/products/:name/:name_id"
+          element={
+            <ProductsByName navMenu={navMenu} asidebasket={asidebasket} />
+          }
+        />
+        <Route
+          path="/movement/:name/:id"
+          element={
+            <ProductsByMovement navMenu={navMenu} asidebasket={asidebasket} />
+          }
+        />
         <Route
           path="/functionality/:name/:id"
-          element={<ProductsByFunctionality />}
+          element={
+            <ProductsByFunctionality
+              navMenu={navMenu}
+              asidebasket={asidebasket}
+            />
+          }
         />
         <Route
           path="/product/:id"
@@ -117,6 +146,8 @@ function App({ basket, favorite, dispatch }) {
             <ProductDetail
               setShowPicture={setShowPicture}
               showPicture={showPicture}
+              navMenu={navMenu}
+              asidebasket={asidebasket}
             />
           }
         />
@@ -126,7 +157,6 @@ function App({ basket, favorite, dispatch }) {
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {asidebasket && <ProductBasket setAsidebasket={setAsidebasket} />}
       <Footer />
     </>
   );

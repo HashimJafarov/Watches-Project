@@ -8,7 +8,16 @@ import "swiper/css";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Swal from "sweetalert2";
-function Home({ category, products, company, favorite, basket, dispatch }) {
+function Home({
+  category,
+  products,
+  navMenu,
+  asidebasket,
+  company,
+  favorite,
+  basket,
+  dispatch,
+}) {
   const featuredProducts = products.filter((t) => t.featured === true);
   const addBasket = (id) => {
     dispatch({
@@ -121,6 +130,13 @@ function Home({ category, products, company, favorite, basket, dispatch }) {
         </div>
       </section>
       <section
+        style={
+          navMenu
+            ? { zIndex: "-1" }
+            : { zIndex: "1" } || asidebasket
+            ? { zIndex: "-1" }
+            : { zIndex: "1" }
+        }
         className="all_watches"
         data-aos="fade-up"
         data-aos-easing="linear"
@@ -159,7 +175,7 @@ function Home({ category, products, company, favorite, basket, dispatch }) {
             </div>
             <div
               className="spring_descr"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-easing="ease-in-sine"
               data-aos-duration="1000"
             >
@@ -251,78 +267,6 @@ function Home({ category, products, company, favorite, basket, dispatch }) {
                 </div>
               );
             })}
-            {/* <div className="feature_product">
-              <div className="product_img">
-                <img
-                  src="http://lenos.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2022/03/14-300x300.jpg"
-                  alt=""
-                />
-                <div className="product_btns">
-                  <button>how</button>
-                  <button>are</button>
-                  <button>you</button>
-                </div>
-              </div>
-              <div className="product_title">
-                <p>Cocomi</p>
-                <h2>Timex Easy Reader White</h2>
-                <p>$225</p>
-              </div>
-            </div>
-            <div className="feature_product">
-              <div className="product_img">
-                <img
-                  src="http://lenos.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2022/03/14-300x300.jpg"
-                  alt=""
-                />
-                <div className="product_btns">
-                  <button>how</button>
-                  <button>are</button>
-                  <button>you</button>
-                </div>
-              </div>
-              <div className="product_title">
-                <p>Cocomi</p>
-                <h2>Timex Easy Reader White</h2>
-                <p>$225</p>
-              </div>
-            </div>
-            <div className="feature_product">
-              <div className="product_img">
-                <img
-                  src="http://lenos.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2022/03/14-300x300.jpg"
-                  alt=""
-                />
-                <div className="product_btns">
-                  <button>how</button>
-                  <button>are</button>
-                  <button>you</button>
-                </div>
-              </div>
-              <div className="product_title">
-                <p>Cocomi</p>
-                <h2>Timex Easy Reader White</h2>
-                <p>$225</p>
-              </div>
-            </div>
-            <div className="feature_product">
-              <div className="product_img">
-                <img
-                  src="http://lenos.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2022/03/14-300x300.jpg"
-                  alt=""
-                />
-                <div className="product_btns">
-                  <button>how</button>
-                  <button>are</button>
-                  <button>you</button>
-                </div>
-              </div>
-              <div className="product_title">
-                <p>Cocomi</p>
-                <h2>Timex Easy Reader White</h2>
-                <p>$225</p>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>

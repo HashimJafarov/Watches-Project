@@ -19,10 +19,10 @@ function Blog({ blog }) {
                   <div className="blog_title">
                     <p>{a.about.toUpperCase()}</p>
                     <p>{a.title}</p>
-                    <p>
-                      {a.part_one.slice(0, 100)}...{" "}
-                      <Link to={`/blog/${a.id}`}>Read More</Link>
-                    </p>
+                    <p>{a.part_one.slice(0, 100)}... </p>
+                    <Link to={`/blog/${a.id}`}>
+                      <button>Read More</button>
+                    </Link>
                   </div>
                 </div>
               ))}

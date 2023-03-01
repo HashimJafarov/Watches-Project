@@ -6,8 +6,8 @@ import "swiper/css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
-
-function About() {
+import { connect } from "react-redux";
+function About({ blog }) {
   return (
     <>
       <section
@@ -58,6 +58,48 @@ function About() {
           </div>
         </div>
       </section>
+      <section className="about_blog">
+        <div className="container">
+          <p>Məlumat</p>
+          <p>
+            <span>Saatlar</span> Haqqında
+          </p>
+          <div className="about_blog_wrapper">
+            {blog.length ? (
+              blog
+                .slice(0, 6)
+                .reverse()
+                .map((a) => (
+                  <Link
+                    to={`/blog/${a.id}`}
+                    className="about_blog_product"
+                    key={a.id}
+                  >
+                    <div className="about_blog_img">
+                      <img src={a.head_img} alt="" />
+                    </div>
+                    <div className="about_blog_title">
+                      <p>{a.about.toUpperCase()}</p>
+                      <p>{a.title}</p>
+                      <p>{a.part_one.slice(0, 100)}...</p>
+                      {/* <Link to={`/blog/${a.id}`}>
+                        <button>Read More</button>
+                      </Link> */}
+                    </div>
+                  </Link>
+                ))
+            ) : (
+              <div className="loading">
+                <div className="load">
+                  <div className="circle_one">
+                    <div className="circle_two"></div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
       <section className="sponsor">
         <div className="container">
           <div className="sponsor_descr">
@@ -103,5 +145,5 @@ function About() {
     </>
   );
 }
-
-export default About;
+const t = (a) => a;
+export default connect(t)(About);
