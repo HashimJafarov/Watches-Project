@@ -14,6 +14,7 @@ function Header({
   movement,
   functionality,
   setAsidebasket,
+  showPicture = { showPicture },
 }) {
   return (
     <section
@@ -21,6 +22,7 @@ function Header({
       data-aos="fade-down"
       data-aos-easing="linear"
       data-aos-duration="1500"
+      style={showPicture ? { zIndex: "1" } : { zIndex: "3" }}
     >
       <div className="container">
         <header>

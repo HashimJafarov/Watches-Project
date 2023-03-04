@@ -119,7 +119,7 @@ function ProductByName({
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                height: "350px",
+                height: "550px",
               }}
             ></section>
           )

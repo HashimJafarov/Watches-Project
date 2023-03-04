@@ -278,10 +278,26 @@ function Home({
             modules={[Autoplay]}
             spaceBetween={10}
             slidesPerView={5}
+            breakpoints={{
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 15,
+              },
+              992: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+              769: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              521: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+            }}
             loop={true}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide>
               <img src="/images/swiperphoto/hand1.jpg" alt="" />

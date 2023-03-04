@@ -28,10 +28,6 @@ function Blog({
     minPrice: 0,
     maxPrice: 0,
   });
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const [postsPerPage, setPostsPerPage] = useState(16);
-  // const lastPostIndex = currentPage * postsPerPage;
-  // const firstPostIndex = lastPostIndex - postsPerPage;
   const [page, setPage] = useState(1);
   const itemPerPage = 16;
   useEffect(() => {

@@ -9,7 +9,6 @@ const init = {
   functionality: [],
   basket: localBasket ? JSON.parse(localBasket) : [],
   favorite: localBasket ? JSON.parse(localFavorite) : [],
-  // favorite: [],
 };
 export default function Reducer(state = init, action) {
   switch (action.type) {

@@ -8,7 +8,7 @@ import About from "./pages/About";
 import ProductsByCategory from "./pages/ProductsByCategory";
 import ProductsByName from "./pages/ProductsByName";
 import ProductBasket from "./components/ProductBasket";
-import ProductDetail from "./components/ProductDetail";
+import ProductDetail from "./pages/ProductDetail";
 import { connect } from "react-redux";
 import ProductCard from "./pages/ProductCard";
 import ProductFavorites from "./pages/ProductFavorites";
@@ -30,6 +30,7 @@ function App({ basket, favorite, dispatch }) {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(false);
   const [showPicture, setShowPicture] = useState(false);
+
   useEffect(() => {
     localStorage.setItem("basket", JSON.stringify(basket));
   }, [basket]);
@@ -104,6 +105,7 @@ function App({ basket, favorite, dispatch }) {
         setNavMenu={setNavMenu}
         navMenu={navMenu}
         setUser={setUser}
+        showPicture={showPicture}
       />
       {navMenu && <NavMenu setNavMenu={setNavMenu} />}
       {asidebasket && <ProductBasket setAsidebasket={setAsidebasket} />}
