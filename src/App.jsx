@@ -18,6 +18,7 @@ import Contact from "./pages/Contact";
 import ProductsByMovement from "./pages/ProductsByMovement";
 import ProductsByFunctionality from "./pages/ProductsByFunctionality";
 import NavMenu from "./components/NavMenu";
+import Customers from "./pages/Customers";
 function App({ basket, favorite, dispatch }) {
   let loc = useLocation();
   useEffect(() => {
@@ -72,6 +73,36 @@ function App({ basket, favorite, dispatch }) {
           .then((a) => {
             dispatch({
               type: "SET_COMPANY",
+              payload: [...a],
+            });
+          });
+      })
+      .then(() => {
+        fetch("http://localhost:1225/comments")
+          .then((a) => a.json())
+          .then((a) => {
+            dispatch({
+              type: "SET_COMMENTS",
+              payload: [...a],
+            });
+          });
+      })
+      .then(() => {
+        fetch("http://localhost:1225/customers")
+          .then((a) => a.json())
+          .then((a) => {
+            dispatch({
+              type: "SET_CUSTOMERS",
+              payload: [...a],
+            });
+          });
+      })
+      .then(() => {
+        fetch("http://localhost:1225/subcustomers")
+          .then((a) => a.json())
+          .then((a) => {
+            dispatch({
+              type: "SET_SUBCUSTOMERS",
               payload: [...a],
             });
           });
@@ -158,6 +189,7 @@ function App({ basket, favorite, dispatch }) {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/customers/:name/:id" element={<Customers />} />
       </Routes>
       <Footer />
     </>

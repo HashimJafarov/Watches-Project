@@ -19,6 +19,10 @@ import { FreeMode, Thumbs } from "swiper";
 import PictureModal from "../components//PictureModal";
 import Swal from "sweetalert2";
 import StarRatings from "../components//StarRatings";
+import { animate, AnimatePresence, motion } from "framer-motion";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/all";
+import ProductStarRating from "../components/ProductStarRating";
+import CommentStarRating from "../components/CommentStarRating";
 
 function Product({
   asidebasket,
@@ -32,11 +36,27 @@ function Product({
   products,
   category,
   blog,
+  comments,
 }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
+  const [prodescr, setProdescr] = useState(false);
+  const [description, setDescription] = useState(false);
+  const [shipping, setShipping] = useState(false);
+  const [currentValue, setCurrentValue] = useState(0);
+  // const [writeComments, setWriteComments] = useState(false);
+  const [newComment, setNewComment] = useState({
+    rate: 0,
+    product_id: +id,
+    name: "",
+    comment: "",
+    email: "",
+    user_img:
+      "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+    status: 0,
+  });
   useEffect(() => {
     fetch(`http://localhost:1225/products/${id}`)
       .then((a) => a.json())
@@ -45,6 +65,7 @@ function Product({
         setLoading(false);
       });
   }, []);
+
   const updatePage = (id) => {
     useEffect(() => {
       fetch(`http://localhost:1225/products/${id}`)
@@ -54,6 +75,37 @@ function Product({
           setLoading(false);
         });
     }, []);
+  };
+
+  const handleChange = (e) => {
+    setNewComment({ ...newComment, [e.target.name]: e.target.value });
+    console.log(newComment);
+  };
+
+  const handleRate = (currentValue) => {
+    setNewComment({ ...newComment, rate: currentValue });
+  };
+  const saveComment = () => {
+    comments.push({ ...newComment, id: comments.length + 1 });
+
+    fetch(`http://localhost:1225/comments/`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newComment),
+    });
+    setNewComment({
+      rate: 0,
+      product_id: +id,
+      name: "",
+      comment: "",
+      email: "",
+      user_img:
+        "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      status: 0,
+    });
   };
   const addBasket = (id) => {
     dispatch({
@@ -71,7 +123,6 @@ function Product({
         toast.addEventListener("mouseleave", Swal.resumeTimer);
       },
     });
-
     Toast.fire({
       icon: "success",
       title: "Məhsul səbətə əlavə olundu",
@@ -93,7 +144,6 @@ function Product({
         toast.addEventListener("mouseleave", Swal.resumeTimer);
       },
     });
-
     Toast.fire({
       icon: "success",
       title: "Məhsul səbətdən silindi",
@@ -121,6 +171,7 @@ function Product({
   const checkAnotherProducts = products.filter(
     (a) => a.id !== +id && a.category_id === product.category_id
   );
+  const findComment = comments.filter((a) => a.product_id === product.id);
   return (
     <>
       {product.category_id === 1 && <Mensbg />}
@@ -228,7 +279,8 @@ function Product({
                       <div className="details_operations">
                         <div className="details_operation_titles">
                           <h2>{product.title}</h2>
-                          <StarRatings />
+                          {/* <StarRatings /> */}
+                          <ProductStarRating id={id} />
                           <h3>
                             {product.price}{" "}
                             <i className="fa-solid fa-manat-sign"></i>
@@ -302,78 +354,148 @@ function Product({
                     </div>
                   </div>
                   <div className="details_descr">
-                    <p>Məhsulun Xarakteristikası</p>
-                    <div className="details_prodescr">
-                      {product.title ? (
-                        <p>
-                          Modelin Adı: <span>{product.title}</span>
-                        </p>
-                      ) : null}
-                      {product.model ? (
-                        <p>
-                          Model: <span>{product.model}</span>
-                        </p>
-                      ) : null}
-                      {findCategory ? (
-                        <p>
-                          Kateqoriya: <span>{findCategory.title}</span>
-                        </p>
-                      ) : null}
-                      {product.case_material ? (
-                        <p>
-                          Material: <span>{product.case_material}</span>
-                        </p>
-                      ) : null}
-                      {product.dial_material ? (
-                        <p>
-                          Siferblatın materialı:{" "}
-                          <span>{product.dial_material}</span>
-                        </p>
-                      ) : null}
-                      {product.diameter ? (
-                        <p>
-                          Diametr: <span>{product.diameter}</span>
-                        </p>
-                      ) : null}
-                      {product.shape ? (
-                        <p>
-                          Siferblatın forması: <span>{product.shape}</span>
-                        </p>
-                      ) : null}
-                      {product.color ? (
-                        <p>
-                          Rəng: <span>{product.color}</span>{" "}
-                        </p>
-                      ) : null}
-                      {product.dial ? (
-                        <p>
-                          Siferblatın Rəngi: <span>{product.dial}</span>{" "}
-                        </p>
-                      ) : null}
-                      {findMovement ? (
-                        <p>
-                          Mexanizm: <span>{findMovement.title}</span>{" "}
-                        </p>
-                      ) : null}
-                      {findFunc ? (
-                        <p>
-                          Funksionallıq: <span>{findFunc.title}</span>{" "}
-                        </p>
-                      ) : null}
+                    <div className="details_descr_title">
+                      <p>Məhsulun Xarakteristikası</p>
+                      <IoIosArrowDown
+                        onClick={() => setProdescr(!prodescr)}
+                        style={
+                          prodescr
+                            ? { transform: "rotate(180deg)" }
+                            : { transform: "rotate(0)" }
+                        }
+                      />
+                    </div>
+                    <div className="details_overflow">
+                      <AnimatePresence>
+                        {prodescr && (
+                          <motion.div
+                            initial={{ y: -1200 }}
+                            animate={{ y: 0 }}
+                            exit={{ y: -1200 }}
+                            className="details_prodescr_demo"
+                          >
+                            <div className="details_prodescr">
+                              {product.title ? (
+                                <p>
+                                  Modelin Adı: <span>{product.title}</span>
+                                </p>
+                              ) : null}
+                              {product.model ? (
+                                <p>
+                                  Model: <span>{product.model}</span>
+                                </p>
+                              ) : null}
+                              {findCategory ? (
+                                <p>
+                                  Kateqoriya: <span>{findCategory.title}</span>
+                                </p>
+                              ) : null}
+                              {product.case_material ? (
+                                <p>
+                                  Material: <span>{product.case_material}</span>
+                                </p>
+                              ) : null}
+                              {product.dial_material ? (
+                                <p>
+                                  Siferblatın materialı:{" "}
+                                  <span>{product.dial_material}</span>
+                                </p>
+                              ) : null}
+                              {product.diameter ? (
+                                <p>
+                                  Diametr: <span>{product.diameter}</span>
+                                </p>
+                              ) : null}
+                              {product.shape ? (
+                                <p>
+                                  Siferblatın forması:{" "}
+                                  <span>{product.shape}</span>
+                                </p>
+                              ) : null}
+                              {product.color ? (
+                                <p>
+                                  Rəng: <span>{product.color}</span>{" "}
+                                </p>
+                              ) : null}
+                              {product.dial ? (
+                                <p>
+                                  Siferblatın Rəngi: <span>{product.dial}</span>{" "}
+                                </p>
+                              ) : null}
+                              {findMovement ? (
+                                <p>
+                                  Mexanizm: <span>{findMovement.title}</span>{" "}
+                                </p>
+                              ) : null}
+                              {findFunc ? (
+                                <p>
+                                  Funksionallıq: <span>{findFunc.title}</span>{" "}
+                                </p>
+                              ) : null}
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                     </div>
                     {product.description ? (
-                      <>
-                        <p>Məhsul Haqqında</p>
-                        <div className="details_description">
-                          <p>{product.description}</p>
+                      <div className="details_transition">
+                        <div className="details_descr_title">
+                          <p>Məhsul Haqqında</p>
+                          <IoIosArrowDown
+                            onClick={() => setDescription(!description)}
+                            style={
+                              description
+                                ? { transform: "rotate(180deg)" }
+                                : { transform: "rotate(0)" }
+                            }
+                          />
                         </div>
-                      </>
+                        <div className="details_overflow">
+                          <AnimatePresence>
+                            {description && (
+                              <motion.div
+                                initial={{ y: -300 }}
+                                animate={{ y: 0 }}
+                                exit={{ y: -300 }}
+                                className="details_prodescr_demo"
+                              >
+                                <div className="details_description">
+                                  <p>{product.description}</p>
+                                </div>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        </div>
+                      </div>
                     ) : null}
                     {product.delivery ? (
                       <>
-                        <p>Çatdırılma</p>
-                        <div className="details_shipping">
-                          <p>{product.delivery}</p>
+                        <div className="details_descr_title">
+                          <p>Çatdırılma</p>
+                          <IoIosArrowDown
+                            onClick={() => setShipping(!shipping)}
+                            style={
+                              shipping
+                                ? { transform: "rotate(180deg)" }
+                                : { transform: "rotate(0)" }
+                            }
+                          />
+                        </div>
+                        <div className="details_overflow">
+                          <AnimatePresence>
+                            {shipping && (
+                              <motion.div
+                                initial={{ y: -1200 }}
+                                animate={{ y: 0 }}
+                                exit={{ y: -1200 }}
+                                className="details_prodescr_demo"
+                              >
+                                <div className="details_shipping">
+                                  <p>{product.delivery}</p>
+                                </div>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
                         </div>
                       </>
                     ) : null}
@@ -382,13 +504,14 @@ function Product({
                     <p>Oxşar məhsullar</p>
                     <div className="details_another_products_wrap">
                       {checkAnotherProducts
-                        .slice(0, 12)
+                        .slice(0, 16)
                         .map((anotherproducts) => {
                           return (
                             <Link
                               onClick={() => updatePage(anotherproducts.id)}
                               to={`/product/${anotherproducts.id}`}
                               className="details_another_product"
+                              key={anotherproducts.id}
                             >
                               <div className="details_another_img">
                                 <img src={anotherproducts.frontimage} alt="" />
@@ -403,6 +526,90 @@ function Product({
                             </Link>
                           );
                         })}
+                    </div>
+                  </div>
+                  <div className="details_reviews">
+                    <div className="details_descr_title">
+                      <p>Rəylər</p>
+                    </div>
+                    <div className="details_overflow">
+                      {!newComment.status && (
+                        <button
+                          onClick={() =>
+                            setNewComment({ ...newComment, status: 1 })
+                          }
+                        >
+                          Rəy yazmaq
+                        </button>
+                      )}
+                      {!newComment.status ? (
+                        <div className="comment_parts">
+                          {findComment.length ? (
+                            findComment.map((comment) => {
+                              return (
+                                <div className="review" key={comment.id}>
+                                  <div className="review_user">
+                                    <img src={comment.user_img} alt="" />
+                                    <p>{comment.name}</p>
+                                    <CommentStarRating id={comment.id} />
+                                  </div>
+                                  <p>{comment.comment}</p>
+                                  <p>{comment.year}</p>
+                                </div>
+                              );
+                            })
+                          ) : (
+                            <p>Rey yoxdu</p>
+                          )}
+                        </div>
+                      ) : (
+                        <div className="comment_write">
+                          <div className="comment_rate">
+                            <p>Məhsulu qiymətləndirin</p>
+                            <div className="comment_stars">
+                              <StarRatings
+                                currentValue={currentValue}
+                                setCurrentValue={setCurrentValue}
+                                handleRate={handleRate}
+                              />
+                            </div>
+                          </div>
+                          <div className="comment_opinion">
+                            <p>Rəyinizi bildirin</p>
+                            <textarea
+                              onChange={handleChange}
+                              type="text"
+                              name="comment"
+                            ></textarea>
+                          </div>
+                          <div className="comment_name">
+                            <p>Adınızı qeyd edin</p>
+                            <input
+                              onChange={handleChange}
+                              type="text"
+                              name="name"
+                            />
+                          </div>
+                          <div className="comment_email">
+                            <p>Email qeyd edin</p>
+                            <input
+                              onChange={handleChange}
+                              type="email"
+                              name="email"
+                            />
+                          </div>
+                          <div className="comment_btns">
+                            <button
+                              onClick={() =>
+                                setNewComment({ ...newComment, status: 0 })
+                              }
+                            >
+                              Geri
+                            </button>
+                            <button onClick={saveComment}>Təsdiq et</button>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -444,3 +651,4 @@ function Product({
 }
 const t = (a) => a;
 export default connect(t)(Product);
+//

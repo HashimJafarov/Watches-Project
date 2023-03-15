@@ -1,13 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
-const colors = {
-  orange: "ffba5a",
-  grey: "a9a9a9",
-};
-function StarRatings() {
+function StarRatings({ currentValue, setCurrentValue, handleRate }) {
   const stars = Array(5).fill(0);
-  const [currentValue, setCurrentValue] = useState(0);
   const [hoverValue, setHoverValue] = useState(undefined);
   const handleClick = (value) => {
     setCurrentValue(value);
@@ -22,15 +17,23 @@ function StarRatings() {
     <div className="star_ratings">
       {stars.map((_, index) => {
         return (
-          <FaStar
+          <div
             key={index}
-            color={
-              (hoverValue || currentValue) > index ? colors.orange : colors.grey
-            }
-            onClick={() => handleClick(index + 1)}
+            onClick={() => {
+              handleClick(index + 1);
+              handleRate(index + 1);
+            }}
             onMouseOver={() => handleMouseOver(index + 1)}
             onMouseLeave={handleMouseLeave}
-          />
+            style={
+              (hoverValue || currentValue) > index
+                ? { backgroundColor: "#3a3a3a", color: "#f7f7f7" }
+                : { backgroundColor: "#f7f7f7", color: "#a9a9a9" }
+            }
+            className="star_rate"
+          >
+            <FaStar />
+          </div>
         );
       })}
     </div>

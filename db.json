@@ -23,7 +23,8 @@
       "quality": "Keyfiyyətli Materiallar: “Paslanmayan polad korpus və ilgək qolbaq, mavi siferblat. Saatı cızıqlardan qoruyan möhkəm mineral kristaldan hazırlanıb.",
       "category_id": 1,
       "featured": false,
-      "delivery": "Watches.com Standard International Mail* (249$-dan yuxarı sifarişlər) və Standard Domestic Mail (100$+-dan yuxarı sifarişlər) xərclərini ödəyəcək. Bütün ölkələr pulsuz beynəlxalq göndərmə üçün uyğun deyil. Təkmilləşdirilmiş göndərmə seçimləri (təxmini tranzit vaxtları və tariflər) yoxlama zamanı təklif ediləcək.Watches.com 1999-cu ildən bütün dünyaya göndərilir və biz hər gün beynəlxalq miqyasda göndəririk. Sifarişlərin çoxu adi iş günlərində bazar ertəsindən cümə gününə qədər saat 17:00-a (MST) qədər emal edilir və göndərilir. Ödənişin/fırıldaqçılığın yoxlanılması adətən ani olur, lakin bəzi hallarda 48 saata qədər çəkə bilər. Saat 12:00-dan (MST) sonra verilən/qəbul edilən sifarişlər növbəti iş günü həyata keçiriləcək. Nəzərə alın ki, UPS həftə sonları çatdırmır. Gömrük rüsumları ölkədən asılı olaraq fərqli olduğundan, biz yoxlama zamanı rüsum almırıq. Əgər rüsumlar ödənilirsə, gömrük agentliyiniz paket ölkənizə çatdıqda sizə xəbər verəcəkdir. Bu ödənişləri ölkənizə ödəmək sizin məsuliyyətinizdir.Mallar göndərildikdən sonra məsuliyyət daşıyıcının şərtləri ilə əhatə olunur. Müştərinin göstərdiyi ünvana çatdırırıq. Əgər bizə dəqiq ünvan verməmisinizsə, nə Watches.com, nə də daşıyıcı məhsulun itirilməsinə görə məsuliyyət daşıya bilməz. Zəhmət olmasa göndərmə ünvanınızı iki dəfə yoxlayın. Göndərmə ilə bağlı hər hansı ziyan çatdırıldıqdan sonra 48 saat ərzində Watches.com-a bildirilməlidir, əks halda bu, hər hansı sığorta və ya pulun geri qaytarılması iddiası üçün uyğun deyil. Qeyd: Casio-nun siyasətinə görə, Casio və G-Shock saatları Beynəlxalq Göndərmə üçün uyğun deyil. Casio və ya G-Shock saatı olan istənilən beynəlxalq sifariş ləğv ediləcək və bütün pullar geri qaytarılacaq."
+      "delivery": "Watches.com Standard International Mail* (249$-dan yuxarı sifarişlər) və Standard Domestic Mail (100$+-dan yuxarı sifarişlər) xərclərini ödəyəcək. Bütün ölkələr pulsuz beynəlxalq göndərmə üçün uyğun deyil. Təkmilləşdirilmiş göndərmə seçimləri (təxmini tranzit vaxtları və tariflər) yoxlama zamanı təklif ediləcək.Watches.com 1999-cu ildən bütün dünyaya göndərilir və biz hər gün beynəlxalq miqyasda göndəririk. Sifarişlərin çoxu adi iş günlərində bazar ertəsindən cümə gününə qədər saat 17:00-a (MST) qədər emal edilir və göndərilir. Ödənişin/fırıldaqçılığın yoxlanılması adətən ani olur, lakin bəzi hallarda 48 saata qədər çəkə bilər. Saat 12:00-dan (MST) sonra verilən/qəbul edilən sifarişlər növbəti iş günü həyata keçiriləcək. Nəzərə alın ki, UPS həftə sonları çatdırmır. Gömrük rüsumları ölkədən asılı olaraq fərqli olduğundan, biz yoxlama zamanı rüsum almırıq. Əgər rüsumlar ödənilirsə, gömrük agentliyiniz paket ölkənizə çatdıqda sizə xəbər verəcəkdir. Bu ödənişləri ölkənizə ödəmək sizin məsuliyyətinizdir.Mallar göndərildikdən sonra məsuliyyət daşıyıcının şərtləri ilə əhatə olunur. Müştərinin göstərdiyi ünvana çatdırırıq. Əgər bizə dəqiq ünvan verməmisinizsə, nə Watches.com, nə də daşıyıcı məhsulun itirilməsinə görə məsuliyyət daşıya bilməz. Zəhmət olmasa göndərmə ünvanınızı iki dəfə yoxlayın. Göndərmə ilə bağlı hər hansı ziyan çatdırıldıqdan sonra 48 saat ərzində Watches.com-a bildirilməlidir, əks halda bu, hər hansı sığorta və ya pulun geri qaytarılması iddiası üçün uyğun deyil. Qeyd: Casio-nun siyasətinə görə, Casio və G-Shock saatları Beynəlxalq Göndərmə üçün uyğun deyil. Casio və ya G-Shock saatı olan istənilən beynəlxalq sifariş ləğv ediləcək və bütün pullar geri qaytarılacaq.",
+      "rate": 4
     },
     {
       "id": 2,
@@ -39,6 +40,7 @@
       "price": "630",
       "color": "Boz",
       "dial": "Göy",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/61VGz0gz4iS._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/41l+GY4pFRS._AC_UX522_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/61S-5KAsZFS._AC_UX522_.jpg",
@@ -63,6 +65,7 @@
       "price": "342",
       "color": "Qəhvəli",
       "dial": "Göy",
+      "rate": 3,
       "frontimage": "https://m.media-amazon.com/images/I/71TfGGdzPqL._AC_UY741_.jpg",
       "sideimage": "https://watchesprime.com/wp-content/uploads/2020/03/2-16.jpg",
       "backimage": "https://www.chic-time.fr/178048/tommy-hilfiger-1791066-mens-watchbracelet-color-brown-movement-quartz-waterproofing-50-m-5-atm-dial-color-blue-bracelet-material.jpg",
@@ -87,6 +90,7 @@
       "price": "562",
       "color": "Boz",
       "dial": "Göy",
+      "rate": 3,
       "frontimage": "https://m.media-amazon.com/images/I/81F14MJhLLL._AC_UY741_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81kRZj1yVPL._AC_UX385_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/715HRtAU9pL._AC_UX385_.jpg",
@@ -111,6 +115,7 @@
       "price": "18295",
       "color": "Boz",
       "dial": "Göy",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/7102kbNCosL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/71jNj68DGnL._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/71Q3RlEuLML._AC_UX679_.jpg",
@@ -135,6 +140,7 @@
       "price": "146",
       "color": "Boz",
       "dial": "Göy",
+      "rate": 3,
       "frontimage": "https://m.media-amazon.com/images/I/714vEQff0RL._AC_SY741._SX._UX._SY._UY_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/51l6NxAST0L._AC_SY741._SX._UX._SY._UY_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/71OGOWTqQaL._AC_SX679._SX._UX._SY._UY_.jpg",
@@ -159,6 +165,7 @@
       "price": "17000",
       "color": "Ağ",
       "dial": "Ağ",
+      "rate": 5,
       "frontimage": "https://media2.bulgari.com/f_auto,q_auto,c_pad,h_520,w_520/production/dw5b5046d5/images/images/481652.png",
       "sideimage": "https://media2.bulgari.com/f_auto,q_auto,c_pad,h_520,w_520/production/dw2040b6dc/images/images/481651.png",
       "backimage": "",
@@ -183,6 +190,7 @@
       "price": "253",
       "color": "Qara",
       "dial": "Qara",
+      "rate": 3,
       "frontimage": "https://m.media-amazon.com/images/I/81PRL2d74BL._AC_UY741_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81iMtKGbCWL._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/81zKaWtEScL._AC_UX679_.jpg",
@@ -207,6 +215,7 @@
       "price": "317",
       "color": "Yaşıl",
       "dial": "Yaşıl",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/8142-BJLwgL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/71qspQMyL+L._AC_UX466_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/81M3lhlh9WL._AC_UX466_.jpg",
@@ -231,6 +240,7 @@
       "price": "317",
       "color": "Silver",
       "dial": "Blue",
+      "rate": 4,
       "frontimage": "https://m.media-amazon.com/images/I/81IehaAG8CL._AC_UY679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/61FNu8NohEL._AC_UY741_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/61Dn-essEwL._AC_UY741_.jpg",
@@ -255,6 +265,7 @@
       "price": "880",
       "color": "Qəhvəyi",
       "dial": "Qara",
+      "rate": 4,
       "frontimage": "https://m.media-amazon.com/images/I/91Ew-Q9T4uL._AC_UY741_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81dy8ZcQTDL._AC_UY741_.jpg",
       "backimage": "",
@@ -279,6 +290,7 @@
       "price": "996",
       "color": "Qəhvəyi",
       "dial": "Qara",
+      "rate": 4,
       "frontimage": "https://m.media-amazon.com/images/I/81o-cSq6NqL._AC_UY679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81auYhOc2SL._AC_UX679_.jpg",
       "backimage": "",
@@ -303,6 +315,7 @@
       "price": "325",
       "color": "Qəhvəyi",
       "dial": "Ağ",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/71g8NqUdGeL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/51qrMfBxlJL._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/61aYGsMHHlL._AC_UX679_.jpg",
@@ -327,6 +340,7 @@
       "price": "419",
       "color": "Qəhvəyi",
       "dial": "Ağ",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/61jhwS+wohL._AC_UY679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/71V56iOJAiL._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/71IgfFZ7NfL._AC_UX679_.jpg",
@@ -351,6 +365,7 @@
       "price": "325",
       "color": "Ağ",
       "dial": "Yaşıl",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/71JPuT4VxSL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/41Has4g836L._AC_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/71tXuufvkvL._AC_UX679_.jpg",
@@ -375,6 +390,7 @@
       "price": "221",
       "color": "Qərənfil",
       "dial": "Boz",
+      "rate": 4,
       "frontimage": "https://m.media-amazon.com/images/I/71A8GSSHEmL._AC_UY679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81YHszfga7L._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/91Sx+NCLUOL._AC_UX679_.jpg",
@@ -398,6 +414,7 @@
       "shape": "Dairəvi",
       "price": "2051",
       "color": "Qəhvəyi",
+      "rate": 5,
       "dial": "Qara",
       "frontimage": "https://m.media-amazon.com/images/I/81W9odh1ajL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81jdubq23TL._AC_UX679_.jpg",
@@ -422,6 +439,7 @@
       "shape": "Dairəvi",
       "price": "1553",
       "color": "Boz",
+      "rate": 4,
       "dial": "Qara",
       "frontimage": "https://m.media-amazon.com/images/I/619H4aqTbJL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/61N7cCDBjmL._AC_UX679_.jpg",
@@ -447,6 +465,7 @@
       "price": "1134",
       "color": "Boz",
       "dial": "Ağ",
+      "rate": 4,
       "frontimage": "https://m.media-amazon.com/images/I/61YOiMb3tgL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/61AWkhhz6bL._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/610Rw+sX9sL._AC_UX679_.jpg",
@@ -471,6 +490,7 @@
       "price": "2775",
       "color": "Qızılı-Boz",
       "dial": "Boz",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/811CSTwo7GL._AC_UY741_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81JiCI3QBEL._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/81ZOSKBqlDL._AC_UX569_.jpg",
@@ -494,6 +514,7 @@
       "shape": "Dairəvi",
       "price": "1452",
       "color": "Qara",
+      "rate": 4,
       "dial": "Göy",
       "frontimage": "https://m.media-amazon.com/images/I/91OZKncBUBL._AC_UY679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81M79JvjSLL._AC_UY741_.jpg",
@@ -518,6 +539,7 @@
       "shape": "Dairəvi",
       "price": "314",
       "color": "Yaşıl",
+      "rate": 3,
       "dial": "Qara",
       "frontimage": "https://m.media-amazon.com/images/I/81OKsV5A-nL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/71Ngd5edh3L._AC_UX679_.jpg",
@@ -543,6 +565,7 @@
       "price": "267",
       "color": "Qızıl",
       "dial": "Qızıl",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/81UJCcC9tpL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/818cI8OtavL._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/71qz9oLRuaL._AC_UX679_.jpg",
@@ -566,6 +589,7 @@
       "shape": "Dairəvi",
       "price": "3257",
       "color": "Boz",
+      "rate": 5,
       "dial": "Boz",
       "frontimage": "https://m.media-amazon.com/images/I/81iHi65Uv6L._AC_UY741_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81uj8LBqo+L._AC_UX679_.jpg",
@@ -591,6 +615,7 @@
       "price": "180",
       "color": "Boz",
       "dial": "Qara",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/918iUcCgj-L._AC_UY679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/61g7tLSqzPL._AC_UX679_.jpg",
       "backimage": "",
@@ -606,8 +631,8 @@
       "company_id": 6,
       "movement_id": 2,
       "functionality_id": 3,
-      "title": "Oris Williams FW41 Limited Edition Chronograph Automatic Black Titanium Black Rubber Strap Black Dial Date Mens Watch 774 7725 8794-Set RS",
-      "model": "01 774 7725 8794-Set RS",
+      "title": "Oris Williams FW41 Limited Edition Mens Watch ",
+      "model": "774 7725 8794-Set RS",
       "case_material": "Rezin",
       "dial_material": "Mineral",
       "diameter": "46 mm",
@@ -615,6 +640,7 @@
       "price": "180",
       "color": "Qara",
       "dial": "Qara",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/71xmQhdbaQS._AC_UY679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/71TUUpYg+zS._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/51WWyqc1d7S._AC_UX679_.jpg",
@@ -639,6 +665,7 @@
       "price": "180",
       "color": "Qara",
       "dial": "Qara",
+      "rate": 5,
       "frontimage": "https://m.media-amazon.com/images/I/61gVlua8E8L._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/51A88Qfdj5L._AC_UX679_.jpg",
       "backimage": "https://m.media-amazon.com/images/I/61CpQcnK40L._AC_UX679_.jpg",
@@ -661,6 +688,7 @@
       "diameter": "44 mm",
       "shape": "Dairəvi",
       "price": "553",
+      "rate": 5,
       "color": "Qəhvəyi",
       "dial": "Qara",
       "frontimage": "https://m.media-amazon.com/images/I/71jwwLFgxyL._AC_UX679_.jpg",
@@ -685,6 +713,7 @@
       "diameter": "38 mm",
       "shape": "Dairəvi",
       "price": "522",
+      "rate": 5,
       "color": "Qəhvəyi",
       "dial": "Qara",
       "frontimage": "https://production.watchshop.com/products/100032423/main/large/H69439531.jpg",
@@ -708,6 +737,7 @@
       "dial_material": "Mineral",
       "diameter": "33 mm",
       "shape": "Dairəvi",
+      "rate": 5,
       "price": "380",
       "color": "Ağ",
       "dial": "Ağ",
@@ -732,6 +762,7 @@
       "dial_material": "Mineral",
       "diameter": "44 mm",
       "shape": "Dairəvi",
+      "rate": 5,
       "price": "608",
       "color": "Qəhvəyi",
       "dial": "Göy",
@@ -758,6 +789,7 @@
       "shape": "Dairəvi",
       "price": "480",
       "color": "Qara",
+      "rate": 5,
       "dial": "Qara",
       "frontimage": "https://m.media-amazon.com/images/I/712pZaKiUOL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81qahN-0SQL._AC_UY741_.jpg",
@@ -782,6 +814,7 @@
       "shape": "Dairəvi",
       "price": "417",
       "color": "Boz",
+      "rate": 5,
       "dial": "Göy",
       "frontimage": "https://m.media-amazon.com/images/I/71VS-b2+4YL._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/71D4LESIRKL._AC_UX679_.jpg",
@@ -806,6 +839,7 @@
       "shape": "Dairəvi",
       "price": "417",
       "color": "Qızıl",
+      "rate": 5,
       "dial": "Qızıl",
       "frontimage": "https://m.media-amazon.com/images/I/91rR9N09biL._AC_UY679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/71CxLErYRcL._AC_UX679_.jpg",
@@ -830,6 +864,7 @@
       "shape": "Kvadrat",
       "price": "23",
       "color": "Boz",
+      "rate": 5,
       "dial": "",
       "frontimage": "https://m.media-amazon.com/images/I/51+6hbisNEL._AC_UY679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/61vjs7r4vGL._AC_UY741_.jpg",
@@ -854,6 +889,7 @@
       "shape": "Kvadrat",
       "price": "20",
       "color": "Qızıl",
+      "rate": 5,
       "dial": "Qızıl",
       "frontimage": "https://m.media-amazon.com/images/I/61aYr+L-H1L._AC_UX679_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/617o7+vPnOL._AC_UX679_.jpg",
@@ -878,6 +914,7 @@
       "shape": "Dairəvi",
       "price": "20599",
       "color": "Ağ",
+      "rate": 5,
       "dial": "Boz",
       "frontimage": "https://m.media-amazon.com/images/I/61hz5Qe-RDL._AC_UL1000_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/51dt8ZlwwbL._AC_UL1000_.jpg",
@@ -902,6 +939,7 @@
       "shape": "Dairəvi",
       "price": "120",
       "color": "Boz",
+      "rate": 5,
       "dial": "Qara",
       "frontimage": "https://m.media-amazon.com/images/I/81J6fbYKnzL._AC_UL1500_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/81J6fbYKnzL._AC_UL1500_.jpg",
@@ -925,6 +963,7 @@
       "diameter": "39.5 mm",
       "shape": "Kvadrat",
       "price": "30",
+      "rate": 5,
       "color": "Qara",
       "dial": "Ekran",
       "frontimage": "https://m.media-amazon.com/images/I/61QkRaEAnUL._AC_UL1102_.jpg",
@@ -949,6 +988,7 @@
       "diameter": "42.45 mm",
       "shape": "Kvadrat",
       "price": "378",
+      "rate": 5,
       "color": "Qara",
       "dial": "Qara",
       "frontimage": "https://m.media-amazon.com/images/I/61pVj8zYn1L._AC_UL1500_.jpg",
@@ -973,6 +1013,7 @@
       "diameter": "26 mm",
       "shape": "Dairəvi",
       "price": "425",
+      "rate": 5,
       "color": "Boz",
       "dial": "Göy",
       "frontimage": "https://m.media-amazon.com/images/I/71JOw8wf1KL._AC_UL1500_.jpg",
@@ -997,6 +1038,7 @@
       "diameter": "38 mm",
       "shape": "Dairəvi",
       "price": "546",
+      "rate": 5,
       "color": "Qara",
       "dial": "Qara",
       "frontimage": "https://m.media-amazon.com/images/I/81OGa1ox74L._AC_UL1500_.jpg",
@@ -1021,6 +1063,7 @@
       "diameter": "44 mm",
       "shape": "Dairəvi",
       "price": "474",
+      "rate": 5,
       "color": "Boz",
       "dial": "Qara",
       "frontimage": "https://m.media-amazon.com/images/I/81tq8HxL0fL._AC_UL1500_.jpg",
@@ -1044,6 +1087,7 @@
       "dial_material": "Mineral",
       "diameter": "46 mm",
       "shape": "Dairəvi",
+      "rate": 5,
       "price": "380",
       "color": "Qara",
       "dial": "Qara",
@@ -1070,6 +1114,7 @@
       "shape": "Dairəvi",
       "price": "5600",
       "color": "Ağ",
+      "rate": 5,
       "dial": "Göy",
       "frontimage": "https://m.media-amazon.com/images/I/71dis7XTBFL._AC_UL1500_.jpg",
       "sideimage": "https://m.media-amazon.com/images/I/71dis7XTBFL._AC_UL1500_.jpg",
@@ -1093,6 +1138,7 @@
       "diameter": "36.5 mm",
       "shape": "Dairəvi",
       "price": "5600",
+      "rate": 5,
       "color": "Ağ",
       "dial": "Göy",
       "frontimage": "https://m.media-amazon.com/images/I/71dis7XTBFL._AC_UL1500_.jpg",
@@ -1104,6 +1150,504 @@
       "category_id": 2,
       "featured": false,
       "delivery": "Watches.com Standard International Mail* (249$-dan yuxarı sifarişlər) və Standard Domestic Mail (100$+-dan yuxarı sifarişlər) xərclərini ödəyəcək. Bütün ölkələr pulsuz beynəlxalq göndərmə üçün uyğun deyil. Təkmilləşdirilmiş göndərmə seçimləri (təxmini tranzit vaxtları və tariflər) yoxlama zamanı təklif ediləcək. Watches.com 1999-cu ildən bütün dünyaya göndərilir və biz hər gün beynəlxalq miqyasda göndəririk. Sifarişlərin çoxu adi iş günlərində bazar ertəsindən cümə gününə qədər saat 17:00-a (MST) qədər emal edilir və göndərilir. Ödənişin/fırıldaqçılığın yoxlanılması adətən ani olur, lakin bəzi hallarda 48 saata qədər çəkə bilər. Saat 12:00-dan (MST) sonra verilən/qəbul edilən sifarişlər növbəti iş günü həyata keçiriləcək. Nəzərə alın ki, UPS həftə sonları çatdırmır. Gömrük rüsumları ölkədən asılı olaraq fərqli olduğundan, biz yoxlama zamanı rüsum almırıq. Əgər rüsumlar ödənilirsə, gömrük agentliyiniz paket ölkənizə çatdıqda sizə xəbər verəcəkdir. Bu ödənişləri ölkənizə ödəmək sizin məsuliyyətinizdir.Mallar göndərildikdən sonra məsuliyyət daşıyıcının şərtləri ilə əhatə olunur. Müştərinin göstərdiyi ünvana çatdırırıq. Əgər bizə dəqiq ünvan verməmisinizsə, nə Watches.com, nə də daşıyıcı məhsulun itirilməsinə görə məsuliyyət daşıya bilməz. Zəhmət olmasa göndərmə ünvanınızı iki dəfə yoxlayın. Göndərmə ilə bağlı hər hansı ziyan çatdırıldıqdan sonra 48 saat ərzində Watches.com-a bildirilməlidir, əks halda bu, hər hansı sığorta və ya pulun geri qaytarılması iddiası üçün uyğun deyil. Qeyd: Casio-nun siyasətinə görə, Casio və G-Shock saatları Beynəlxalq Göndərmə üçün uyğun deyil. Casio və ya G-Shock saatı olan istənilən beynəlxalq sifariş ləğv ediləcək və bütün pullar geri qaytarılacaq."
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "product_id": 1,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 2,
+      "product_id": 2,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "rate": 5,
+      "product_id": 3,
+      "name": "Huseyn Cavidov",
+      "comment": "Super, bəyəndim",
+      "email": "aaaaaaaa",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 3
+    },
+    {
+      "rate": 2,
+      "product_id": 4,
+      "name": "Həşim Cafarov",
+      "comment": "pisdi",
+      "email": "hashim.cfr@gmail.com",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "product_id": 5,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 6,
+      "product_id": 6,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 7,
+      "product_id": 7,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 8,
+      "product_id": 8,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 9,
+      "product_id": 9,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 10,
+      "product_id": 10,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 11,
+      "product_id": 11,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 12,
+      "product_id": 12,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 13,
+      "product_id": 13,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 14,
+      "product_id": 14,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 15,
+      "product_id": 15,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 16,
+      "product_id": 16,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 17,
+      "product_id": 17,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 18,
+      "product_id": 18,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 19,
+      "product_id": 19,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 20,
+      "product_id": 20,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 21,
+      "product_id": 21,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 22,
+      "product_id": 22,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 23,
+      "product_id": 23,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 24,
+      "product_id": 24,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 25,
+      "product_id": 25,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 26,
+      "product_id": 26,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 27,
+      "product_id": 27,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 28,
+      "product_id": 28,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 29,
+      "product_id": 29,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 30,
+      "product_id": 30,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 31,
+      "product_id": 31,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 32,
+      "product_id": 32,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 33,
+      "product_id": 33,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 34,
+      "product_id": 34,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 35,
+      "product_id": 35,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 36,
+      "product_id": 36,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 37,
+      "product_id": 37,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 38,
+      "product_id": 38,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 39,
+      "product_id": 39,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 40,
+      "product_id": 40,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 41,
+      "product_id": 41,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 42,
+      "product_id": 42,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 43,
+      "product_id": 43,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 44,
+      "product_id": 44,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "id": 45,
+      "product_id": 45,
+      "rate": 4,
+      "name": "Kamran Ağayev",
+      "comment": "Aldım razı qaldim. Əldə rahat oturur. Həmdə stilni görsənir",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "1 il əvvəl"
+    },
+    {
+      "id": 46,
+      "product_id": 46,
+      "rate": 5,
+      "name": "Zəhra Əliyeva",
+      "comment": "Mən adətən rəy yazmıram...amma deməliyəm ki, watches.com-un xidmətlərindən çox məmnunam. Ünvan dəyişikliyi ilə bağlı sorğum var idi ki, bu da tez və şən şəkildə yerinə yetirildi. Həmçinin, bu saat üçün rastlaşdığım ən yaxşı qiymət. Tez göndərildi. O ki qaldı: bundan çox razıyam. Onlayn oxuya biləcəyiniz statistikadan başqa: quruluş həqiqətən möhkəmdir, əllərin hərəkəti və bezel hamısı əladır. Bilərzik həqiqətən gözəl. Həqiqətən, qiymətə görə çox məmnunam.",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "year": "10 ay əvvəl"
+    },
+    {
+      "rate": 3,
+      "product_id": 25,
+      "name": "Orxan Tahirov",
+      "comment": "Casio super saatdi, almışam, bəyənirəm, razıyam!",
+      "email": "orxanth@gmail.com",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 47
+    },
+    {
+      "rate": 5,
+      "product_id": 34,
+      "name": "Aydan Qədirova",
+      "comment": "Ürəyim gedir Bulova saatlarından ötrü, ərim mənə ikincisini hədiyyə edib, o andan bəri 3-nü istəyirəm",
+      "email": "ayka_angel@gmail.com",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 48
+    },
+    {
+      "rate": 5,
+      "product_id": 1,
+      "name": "Roboto",
+      "comment": "pis maldi",
+      "email": "cheshim@coders.edu.az",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 49
+    },
+    {
+      "rate": 4,
+      "product_id": 2,
+      "name": "Aynur Salimli",
+      "comment": "Əla məhsuldu, cox bəyəndim",
+      "email": "Akif6563@mail.ru",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 50
+    },
+    {
+      "rate": 4,
+      "product_id": 2,
+      "name": "Mətanət Cəfərova",
+      "comment": "Deyerli mehsuldu, beyendim",
+      "email": "cheshim@coders.edu.az",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 51
+    },
+    {
+      "rate": 3,
+      "product_id": 26,
+      "name": "Elmar Akbarov",
+      "comment": "belede, piveynen geder",
+      "email": "cafarov95@mail.ru",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 52
+    },
+    {
+      "rate": 2,
+      "product_id": 2,
+      "name": "Leyla Mehtiyeva",
+      "comment": "ela maldi",
+      "email": "dgfdg@gmail.com",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 53
+    },
+    {
+      "rate": 4,
+      "product_id": 1,
+      "name": "Gunlar Mandarin Haqverdiyeva",
+      "comment": "Beyeeenmeeediiimm.\nPS Mandarin",
+      "email": "dgfdg@gmail.com",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 54
     }
   ],
   "category": [
@@ -1475,6 +2019,322 @@
       "part_seven_img": "https://cdn.luxatic.com/wp-content/uploads/2023/01/Cartier-Panthere-de-Cartier-Medium-.jpg",
       "part_eight_img": "https://cdn.luxatic.com/wp-content/uploads/2023/01/Vacheron-Constantin-Egerie-Self-Winding-.jpg",
       "part_nine_img": "https://cdn.luxatic.com/wp-content/uploads/2023/01/Breitling-Galactic-36-1536x1536.jpg"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "title": "faqs",
+      "name": "Ən çox verilən suallar"
+    },
+    {
+      "id": 2,
+      "title": "refund-policy",
+      "name": "Qaytarmaq & Dəyişmək"
+    },
+    {
+      "id": 3,
+      "title": "shipping-details",
+      "name": "Göndərmə & Çatdırılma"
+    },
+    {
+      "id": 4,
+      "title": "damaged-or-defected-items",
+      "name": "Zədələnmiş & qüsurlu məhsullar"
+    },
+    {
+      "id": 5,
+      "title": "cancelling-or-changing-an-order",
+      "name": "Sifarişin ləğvi & Dəyişdirilməsi"
+    }
+  ],
+  "subcustomers": [
+    {
+      "id": 1,
+      "customer_id": 1,
+      "question": "Qiymətlər mənim yerli valyutamda göstərilir?",
+      "answer": "Watches.com saytındakı bütün məhsulların qiyməti ABŞ dolları ($ USD) ilə müəyyən edilir. Birləşmiş Ştatlardan kənarda yerləşən müştərilər bank çıxarışlarında bank sövdələşmələrinin defolt valyutasında tutulacaq ümumi məbləği görəcəklər. Sifarişin cəmi ABŞ dolları ilə bank çıxarışınızda tutulan məbləğ arasındakı fərq maliyyə institutunuzdan valyuta konvertasiyası ilə bağlıdır."
+    },
+    {
+      "id": 2,
+      "customer_id": 1,
+      "question": "Sifarişim haradadır?",
+      "answer": "Bütün sifarişlər Bazar ertəsindən Cümə gününə qədər saat 17:00 (PST) tərəfindən işlənir və göndərilir. Saat 12:00-dan (PST) sonra alınan sifarişlər növbəti iş günü işlənəcək. Bütün göndərmə vaxtları göndərmə tərəfdaşlarımız tərəfindən bizə verilən təxminlərdir. Hava şəraiti və ya buraxılmış çatdırılma cəhdləri tez-tez daşınmaların gecikməsinə səbəb ola bilər. Həmçinin beynəlxalq daşımalar hər bir ölkənin gömrük emalında yüksək fərq səbəbindən tez-tez gecikə bilər. Paketinizi izləmək üçün bizdən göndərmə təsdiq e-poçtunuzu tapın və Paketi İzləyin klikləyin. Ödəniş zamanı Marşrut Paketi Mühafizəsini seçsəniz, təkmilləşdirmə izləmə qabiliyyətlərinizi görmək üçün Marşrutdan göndərmə e-poçtunu tapın."
+    },
+    {
+      "id": 3,
+      "customer_id": 1,
+      "question": "Sifarişimi ləğv edə bilərəmmi?",
+      "answer": "Sifarişlər sifariş tamamlandıqdan sonra 20 dəqiqə ərzində işlənir və icra mərkəzimizə göndərilir. Sifarişiniz verildikdən sonra 15 dəqiqə ərzində bizə bildiriş göndərilərsə, biz heç bir ödəniş etmədən sifarişi ləğv edə bilərik. Zəhmət olmasa, təcili yardım üçün 925-820-4300 nömrəsinə Sakit okean standart vaxtı ilə səhər 8-dən 5-ə qədər zəng edin. E-poçtlar sifarişin ləğvinə zəmanət verməyəcək, çünki onlar alındıqları qaydada cavablandırılır. Bu 15 dəqiqədən sonra sifarişlər ləğv edilə bilməz. Əvvəlcədən sifarişlər və xüsusi sifarişlər ləğv edilə bilməz, çünki pullar saatınızın təhlükəsizliyini təmin etmək üçün istehsalçıya göndərilib."
+    },
+    {
+      "id": 4,
+      "customer_id": 1,
+      "question": "Paketimi necə izləyə bilərəm?",
+      "answer": "Paketiniz göndərildikdə, izləmə nömrəsi olan avtomatlaşdırılmış e-poçt məktubu alacaqsınız. Əgər izləmə nömrəniz 9 və ya 2 hərflə başlayırsa (məsələn, LJ), onda siz göndərişinizi izləmək üçün Amerika Birləşmiş Ştatları Poçt Xidmətinin saytında izləmə nömrəsini daxil edə bilərsiniz (www.usps.com). İzləmə nömrəniz “1Z” ilə başlayırsa, o, UPS vasitəsilə göndərilib və burada izlənilə bilər (www.ups.com). İzləmə nömrəniz \"N00\" ilə başlayırsa, o, Asendia (http://www.asendiausa.com/). İzləmə e-poçtunu tapa bilmirsiniz? Sifarişinizlə əlaqəli e-poçtdan istifadə edərək Watches.com saytında hesab yaradın. \"Hesablarım\" səhifəsinə daxil olun və izləmək istədiyiniz sifariş nömrəsinə klikləyin. Göndərilən sifarişlər \"Tamamlandı\" statusuna sahib olacaq və izləmə nömrəsi \"Göndərmə təfərrüatları\" altında qeyd olunacaq. Sifarişiniz yaratdıqdan sonra hesabınızda görünmürsə, kömək üçün contact@watches.com ünvanına e-poçt göndərin."
+    },
+    {
+      "id": 5,
+      "customer_id": 1,
+      "question": "Satdığınız saatlar 100% orijinaldır?",
+      "answer": "Bəli, Watches.com daşıdığımız BÜTÜN markaların/saatların Səlahiyyətli Satıcısıdır və onların hamısı beynəlxalq miqyasda layiq görülən tam istehsalçı zəmanəti ilə gəlir. Satılan bütün saatlarımız 100% Orjinal Zəmanətlidir, yeni, köhnəlməmiş və orijinal istehsalçı qablaşdırmasında gəlir. "
+    },
+    {
+      "id": 6,
+      "customer_id": 1,
+      "question": "Qaytarma siyasətiniz nədir?",
+      "answer": "Bizim ziyarət edinQaytarma Siyasətiətraflı məlumat üçün səhifə. "
+    },
+    {
+      "id": 7,
+      "customer_id": 1,
+      "question": "(Beynəlxalq Müştərilər) Nə üçün kartımdan sifarişimin cəmindən çox pul tutuldu?",
+      "answer": "Biz Amerika Birləşmiş Ştatlarında yerləşdiyimiz üçün Watches.com saytındakı bütün məhsulların qiyməti ABŞ dolları ilə müəyyən edilib. Sizdən yalnız ödəniş zamanı göstərilən dəqiq USD məbləğini götürdük. Siz ABŞ-dan kənarda yerləşdiyiniz üçün tutulan ümumi məbləğdə hər hansı fərq maliyyə institutunuzdan valyutanın konvertasiyası/rüsumları ilə əlaqədardır. Əlavə məlumat üçün onlarla əlaqə saxlayın."
+    },
+    {
+      "id": 8,
+      "customer_id": 1,
+      "question": "Sifariş üçün birdən çox kupon kodu tətbiq edə bilərəmmi?",
+      "answer": "Watches.com-un e-ticarət platforması sifarişə yalnız bir kupon kodu tətbiq etməyə imkan verir. Kupon kodları bizim \"Təklif et\" xüsusiyyətimizlə və ya sifarişinizə tətbiq edilən hər hansı səbət səviyyəsində endirimlərlə birləşdirilə bilməz."
+    },
+    {
+      "id": 9,
+      "customer_id": 1,
+      "question": "Pulsuz çatdırılma təklif edirsiniz?",
+      "answer": "Biz edirik! Watches.com $249*-dan yuxarı sifarişlər üçün pulsuz Beynəlxalq çatdırılma və $99+-dan yuxarı ABŞ sifarişləri üçün pulsuz çatdırılma təklif edir. Bütün digər göndərmə seçimləri kassada göstəriləcək. *Müəyyən ölkələrdə təhlükəsiz çatdırılmanı təmin etmək üçün sifarişinizi tam təfərrüatlı izləmə ilə gəmi üsulu ilə göndərməliyik. Təəssüf ki, pulsuz standart çatdırılma bütün yerlər üçün seçim deyil. Qeyri-uyğun pulsuz göndərmə ölkələrinə çatdırılma xərcləri ödəniş zamanı göstəriləcək."
+    },
+    {
+      "id": 10,
+      "customer_id": 1,
+      "question": "Almaq istədiyim saatın mexaniki yoxsa batareya ilə işləyən olduğunu necə bilə bilərəm?",
+      "answer": "Saatda istifadə edilən hərəkət növü hər bir məhsul səhifəsinin \"Specs\" bölməsində verilmişdir. Bütün kvars saatları batareya tələb edir, avtomatik saatlar əl ilə dolama və ya bilək hərəkəti ilə təchiz edilir."
+    },
+    {
+      "id": 11,
+      "customer_id": 1,
+      "question": "Ölkəmə beynəlxalq göndərişlər edirsiniz?",
+      "answer": "Bəli, Watches.com hər ölkəyə göndərilir. Biz 1999-cu ildən dünya üzrə göndərişlər edirik və biz hər gün Beynəlxalq göndəririk! Biz əksər ölkələrə 249 dollardan yuxarı sifarişlər üçün PULSUZ standart beynəlxalq çatdırılma təklif edirik. UPS və USPS Beynəlxalq Prioritet və ya Ekspres kimi xeyli sürətli ola biləcək müxtəlif ödənişli göndərmə variantları da var ki, siz hər hansı bir şeyi satın almadan əvvəl yoxlama zamanı təklif ediləcək."
+    },
+    {
+      "id": 12,
+      "customer_id": 1,
+      "question": "İlk əməliyyatlarım rədd edildi. Kredit kartı hesabımda niyə çoxsaylı ödənişlər göstərilir?",
+      "answer": "Gördüyünüz rədd edilmiş cəhd üçün bankınızdan müvəqqəti icazələrdir və maliyyə institutunuz bunları bir neçə gün ərzində düzəltməlidir, çünki biz onları emal edə bilmirik və edə bilmirik. Nəzərə alın ki, kredit kartınız vəsaitlərin mövcudluğunu yoxlamaq üçün əvvəlcədən icazə verilə bilər. Əvvəlcədən icazə, sifariş verərkən vəsaitin mövcud olduğunu yoxlamaq üçün müvəqqəti saxlamadır. Əgər tranzaksiyanız uğursuz olarsa, kredit kartınıza icazə verilə bilər, lakin bu o demək deyil ki, ondan ödəniş alındı. Ön avtorizasiyanı silmək üçün müştəri xidməti ilə əlaqə saxlamağa ehtiyac yoxdur, əgər kredit kartınızla əməliyyat tarixçənizdən qabaqcadan icazəni silmək üçün yardıma ehtiyacınız varsa, bankınız və ya maliyyə qurumunuzla əlaqə saxlayın."
+    },
+    {
+      "id": 13,
+      "customer_id": 1,
+      "question": "Hədiyyə Sertifikatı (GC) kodunu hara daxil edə bilərəm?",
+      "answer": "Hədiyyə sertifikatı kodları alış-veriş səbətinizə baxarkən daxil edilə bilər. Siz hədiyyə sertifikatı sahəsini görəcəksiniz (Kupon Kodu sahəsi ilə qarışdırılmamalıdır). Hədiyyə Sertifikatı kodunuzu daxil edin və Tətbiq et düyməsini basın. Sifarişinizin cəmi Hədiyyə Sertifikatınızın məbləği qədər azalacaq."
+    },
+    {
+      "id": 14,
+      "customer_id": 1,
+      "question": "Kupon kodumu hara daxil etməliyəm?",
+      "answer": "Alış-veriş səbətinizə baxarkən kupon kodları daxil edilə bilər. Kuponlar sahəsinə Kupon kodunuzu daxil edin və Tətbiq et düyməsini basın. Səbətinizin cəmi kupon kodunun dəyəri qədər azalacaq."
+    },
+    {
+      "id": 15,
+      "customer_id": 1,
+      "question": "Hədiyyə olaraq saat almışam, xoşuma gəlmir. Dəyişdirə bilərəm?",
+      "answer": "Bəli, siz Watches.com saytından alınmış tamamilə yeni, köhnəlməmiş saatları 30 günlük qaytarma müddəti ərzində mağaza kreditinə dəyişə bilərsiniz. Təəssüf ki, hədiyyələr üçün pulu geri qaytara bilmirik. Geri qaytarma prosesinə başlamaq üçün əlaqə@watches.com ünvanına aşağıdakı məlumatı göndərin ki, saatın Watches.com saytından alındığını təsdiq edək: Orijinal sifariş nömrəsi Alıcının e-poçt ünvanı (əgər varsa) Alıcının adı Sifarişi təsdiq etdikdən sonra biz Qaytarma Təlimatlarını sizə e-poçtla göndərəcək. Nəzərə alın ki, bütün qaytarılanlar Qaytarma Səlahiyyəti nömrəsini (RMA #) almalıdır."
+    },
+    {
+      "id": 16,
+      "customer_id": 1,
+      "question": "Saatım necə işləyir?",
+      "answer": "Saatınızın xüsusi funksionallıq üçün təlimat kitabçası olmalıdır. Bəzi ekoloji cəhətdən təmiz brendlər (məsələn: Vestal) çap olunmuş təlimat kitabçası təqdim etmir, lakin təlimat kitabçalarını öz brendlərinin internet saytında yükləmək üçün əlçatan edir. Əlavə köməyə ehtiyacınız varsa, sizə kömək etməkdən məmnun olarıq. Bizimlə əlaqə səhifəmizi ziyarət edin."
+    },
+    {
+      "id": 17,
+      "customer_id": 1,
+      "question": "Saatı aldıqdan sonra 30 gün ərzində batareyam ölüb, nə etməliyəm?",
+      "answer": "Saatların batareyalarının əksəriyyəti saata ilk dəfə qoyulduğu andan 2 ildən çox davam edə bilər. Saat işləməyi dayandırarsa, bu, çox güman ki, sadəcə dəyişdirilməsi lazım olan vaxtından əvvəl bitmiş batareya hüceyrəsi ilə bağlıdır. İstənilən ixtisaslı yerli saat təmiri mağazası, zərgərlik mağazası və ya saatsaz batareyanı sizin üçün əvəz edə bilər. Batareyanız ilk 30 gün ərzində bitibsə, Bizimlə Əlaqə səhifəmizi ziyarət edin."
+    },
+    {
+      "id": 18,
+      "customer_id": 1,
+      "question": "Suya davamlılıq reytinqləri nə deməkdir?",
+      "answer": "Su Müqaviməti saatın suyun girməsinə qarşı nə qədər yaxşı möhürləndiyini göstərir. Bu, adətən yeni istehsal edilmiş saatların bir nümunəsinin sızma testində məruz qaldığı statik sınaq təzyiqinin göstəricisi ilə müşayiət olunur. Sınaq təzyiqinin suyun dərinliyi baxımından göstərilməsi o demək deyil ki, suya davamlı saat bu cür suyun dərinliklərində təkrar uzunmüddətli istifadə üçün nəzərdə tutulub. Məsələn, 3 ATM/30 metr suya davamlı olaraq işarələnmiş saatın, suyun altında 30 metr dərinlikdə işləməyə davam etmək bir yana, üzgüçülük hovuzunda daha uzun müddət fəaliyyət göstərə biləcəyini gözləmək olmaz. Bunun səbəbi, testin yalnız bir dəfə yeni istehsal edilmiş saat nümunəsi üzərində statik təzyiqdən istifadə etməklə aparılmasıdır. Müəyyən bir dərinlikdə təkrar istifadə üçün dalğıc saatının uyğunlaşdırılması üçün sınaq, suitilərin yaşlanması,Bəzi markaların suya davamlılığını göstərmək üçün istifadə etdiyi bəzi fəaliyyətlər bunlardır. 3 ATM = Hər hansı suya məruz qalma üçün nəzərdə tutulmayıb 5 ATM = Sıçramaya davamlı, əllərin yuyulması və ya yüngül yağış üçün uyğun 10 ATM = Su İdmanları, üzgüçülük, sörfinq və s ."
+    },
+    {
+      "id": 19,
+      "customer_id": 1,
+      "question": "Veb saytınızda olmayan brend üçün xüsusi sifariş verə bilərəmmi?",
+      "answer": "Saytımızda daşıdığımız brendlərin diqqətlə seçilmiş kolleksiyası var; Təəssüf ki, saytımızda görmürsünüzsə, biz onu daşımırıq. Yeni və maraqlı brendləri nəzərdən keçirməyə açığıq. Zəhmət olmasa, Bizimlə Əlaqə səhifəmiz vasitəsilə yeni brendlər/kolleksiyalar təqdim edin."
+    },
+    {
+      "id": 20,
+      "customer_id": 1,
+      "question": "Siz əvəzedici saat kəmərləri satırsınız?",
+      "answer": "Biz məhdud sayda brendlər üçün ehtiyat qayışları daşıyırıq. Bütün digər qayışları birbaşa marka/istehsalçı ilə əlaqə saxlamaqla əldə etmək olar. Mövcud seçimimizə baxmaq üçün Koleksiyonlar sekmesi altındakı Qayışlar kolleksiyamıza daxil olun."
+    },
+    {
+      "id": 21,
+      "customer_id": 1,
+      "question": "Niyə mənim ölkəm Pulsuz Standart Beynəlxalq göndərmə üçün uyğun deyil?",
+      "answer": "Müəyyən ölkələrdə təhlükəsiz çatdırılmanı təmin etmək üçün biz tam təfərrüatlı izləmə ilə sürətləndirilmiş daşıyıcılar vasitəsilə göndərməliyik. Təəssüf ki, pulsuz standart çatdırılma bütün yerlər üçün seçim deyil. Qeyri-uyğun pulsuz göndərmə ölkələrinə çatdırılma xərcləri kassada göstəriləcək."
+    },
+    {
+      "id": 22,
+      "customer_id": 1,
+      "question": "Səhv göndərmə ünvanını daxil etdim. Bunu necə yeniləyə bilərəm?",
+      "answer": "Sifariş verdikdən sonra 15 dəqiqə ərzində bu məlumatı yeniləmək üçün contact@watches.com elektron poçtuna və ya 925-820-4300 nömrəsinə zəng edərək bizimlə əlaqə saxlamalısınız. Daha sürətli emal üçün adınızı, sifariş nömrənizi və düzgün ünvanı daxil edin. Biz kassada daxil edilmiş səhv ünvana verilən və göndərilən sifarişlərə görə məsuliyyət daşımırıq. Sifarişiniz Göndərənə (RTS) qaytarılıbsa, buraxılmış çoxsaylı çatdırılma cəhdləri və ya yanlış ünvan göstərildiyi üçün, paketi geri aldıqdan sonra sizinlə əlaqə saxlayacağıq və yenidən göndərilməmişdən əvvəl əlavə göndərmə haqqı tələb olunacaq."
+    },
+    {
+      "id": 23,
+      "customer_id": 1,
+      "question": "Mənim ölkəm üçün hansı vəzifələr tələb olunur?",
+      "answer": "Potensial idxal vergiləri hökumətiniz tərəfindən tətbiq edilə bilər və biz ölkənizdə tələb oluna biləcək hər hansı mümkün rüsum/vergi proqnozlaşdıra bilmirik. Rüsumlar və vergilər sifarişinizin cəminə daxil edilmir və müştərinin məsuliyyətidir. Tam təfərrüatlar üçün Qaydalar və Şərtlər səhifəmizə baxın."
+    },
+    {
+      "id": 24,
+      "customer_id": 1,
+      "question": "Öncədən sifarişimi almaq nə qədər vaxt aparacaq?",
+      "answer": "Təxmini çatdırılma tarixləri əvvəlcədən sifariş edilmiş məhsul səhifəsində verilmişdir. Biz məhsul(lar) əlçatan olan kimi göndərəcəyik və siz e-poçt vasitəsilə izləmə nömrəsi alacaqsınız. Göndərmə tarixləri təxminidir və xəbərdarlıq edilmədən dəyişdirilə bilər."
+    },
+    {
+      "id": 25,
+      "customer_id": 1,
+      "question": "Saatım zəmanətlə gəlirmi?",
+      "answer": "Daşıdığımız bütün markalar Beynəlxalq istehsalçı zəmanəti ilə təmin edilir.* Bütün zəmanət məsələləri birbaşa saat istehsalçısı ilə həll olunmalıdır, ona görə də Səlahiyyətli Pərakəndə Satıcıdan alış sübutu üçün elektron qaimə-fakturanızı saxlamağınızdan əmin olun. Tam zəmanət şərtləri və təmir təlimatları üçün zəmanət kitabçanızda və ya istehsalçının veb saytındakı məlumatlardan istifadə edərək birbaşa istehsalçılarla əlaqə saxlayın. Adətən istehsalçının zəmanəti aşağıdakıları əhatə etmir: batareya, kristal, qayış və ya bilərzik; düzgün istifadə edilməməsi, baxımsızlıq, qəzalar və ya normal aşınma nəticəsində yaranan zərər; obyektlərlə təmasdan zərər; suyun zədələnməsi. *Təəssüf ki, 666 Barcelona, ​​Rebosus və Tendence saatları Beynəlxalq zəmanətlə təmin edilmir, çünki bu şirkətlərin ilk sahibləri artıq biznesdə deyillər."
+    },
+    {
+      "id": 26,
+      "customer_id": 1,
+      "question": "Mübadiləmin/qaytarımın emal edilməsi nə qədər vaxt aparacaq?",
+      "answer": "Bir dəfə alınan geri qaytarmaların işlənməsi 5 iş gününə qədər vaxt aparır. Sıx tətil mövsümündə qaytarmaların qəbulundan sonra işlənməsi 10 iş gününə qədər çəkə bilər. Qaytarmağınız emal edildikdən sonra sizə e-poçt vasitəsilə bildiriş göndəriləcək."
+    },
+    {
+      "id": 27,
+      "customer_id": 1,
+      "question": "Yeni aldığım saat işləmir, xarabdır və ya nasazdır. Mən nə etməliyəm?",
+      "answer": "Əlavə yardım üçün alındıqdan sonra 48 saat ərzində contact@watches.com ünvanında bizimlə əlaqə saxlayın. İşləyən saat alacağınıza əmin olacağıq. Siz prosesi sürətləndirmək üçün saatın/zərərin qısa təsvirini və mobil telefon şəklini əlavə edə bilərsiniz. Saatı taxdıqdan sonra nasazlıqlar baş verərsə, zəmanət iddiası təqdim etmək üçün istehsalçı ilə əlaqə saxlayın."
+    },
+    {
+      "id": 28,
+      "customer_id": 1,
+      "question": "Saatımı yerə atdım və kristal çatladı. Saatımı necə düzəldə bilərəm?",
+      "answer": "Təəssüf ki, istehsalçı zəmanətləri kristalın dəyişdirilməsini və təsadüfən zədələnmiş və ya lazımi səviyyədə işlənməyən hissələri əhatə etmir. Kristalınızın dəyişdirilməsi üçün ərazinizdəki xidmət mərkəzi üçün istehsalçı ilə əlaqə saxlayın. Watches.com xidmət mərkəzinin qiymətlərinə/haqqlarına nəzarət etmir. Yerli ixtisaslı saat təmiri mağazalarının əksəriyyəti kristalı nominal ödənişlə əvəz edə bilər."
+    },
+    {
+      "id": 29,
+      "customer_id": 1,
+      "question": "Saatlara qulluq edirsiz?",
+      "answer": "Watches.com saytında saatlara xidmət göstərmirik. Ölkənizdəki xidmət mərkəzlərinin siyahısı üçün saatınızın istehsalçısı ilə birbaşa əlaqə saxlayın."
+    },
+    {
+      "id": 30,
+      "customer_id": 2,
+      "return": "Qaytarma və Mübadilə: Yalnız Azərbaycan sifarişləri",
+      "part_one": "Alışınızı sevmirsiniz? Narahat olma! Əgər razı deyilsinizsə, biz məmnuniyyətlə malları geri qaytarmaq və ya dəyişdirmək üçün qəbul edəcəyik, yalnız bu şərt:",
+      "part_two": [
+        {
+          "id": 1,
+          "text": "Yeni vəziyyətdədir"
+        },
+        {
+          "id": 2,
+          "text": "Orijinal faktura/təsdiq e-poçtu ilə müşayiət olunur"
+        },
+        {
+          "id": 3,
+          "text": "Orijinal satın alındıqdan sonra 60 gün ərzində geri qaytarılır."
+        },
+        {
+          "id": 4,
+          "text": "Bu məhsulların heç biri DEYİL: Scrunchie paketi, Baş bandı, İstifadə olunan məhsul (yağ, gül suyu, gil və s.)."
+        }
+      ],
+      "part_three": "Wathces.com, Inc. əvvəlcədən ödənilmiş Qaytarma Etiketləri ilə Azərbaycan Poçt Xidməti ilə göndərmə xidməti təklif etməkdən məmnundur.",
+      "part_four": "To return your order, please visit our return process page and we will lead you through the process www.graceeleyae.com/pages/refund-policy",
+      "part_five": "Azərbaycan-dan kənara qaytarma:",
+      "part_six": "Ölkə xaricində olan müştərilər hər hansı izlənilə bilən üsuldan istifadə edərək aşağıdakı ünvana malları sizin hesabına geri göndərə bilər. Lütfən, bağlamanı sığortaladığınızdan əmin olun.** Əgər qablaşdırma vərəqəniz yoxdursa, lütfən, geri qaytarma zamanı aydın şəkildə yazılmış aşağıdakı məlumatları daxil edin:",
+      "part_seven": [
+        {
+          "id": 1,
+          "text": "Adınız və faktura ünvanınız"
+        },
+        {
+          "id": 2,
+          "text": "Orijinal faktura/təsdiq e-poçtu və ya sifariş nömrəsi"
+        }
+      ],
+      "part_eight": "Bizim ünvan:",
+      "part_nine": "Statistika komitəsi ilə üzbə-üz",
+      "part_ten": "Coders Azərbaycan",
+      "part_eleven": "Zədələnmiş və ya qüsurlu əşyalar:",
+      "part_twelve": "Göndərmə zamanı və ya satın alındıqdan sonra 60 gün ərzində zədələnmiş əşyalar halında, müştəri xidməti şöbəmizə e-poçt göndərin. Aşağıdakı məlumatlarla:",
+      "part_thirteen": [
+        {
+          "id": 1,
+          "text": "Qüsur/zədələnmiş sahənin ətraflı izahı"
+        },
+        {
+          "id": 2,
+          "text": "Qüsur/zədələnmiş ərazinin şəkli"
+        }
+      ],
+      "part_fouteen": "Əşyanızı mümkün qədər tez dəyişdirmək üçün sizinlə işləyəcəyik. Biz onu sizə heç bir ödəniş etmədən göndərəcəyik və sizdən tam adınızı və sifariş nömrənizi özündə əks etdirən e-poçt vasitəsilə aldığınız faktura/qəbzlə birlikdə zədələnmiş/qüsurlu məhsulu qaytarmağınızı xahiş edəcəyik. Pulsuz çatdırılma etiketi sizə təqdim olunacaq."
+    },
+    {
+      "id": 31,
+      "customer_id": 3,
+      "shipping": "Biz bütün Azərbaycan şəhərlərinə göndəriri. Bütün sifarişlər: standart, sürətləndirilmiş və bir gecədə AzərPoçt tərəfindən göndəriləcək və çatdırılacaq.",
+      "shipping_one": "Ödəniş zamanı sizdən mal(lar) üçün göndərmə üsulunu seçmək istəniləcək.",
+      "shipping_two": "APO və FPO daşımaları üçün çatdırılma müddəti fərqli ola bilər.",
+      "shipping_three": "Pulsuz çatdırılma üçün uyğun olan sifarişlər bütün ünvanlara pulsuz çatdırılma əldə edəcəklər. Dəyəri 50 ABŞ dollarından yuxarı olan daxili sifarişlər üçün çatdırılma, daşınma və vergilər əlavə olunmazdan əvvəl çatdırılma pulsuzdur. Təklif əvvəlki satınalmalara tətbiq edilə bilməz və nağd pul üçün geri alına bilməz. Göndərmə təfərrüatları üçün yuxarıya baxın. Pulsuz göndərmə ödəniş zamanı uyğun gələn sifarişlərə avtomatik tətbiq olunacaq.",
+      "shipping_four": [
+        {
+          "id": 1,
+          "text": "Bütün sifarişlər kredit və ünvan yoxlanışına məruz qalır."
+        },
+        {
+          "id": 2,
+          "text": "Göndərmə ünvanları hər sifariş üçün bir ünvanla məhdudlaşır."
+        },
+        {
+          "id": 3,
+          "text": "Zəhmət olmasa, sifariş tarixindən əlavə 1 iş gününə qədər vaxt verin"
+        }
+      ],
+      "shipping_five": "*Çatdırılma vaxtları sifariş verdikdən sonra ən azı bir iş günü qüvvəyə minir. Sifarişlər göndərildikdən sonra sifariş dəyişdirilə bilməz.",
+      "shipping_six": "*çatdırılma vaxtları yalnız ABŞ sifarişlərini əks etdirir",
+      "shipping_seven": "*sifarişlər saat 13:00-dan sonra verilir. PDT növbəti iş günü bazar ertəsindən cümə gününə qədər işlənir. Tətil və Həftəsonu sifarişləri növbəti iş günü həyata keçirilir.",
+      "shipping_eight": "*çatdırılma tarifləri dəyişdirilə bilər.",
+      "shipping_nine": "*Daxili ünvandan asılı olaraq çatdırılma vaxtları dəyişə bilər",
+      "shipping_ten": "Yerinizi və ya sürətləndirilmiş paketinizi izləyin",
+      "shipping_eleven": "İzləmə nömrələri paylama mərkəzimizdən göndərilərkən paketlərə təyin edilir. Bu izləmə nömrələrini göndərişin təsdiqi e-poçtunuzda tapa bilərsiniz. Paketin daşıyıcının izləmə sistemində yoxlanılması 48 saat çəkə bilər. Paketiniz artıq anbarımızdan göndərilmiş və sizə yollansa da, daşıyıcı 48 saat ərzində paketiniz haqqında məlumat verə bilməyəcək.",
+      "shipping_twelve": "Beynəlxalq Sifarişlər",
+      "shipping_thirteen": "Beynəlxalq çatdırılma son satışdır",
+      "shipping_fouteen": "Watches.com məmnuniyyətlə bildirir ki, biz hər bir ölkəyə beynəlxalq daşıma təklif etmək üçün əlimizdən gələni edirik. Bununla belə, yerləşdiyi yerdən asılı olaraq gömrük rüsumları, ƏDV rüsumları və digər məhdudiyyətlər tətbiq oluna bilər. Hazırda gömrük/rüsum və ƏDV xərcləri yalnız ölkə ilə hesablanır və məhsulun göndərildiyi müştərinin məsuliyyətidir. Gömrük/rüsum və ƏDV ödənişləri bizim tərəfimizdən silinə və ya dəyişdirilə bilməz.",
+      "shipping_fifteen": "Paket Azərbaycanı tərk etdikdən sonra bizdə yaxşı görünürlük yoxdur, çünki bütün ölkələr izləmə məlumatı ilə yenilənmir. Biz AzərPoçt Xidməti Mail vasitəsilə göndəririk. Paketiniz üçün izləmə linki göndərmə təsdiq e-poçtunuzda yerləşir. Nəzərə alın ki, bəzi ölkələrin kuryerləri USPS saytında yenilənmir.",
+      "shipping_sixteen": "*sifarişlər saat 13:00-dan sonra verilir. PDT növbəti iş günü bazar ertəsindən cümə gününə qədər işlənir. Tətil və Həftəsonu sifarişləri növbəti iş günü həyata keçirilir.",
+      "shipping_seventeen": "**çatdırılma tarifləri dəyişdirilə bilər.",
+      "shipping_eigthteen": "*Çatdırılma vaxtları ünvandan asılı olaraq dəyişə bilər",
+      "shipping_nineteen": "**Bəzi ölkələr paketi yerli poçt şöbəsində saxlaya bilər və rüsum və ya gömrük ödənişləri tələb edə bilər. Bəzi hallarda, paketi izləmək imkanı giriş limanında başa çatır. Paket qeyd olunan poçt şöbəsinə çatdıqdan sonra və ya gömrük və rüsum haqlarına görə məsuliyyət daşımırıq. Bu, yalnız ölkə ilə həll olunur."
+    },
+    {
+      "id": 32,
+      "customer_id": 4,
+      "damaged": "Göndərmə zamanı və ya satın alındıqdan sonra 60 gün ərzində zədələnmiş əşyalar halında, müştəri xidməti şöbəmizə e-poçt göndərin. Aşağıdakı məlumatlarla:",
+      "damaged_one": [
+        {
+          "id": 1,
+          "text": "Qüsur/zədələnmiş sahənin ətraflı izahı"
+        },
+        {
+          "id": 2,
+          "text": "Qüsur/zədələnmiş ərazinin şəkli"
+        }
+      ],
+      "damaged_two": "Əşyanızı mümkün qədər tez dəyişdirmək üçün sizinlə işləyəcəyik. Biz onu sizə heç bir ödəniş etmədən göndərəcəyik və sizdən tam adınızı və sifariş nömrənizi özündə əks etdirən e-poçt vasitəsilə aldığınız faktura/qəbzlə birlikdə zədələnmiş/qüsurlu məhsulu qaytarmağınızı xahiş edəcəyik. Pulsuz çatdırılma etiketi sizə təqdim olunacaq."
+    },
+    {
+      "id": 33,
+      "customer_id": 5,
+      "cancelling": "Məhsul göndərilmədiyi müddətcə sifarişlər dəyişdirilə bilər. Sifarişiniz yerinə yetirmə mərkəzlərimizdən birini tərk etdikdən sonra onu daha dəyişdirmək mümkün deyil.",
+      "cancelling_one": "Göndərmədən əvvəl sifarişinizi dəyişdirmək üçün 994 (50) 437-5277 nömrəsinə zəng edin."
     }
   ]
 }

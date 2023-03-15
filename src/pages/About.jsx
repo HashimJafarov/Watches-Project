@@ -117,8 +117,8 @@ function About({ blog }) {
               slidesPerView={4}
               loop={true}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
+              // onSwiper={(swiper) => console.log(swiper)}
+              // onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide className="about_slider">
                 <img src="/logo/bvlgari.png" alt="" />

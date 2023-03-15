@@ -7,6 +7,9 @@ const init = {
   blog: [],
   movement: [],
   functionality: [],
+  comments: [],
+  customers: [],
+  subcustomers: [],
   basket: localBasket ? JSON.parse(localBasket) : [],
   favorite: localBasket ? JSON.parse(localFavorite) : [],
 };
@@ -28,6 +31,12 @@ export default function Reducer(state = init, action) {
       return { ...state, movement: action.payload };
     case "SET_FUNCTIONALITY":
       return { ...state, functionality: action.payload };
+    case "SET_COMMENTS":
+      return { ...state, comments: action.payload };
+    case "SET_CUSTOMERS":
+      return { ...state, customers: action.payload };
+    case "SET_SUBCUSTOMERS":
+      return { ...state, subcustomers: action.payload };
     default:
       return state;
   }
