@@ -1918,7 +1918,8 @@ header ul li:nth-of-type(3):hover .dropdown {
 .card .card_wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
   flex-direction: row-reverse;
 }
 .card .card_title {
@@ -1987,11 +1988,15 @@ header ul li:nth-of-type(3):hover .dropdown {
   color: var(--main-color) !important;
 }
 .card .card_total {
+  position: sticky;
+  top: 120px;
   width: 350px;
-  height: 200px;
-  background-color: red;
+  height: 60px;
+  background-color: #eee7e7;
   text-align: center;
   color: var(--main-color);
+  padding: 20px;
+  border-radius: 33px;
 }
 .card .card_total p {
   font-size: 16px;
