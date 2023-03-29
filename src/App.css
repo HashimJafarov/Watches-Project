@@ -126,7 +126,7 @@ header ul li:nth-of-type(3) {
   z-index: 1;
 }
 .dropdown > ul {
-  height: 140px;
+  height: 180px;
   width: 30%;
   display: flex;
   flex-wrap: wrap;
@@ -334,40 +334,87 @@ header ul li:nth-of-type(3):hover .dropdown {
   opacity: 1;
   visibility: visible;
 }
-.home_promo {
+/* .home_promo {
   height: 800px;
   background-image: url(/images/prime.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -1;
   padding-top: 100px;
+} */
+.home_promo .swiper .swiper-slide:first-of-type {
+  background-image: url(/images/prime.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+  height: 800px;
 }
-.promo {
+.home_promo .swiper .swiper-slide:last-of-type {
+  background-image: url("https://wallup.net/wp-content/uploads/2017/11/17/230764-luxury_watches-watch.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+  height: 800px;
+}
+.home_promo .swiper {
+}
+.home_promo .promo {
   position: relative;
 }
-.titles {
+.home_promo .swiper .swiper-button-next,
+.home_promo .swiper .swiper-button-prev {
+  color: var(--main-color);
+}
+.home_promo .titles {
   width: 600px;
   color: #fff;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0, 180%);
+  transform: translate(0, 160%);
   border-left: 3px solid var(--main-color);
   padding-left: 15px;
 }
-.titles p:first-of-type {
+.home_promo .titles p:first-of-type {
   font-size: 25px;
 }
-.titles h1 {
+.home_promo .titles h1 {
   font-size: 30px;
   margin-top: 10px;
   text-transform: uppercase;
 }
-.titles p:last-of-type {
+.home_promo .titles p:last-of-type {
   margin-top: 10px;
   font-size: 14px;
+}
+.home_promo button {
+  width: 150px;
+  height: 35px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  padding: 7px 0;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.home_promo button a {
+  color: #fff;
+}
+.home_promo button:hover {
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+}
+.home_promo button:hover .home_promo button a {
+  color: var(--main-color);
 }
 .all_watches {
   min-height: 400px;
@@ -777,7 +824,7 @@ header ul li:nth-of-type(3):hover .dropdown {
   margin-top: 60px;
 }
 .footer {
-  height: 400px;
+  min-height: 400px;
   background-color: #e9e8e8;
   padding: 25px 0;
   /* font-family: "Raleway" !important; */
@@ -995,6 +1042,112 @@ header ul li:nth-of-type(3):hover .dropdown {
   row-gap: 60px;
   margin-top: 25px;
 }
+.allproducts .menwatches_wrapper {
+  width: 990px;
+}
+.allproducts .allproducts_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+}
+.allproducts .allpro_filters {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 280px;
+  /* position: sticky;
+  top: 130px; */
+}
+.allproducts .allpro_overflow {
+  width: 100%;
+  overflow: hidden;
+}
+.allproducts .allpro_motion {
+  padding: 20px 0;
+}
+.allproducts .allpro_brands,
+.allproducts .allpro_moves,
+.allproducts .allpro_funcs,
+.allproducts .allpro_categories {
+  width: 100%;
+  cursor: pointer;
+}
+.allproducts .allpro_brand,
+.allproducts .allpro_move,
+.allproducts .allpro_func,
+.allproducts .allpro_category {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+.allproducts .allpro_brands p,
+.allproducts .allpro_moves p,
+.allproducts .allpro_funcs p,
+.allproducts .allpro_categories p {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.allproducts input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+.allproducts label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+.allproducts .allpro_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--main-color);
+}
+.allproducts label:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  border: 2px solid #666;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.allproducts label:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 1.3px;
+  top: 1.3px;
+  width: 19px;
+  height: 19px;
+  border-radius: 4px;
+  background-color: #666;
+  transform: scale(0);
+  transition: all 0.2s ease-in-out;
+}
+.allproducts input[type="checkbox"]:checked + label:before {
+  border-color: #cbba9c;
+}
+
+.allproducts input[type="checkbox"]:checked + label:after {
+  transform: scale(1);
+}
 .menwatches .product_descr {
   width: 100%;
   height: 180px;
@@ -1178,6 +1331,9 @@ header ul li:nth-of-type(3):hover .dropdown {
   align-items: center;
   transition: 0.4s;
 }
+.details_descr_title {
+  cursor: pointer;
+}
 .details_prodescr_demo {
   transition: 0.4s;
 }
@@ -1343,10 +1499,13 @@ header ul li:nth-of-type(3):hover .dropdown {
 .details_blog .blog_recent_product:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.details_blogl .blog_recent_product .blog_recent_img,
-.details_blog .blog_recent_product .blog_recent_img img {
+.details_blog .blog_recent_product .blog_recent_img {
   width: 315px;
   height: 150px;
+}
+.details_blog .blog_recent_product .blog_recent_img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .details .details_blog .blog_recent_product .blog_recent_title p:first-of-type {
@@ -1617,7 +1776,8 @@ header ul li:nth-of-type(3):hover .dropdown {
 .cardbg,
 .favoritebg,
 .blogbg,
-.contactbg {
+.contactbg,
+.allprobg {
   min-height: 350px;
   background-position: bottom;
   background-size: cover;
@@ -1649,6 +1809,9 @@ header ul li:nth-of-type(3):hover .dropdown {
 .contactbg {
   background-image: url(https://burst.shopifycdn.com/photos/contact-us-image.jpg?width=1200&format=pjpg&exif=1&iptc=1);
   background-position: top !important;
+}
+.allprobg {
+  background-image: url(https://blog.crownandcaliber.com/wp-content/uploads/2015/03/CC-x-GQ-6355.jpg);
 }
 .menbg h1,
 .womenbg h1,
@@ -2289,9 +2452,22 @@ header ul li:nth-of-type(3):hover .dropdown {
   gap: 20px;
 }
 .contact_textarea,
-.contact_textarea input {
+.contact_textarea textarea {
   width: 600px;
-  min-height: 250px;
+  height: 250px;
+}
+.contact_textarea textarea {
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  color: rgb(58, 58, 58);
+  resize: none;
+}
+.contact_textarea textarea::placeholder {
+  font-size: 14px;
+  font-weight: 300;
 }
 .contact_form fieldset {
   border: none;
@@ -2338,6 +2514,9 @@ header ul li:nth-of-type(3):hover .dropdown {
   transition: 0.4s;
   cursor: pointer;
 }
+.contact_form .contact_btn button:disabled {
+  filter: grayscale();
+}
 .contact_form .contact_btn button:hover {
   background-color: #000;
   color: var(--main-color);
@@ -2362,67 +2541,10 @@ header ul li:nth-of-type(3):hover .dropdown {
   background-color: var(--main-color);
   color: #fff;
   font-size: 14px;
+  cursor: pointer;
 }
 .pagination button:disabled {
   background-color: #7a7a7a;
-}
-@media only screen and (max-width: 1400px) {
-  .container {
-    width: 1150px;
-    margin: 0 auto;
-  }
-  .dropdown {
-    left: -300px;
-  }
-  .navmenu {
-    display: none;
-  }
-  .watches_collection,
-  .watches_collection img {
-    width: 350px;
-    height: 350px;
-  }
-  .watches_wrap .watches_collection h2 {
-    transform: translate(33%, -50%);
-  }
-  .watches_wrap .watches_collection:nth-child(2) h2 {
-    transform: translate(25%, -50%);
-  }
-  .watches_wrap .watches_collection:last-of-type h2 {
-    transform: translate(25%, -50%);
-  }
-  .home_spring_wrap {
-    justify-content: space-between;
-  }
-  .home_spring .spring_img,
-  .home_spring .spring_descr {
-    width: 400px;
-  }
-  .home_spring .spring_descr h2 {
-    font-size: 44px;
-  }
-  .home_spring .spring_img .img_first,
-  .home_spring .spring_img .img_second {
-    left: 90px;
-  }
-  .menwatches .product {
-    width: 230px;
-  }
-  .menwatches .product_img_btns {
-    gap: 26px;
-    left: 5px;
-  }
-  .explore .explore_img,
-  .explore .explore_img img {
-    width: 400px;
-    height: 600px;
-  }
-  .explore .explore_titles {
-    width: 330px;
-  }
-  .explore .explore_position {
-    transform: translate(10%, -7%);
-  }
 }
 .customers {
   min-height: 400px;
@@ -2504,6 +2626,72 @@ header ul li:nth-of-type(3):hover .dropdown {
   font-size: 14px;
   font-weight: 500;
   margin-top: 10px;
+}
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 1150px;
+    margin: 0 auto;
+  }
+  .dropdown {
+    left: -300px;
+  }
+  .navmenu {
+    display: none;
+  }
+  .watches_collection,
+  .watches_collection img {
+    width: 350px;
+    height: 350px;
+  }
+  .watches_wrap .watches_collection h2 {
+    transform: translate(33%, -50%);
+  }
+  .watches_wrap .watches_collection:nth-child(2) h2 {
+    transform: translate(25%, -50%);
+  }
+  .watches_wrap .watches_collection:last-of-type h2 {
+    transform: translate(25%, -50%);
+  }
+  .home_spring_wrap {
+    justify-content: space-between;
+  }
+  .home_spring .spring_img,
+  .home_spring .spring_descr {
+    width: 400px;
+  }
+  .home_spring .spring_descr h2 {
+    font-size: 44px;
+  }
+  .home_spring .spring_img .img_first,
+  .home_spring .spring_img .img_second {
+    left: 90px;
+  }
+  .menwatches .product {
+    width: 230px;
+  }
+  .menwatches .product_img_btns {
+    gap: 26px;
+    left: 5px;
+  }
+  .explore .explore_img,
+  .explore .explore_img img {
+    width: 400px;
+    height: 600px;
+  }
+  .explore .explore_titles {
+    width: 330px;
+  }
+  .explore .explore_position {
+    transform: translate(10%, -7%);
+  }
+  .details .details_operations,
+  .details .details_specifications .details_video {
+    width: 300px;
+  }
+  .details .details_operations .details_operation_titles h2,
+  .details .details_operations .details_operations_input h2 {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -2595,6 +2783,21 @@ header ul li:nth-of-type(3):hover .dropdown {
   }
   .explore .explore_position {
     transform: translate(10%, -7%);
+  }
+  .details .details_wrapper_product .details_wrapper {
+    flex-direction: column;
+    gap: 115px;
+    height: 1215px;
+  }
+  .details .details_prodescr p {
+    font-size: 15px;
+  }
+  .details .details_prodescr p span {
+    font-size: 17px;
+  }
+  .details .details_description p,
+  .details .details_shipping p {
+    font-size: 18px;
   }
 }
 
@@ -2696,6 +2899,15 @@ header ul li:nth-of-type(3):hover .dropdown {
   }
   .limited h2 {
     font-size: 60px;
+  }
+  .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  .details .details_blog {
+    width: 250px;
+  }
+  .details .details_blog .blog_recent_img {
+    width: 228px;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -2817,6 +3029,31 @@ header ul li:nth-of-type(3):hover .dropdown {
   #feature #feature_titles p {
     font-size: 14px;
   }
+  .footer_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .details .details_wrapper_all {
+    flex-direction: column;
+  }
+  .details .details_wrapper_all .details_wrapper_product {
+    width: 100%;
+  }
+  .details .details_another_product {
+    width: 184px;
+    height: 360px;
+  }
+  .details .details_blog {
+    width: 425px;
+  }
+  .details .details_blog .blog_recent_img {
+    width: 400px;
+  }
+  .picture .picture_show {
+    width: 500px;
+  }
 }
 @media only screen and (max-width: 521px) {
   .container {
@@ -2845,6 +3082,10 @@ header ul li:nth-of-type(3):hover .dropdown {
     padding: 15px;
   }
   .aside_basket {
+    display: none;
+  }
+  .home_promo .swiper .swiper-button-next,
+  .home_promo .swiper .swiper-button-prev {
     display: none;
   }
   .navmenu {
@@ -2948,5 +3189,23 @@ header ul li:nth-of-type(3):hover .dropdown {
   }
   #feature #feature_titles {
     width: 250px;
+  }
+  .footer .footer_box:last-of-type {
+    width: 250px;
+  }
+  .details .details_blog {
+    width: 270px;
+  }
+  .details .details_blog .blog_recent_img {
+    width: 250px;
+  }
+  .details .details_another_product,
+  .details_img,
+  .details_img img {
+    width: 250px;
+  }
+  .picture .picture_show {
+    width: 275px;
+    height: 86vh;
   }
 }

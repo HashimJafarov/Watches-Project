@@ -272,10 +272,10 @@ function Blog({
                       );
                     })
                 ) : (
-                  <h2>Axtarish Netice vermedi</h2>
+                  <h2>Axtarış Nəticə vermədi</h2>
                 )
               ) : (
-                <h2>Mal yoxdur</h2>
+                <h2>Məhsul yoxdur</h2>
               )}
             </div>
             {filteredProducts.length ? (

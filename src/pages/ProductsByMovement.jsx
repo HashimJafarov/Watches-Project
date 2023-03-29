@@ -218,7 +218,7 @@ function ProductsByMovement({
                     );
                   })
               ) : (
-                <h2>Mal yoxdur</h2>
+                <h2>Məhsul yoxdur</h2>
               )}
             </div>
             {filteredMovemets.length ? (

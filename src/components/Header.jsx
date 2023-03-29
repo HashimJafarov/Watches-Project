@@ -41,7 +41,7 @@ function Header({
               <div className="dropdown">
                 <ul>
                   <li>
-                    Məhsullar
+                    Kategoriya
                     <ul className="dropdown_category">
                       {category.map((a) => (
                         <NavLink
@@ -92,6 +92,11 @@ function Header({
                       ))}
                     </ul>
                   </li>
+
+                  <li>
+                    <NavLink to="/allproducts">Bütün məhsullar</NavLink>
+                  </li>
+
                   <ul className="dropdown_img">
                     <img
                       src="https://images.unsplash.com/photo-1526648856597-c2b6745ad7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0Y2glMjB3YWxscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80"

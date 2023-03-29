@@ -19,6 +19,7 @@ import ProductsByMovement from "./pages/ProductsByMovement";
 import ProductsByFunctionality from "./pages/ProductsByFunctionality";
 import NavMenu from "./components/NavMenu";
 import Customers from "./pages/Customers";
+import AllProducts from "./pages/AllProducts";
 function App({ basket, favorite, dispatch }) {
   let loc = useLocation();
   useEffect(() => {
@@ -146,6 +147,7 @@ function App({ basket, favorite, dispatch }) {
           element={<Home navMenu={navMenu} asidebasket={asidebasket} />}
         />
         <Route path="/about" element={<About />} />
+        <Route path="/allproducts" element={<AllProducts />} />
         <Route
           path="/:category_name/:category_id"
           element={

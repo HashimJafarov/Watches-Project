@@ -1,7 +1,24 @@
 import React from "react";
 import Contactbg from "../components/Contactbg";
-
+import { useState } from "react";
 function Contact() {
+  const [contactInfo, setContactInfo] = useState({
+    name: "",
+    surname: "",
+    email: "",
+    text: "",
+  });
+  const handleChange = (e) => {
+    setContactInfo({ ...contactInfo, [e.target.name]: e.target.value });
+  };
+  const sendData = () => {
+    setContactInfo({ name: "", surname: "", email: "", text: "" });
+  };
+  const btnDisabled =
+    contactInfo.name.length < 3 ||
+    contactInfo.surname.length < 3 ||
+    contactInfo.email.length < 3 ||
+    contactInfo.text.length < 3;
   return (
     <>
       <Contactbg />
@@ -12,20 +29,45 @@ function Contact() {
               <p>Contact Us</p>
               <div className="contact_user">
                 <div className="contact_name">
-                  <input type="text" placeholder="Name" />
+                  <input
+                    type="text"
+                    placeholder="Ad"
+                    name="name"
+                    value={contactInfo.name}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div className="contact_surname">
-                  <input type="text" placeholder="Surname" />
+                  <input
+                    type="text"
+                    placeholder="Soyad"
+                    value={contactInfo.surname}
+                    name="surname"
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className="contact_email">
-                <input type="email" placeholder="Email" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  value={contactInfo.email}
+                  onChange={handleChange}
+                />
               </div>
               <div className="contact_textarea">
-                <input type="textarea" placeholder="Enter your text..." />
+                <textarea
+                  name="text"
+                  value={contactInfo.text}
+                  onChange={handleChange}
+                  placeholder="Mətn daxil edin..."
+                ></textarea>
               </div>
               <div className="contact_btn">
-                <button>Submit</button>
+                <button onClick={sendData} disabled={btnDisabled}>
+                  Submit
+                </button>
               </div>
             </div>
           </div>

@@ -5,6 +5,8 @@ AOS.init();
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Swal from "sweetalert2";
@@ -107,9 +109,54 @@ function Home({
       title: "Məhsul sevimlilərdən silindi",
     });
   };
+  const firstImg = "/images/prime.jpg";
+  const secondImg = "https://wallpapercave.com/wp/wp2168389.jpg";
   return (
     <>
       <section
+        className="home_promo"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+          <SwiperSlide>
+            <div className="container">
+              <div className="promo">
+                <div className="titles">
+                  <p>Məhşur Kolleksiyalar</p>
+                  <h1>Hamının Arzuladığı Saat!</h1>
+                  <p>
+                    Saat dünyasının lüks brendlərindən olan ən yaxşı və yüksək
+                    keyfiyyətli saatlar.
+                  </p>
+                  <button>
+                    <Link to="/allproducts">Bütün məhsullar</Link>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="container">
+              <div className="promo">
+                <div className="titles">
+                  <p>Məhşur Kolleksiyalar</p>
+                  <h1>Hamının Arzuladığı Saat!</h1>
+                  <p>
+                    Saat dünyasının lüks brendlərindən olan ən yaxşı və yüksək
+                    keyfiyyətli saatlar.
+                  </p>
+                  <button>
+                    <Link to="/allproducts">Bütün məhsullar</Link>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </section>
+      {/* <section
         className="home_promo"
         data-aos="fade-up"
         data-aos-easing="linear"
@@ -128,7 +175,8 @@ function Home({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
       <section
         style={
           navMenu

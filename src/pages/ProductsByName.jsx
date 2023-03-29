@@ -215,7 +215,7 @@ function ProductByName({
                     );
                   })
               ) : (
-                <h2>Mal yoxdur</h2>
+                <h2>Məhsul yoxdur</h2>
               )}
             </div>
             {filteredProducts.length ? (

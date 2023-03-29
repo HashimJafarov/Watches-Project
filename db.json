@@ -1127,7 +1127,7 @@
       "delivery": "Watches.com Standard International Mail* (249$-dan yuxarı sifarişlər) və Standard Domestic Mail (100$+-dan yuxarı sifarişlər) xərclərini ödəyəcək. Bütün ölkələr pulsuz beynəlxalq göndərmə üçün uyğun deyil. Təkmilləşdirilmiş göndərmə seçimləri (təxmini tranzit vaxtları və tariflər) yoxlama zamanı təklif ediləcək.Watches.com 1999-cu ildən bütün dünyaya göndərilir və biz hər gün beynəlxalq miqyasda göndəririk. Sifarişlərin çoxu adi iş günlərində bazar ertəsindən cümə gününə qədər saat 17:00-a (MST) qədər emal edilir və göndərilir. Ödənişin/fırıldaqçılığın yoxlanılması adətən ani olur, lakin bəzi hallarda 48 saata qədər çəkə bilər. Saat 12:00-dan (MST) sonra verilən/qəbul edilən sifarişlər növbəti iş günü həyata keçiriləcək. Nəzərə alın ki, UPS həftə sonları çatdırmır. Gömrük rüsumları ölkədən asılı olaraq fərqli olduğundan, biz yoxlama zamanı rüsum almırıq. Əgər rüsumlar ödənilirsə, gömrük agentliyiniz paket ölkənizə çatdıqda sizə xəbər verəcəkdir. Bu ödənişləri ölkənizə ödəmək sizin məsuliyyətinizdir.Mallar göndərildikdən sonra məsuliyyət daşıyıcının şərtləri ilə əhatə olunur. Müştərinin göstərdiyi ünvana çatdırırıq. Əgər bizə dəqiq ünvan verməmisinizsə, nə Watches.com, nə də daşıyıcı məhsulun itirilməsinə görə məsuliyyət daşıya bilməz. Zəhmət olmasa göndərmə ünvanınızı iki dəfə yoxlayın. Göndərmə ilə bağlı hər hansı ziyan çatdırıldıqdan sonra 48 saat ərzində Watches.com-a bildirilməlidir, əks halda bu, hər hansı sığorta və ya pulun geri qaytarılması iddiası üçün uyğun deyil. Qeyd: Casio-nun siyasətinə görə, Casio və G-Shock saatları Beynəlxalq Göndərmə üçün uyğun deyil. Casio və ya G-Shock saatı olan istənilən beynəlxalq sifariş ləğv ediləcək və bütün pullar geri qaytarılacaq."
     },
     {
-      "id": 46,
+      "id": 47,
       "company_id": 6,
       "movement_id": 2,
       "functionality_id": 1,
@@ -1648,6 +1648,26 @@
       "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
       "status": 1,
       "id": 54
+    },
+    {
+      "rate": 4,
+      "product_id": 4,
+      "name": "Vahid Qocayev",
+      "comment": "Əla məhsuldu",
+      "email": "dgfdg@gmail.com",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 55
+    },
+    {
+      "rate": 2,
+      "product_id": 10,
+      "name": "sadfasdf",
+      "comment": "sdfasf",
+      "email": "asdfasdf",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 56
     }
   ],
   "category": [

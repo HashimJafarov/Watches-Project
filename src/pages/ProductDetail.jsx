@@ -76,7 +76,10 @@ function Product({
         });
     }, []);
   };
-
+  const checkDisabled =
+    newComment.name.length < 5 ||
+    newComment.comment.length < 5 ||
+    newComment.email.length < 5;
   const handleChange = (e) => {
     setNewComment({ ...newComment, [e.target.name]: e.target.value });
     console.log(newComment);
@@ -164,6 +167,9 @@ function Product({
       payload: [...basket],
     });
   };
+  const detectChange = (a) => {
+    console.log(a);
+  };
   const check = basket.find((a) => a.id === +id);
   const findMovement = movement.find((a) => a.id === product.movement_id);
   const findFunc = functionality.find((a) => a.id === product.functionality_id);
@@ -208,6 +214,7 @@ function Product({
                         navigation={true}
                         thumbs={{ swiper: thumbsSwiper }}
                         modules={[FreeMode, Thumbs]}
+                        onSlideChange={detectChange}
                         className="details_swiper_up"
                       >
                         {product.frontimage ? (
@@ -354,10 +361,12 @@ function Product({
                     </div>
                   </div>
                   <div className="details_descr">
-                    <div className="details_descr_title">
+                    <div
+                      className="details_descr_title"
+                      onClick={() => setProdescr(!prodescr)}
+                    >
                       <p>Məhsulun Xarakteristikası</p>
                       <IoIosArrowDown
-                        onClick={() => setProdescr(!prodescr)}
                         style={
                           prodescr
                             ? { transform: "rotate(180deg)" }
@@ -439,10 +448,12 @@ function Product({
                     </div>
                     {product.description ? (
                       <div className="details_transition">
-                        <div className="details_descr_title">
+                        <div
+                          className="details_descr_title"
+                          onClick={() => setDescription(!description)}
+                        >
                           <p>Məhsul Haqqında</p>
                           <IoIosArrowDown
-                            onClick={() => setDescription(!description)}
                             style={
                               description
                                 ? { transform: "rotate(180deg)" }
@@ -470,10 +481,12 @@ function Product({
                     ) : null}
                     {product.delivery ? (
                       <>
-                        <div className="details_descr_title">
+                        <div
+                          className="details_descr_title"
+                          onClick={() => setShipping(!shipping)}
+                        >
                           <p>Çatdırılma</p>
                           <IoIosArrowDown
-                            onClick={() => setShipping(!shipping)}
                             style={
                               shipping
                                 ? { transform: "rotate(180deg)" }
@@ -580,6 +593,7 @@ function Product({
                               onChange={handleChange}
                               type="text"
                               name="comment"
+                              required
                             ></textarea>
                           </div>
                           <div className="comment_name">
@@ -588,6 +602,7 @@ function Product({
                               onChange={handleChange}
                               type="text"
                               name="name"
+                              required
                             />
                           </div>
                           <div className="comment_email">
@@ -596,6 +611,7 @@ function Product({
                               onChange={handleChange}
                               type="email"
                               name="email"
+                              required
                             />
                           </div>
                           <div className="comment_btns">
@@ -606,7 +622,12 @@ function Product({
                             >
                               Geri
                             </button>
-                            <button onClick={saveComment}>Təsdiq et</button>
+                            <button
+                              onClick={saveComment}
+                              disabled={checkDisabled}
+                            >
+                              Təsdiq et
+                            </button>
                           </div>
                         </div>
                       )}
