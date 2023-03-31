@@ -116,7 +116,9 @@ function Header({
           <div className="favorites">
             <div className="user">
               <button>
-                <i className="fa-regular fa-user"></i>
+                <Link to="/login">
+                  <i className="fa-regular fa-user"></i>
+                </Link>
               </button>
             </div>
             <div className="heart">

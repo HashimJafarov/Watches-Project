@@ -20,6 +20,8 @@ import ProductsByFunctionality from "./pages/ProductsByFunctionality";
 import NavMenu from "./components/NavMenu";
 import Customers from "./pages/Customers";
 import AllProducts from "./pages/AllProducts";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 function App({ basket, favorite, dispatch }) {
   let loc = useLocation();
   useEffect(() => {
@@ -192,6 +194,8 @@ function App({ basket, favorite, dispatch }) {
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/customers/:name/:id" element={<Customers />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </>

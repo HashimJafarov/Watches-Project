@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 function Footer({ customers, functionality, movement, category }) {
@@ -11,6 +12,21 @@ function Footer({ customers, functionality, movement, category }) {
           setLoading(false);
         });
     }, []);
+    // const [yes, setYes] = useState(false);
+    // const [inputValue, setInputValue] = useState("");
+    // const handleEmail = (e) => {
+    //   setInputValue(e.target.value);
+    // };
+    // console.log(inputValue);
+    // const btnable = inputValue.email.length < 5;
+    // const setData = () => {
+    //   if (btnable) {
+    //     setYes(true);
+    //     return;
+    //   }
+    //   setInputValue("");
+    //   setYes(true);
+    // };
   };
   return (
     <footer className="footer">
@@ -86,8 +102,18 @@ function Footer({ customers, functionality, movement, category }) {
           </div>
           <div className="footer_box">
             <p>Qeydiyyatdan keçin və ilk alışa 10% endirim qazanın</p>
-            <input type="text" placeholder="Email..." />
-            <button>Təsdiq et</button>
+            <input
+              type="text"
+              placeholder="Email..."
+              name="email"
+              // value={inputValue.email}
+              // onChange={handleEmail}
+            />
+            <button
+            // onClick={setData}
+            >
+              Təsdiq et
+            </button>
             <div className="footer_social">
               <i className="fa-brands fa-facebook-f"></i>
               <i className="fa-brands fa-instagram"></i>

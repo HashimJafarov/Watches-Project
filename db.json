@@ -1668,6 +1668,16 @@
       "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
       "status": 1,
       "id": 56
+    },
+    {
+      "rate": 4,
+      "product_id": 1,
+      "name": "Həşim",
+      "comment": "yaxwidi",
+      "email": "dgfdg@gmail.com",
+      "user_img": "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
+      "status": 1,
+      "id": 57
     }
   ],
   "category": [

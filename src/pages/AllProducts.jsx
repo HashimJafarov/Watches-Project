@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Pagination from "../components/Pagination";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/all";
 import { animate, AnimatePresence, motion } from "framer-motion";
+import Swal from "sweetalert2";
 
 function AllProducts({
   products,
@@ -15,6 +16,7 @@ function AllProducts({
   movement,
   functionality,
   navMenu,
+  dispatch,
 }) {
   const [brands, setBrands] = useState(false);
   const [cat, setCat] = useState(false);
@@ -37,6 +39,94 @@ function AllProducts({
       return;
     }
     setFilter({ ...filter, [n]: [...filter[n].filter((a) => a !== v)] });
+  };
+  const addBasket = (id) => {
+    dispatch({
+      type: "SET_BASKET",
+      payload: [...basket, { id: id, count: 1 }],
+    });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul səbətə əlavə olundu",
+    });
+  };
+  const removeBasket = (id) => {
+    dispatch({
+      type: "SET_BASKET",
+      payload: [...basket.filter((t) => t.id !== id)],
+    });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul səbətdən silindi",
+    });
+  };
+  const addFavorite = (id) => {
+    dispatch({
+      type: "SET_FAVORITE",
+      payload: [...favorite, { id: id }],
+    });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul sevimlilərə əlavə olundu",
+    });
+  };
+  const removeFavorite = (id) => {
+    dispatch({
+      type: "SET_FAVORITE",
+      payload: [...favorite.filter((t) => t.id !== id)],
+    });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Məhsul sevimlilərdən silindi",
+    });
   };
   const filterProducts = products.filter(
     (a) =>

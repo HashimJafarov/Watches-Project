@@ -901,7 +901,7 @@ header ul li:nth-of-type(3):hover .dropdown {
 }
 .sponsor {
   min-height: 250px;
-  background-color: #e7e7e7;
+  background-color: #f7f7f7;
   padding: 80px 0;
 }
 .sponsor_descr {
@@ -2419,10 +2419,57 @@ header ul li:nth-of-type(3):hover .dropdown {
   min-height: 400px;
   padding: 100px 0;
 }
+.contact_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 70px;
+}
+.contact .contact_address {
+  width: 400px;
+  height: 300px;
+  background-color: #f7f7f7;
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.contact .contact_share {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.contact .contact_share span {
+  text-transform: uppercase;
+}
+.contact .contact_share i {
+  font-size: 14px;
+  color: #000;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.contact .contact_share i:hover {
+  color: var(--main-color);
+}
+.contact .contact_address p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.contact .contact_address p span {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.contact .contact_alarm p {
+  font-size: 12px;
+  color: rgb(255, 77, 77);
+  font-weight: 300;
+  margin-top: 10px;
+}
 .contact_form {
   width: 600px;
   min-height: 300px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2437,7 +2484,7 @@ header ul li:nth-of-type(3):hover .dropdown {
 }
 .contact_name,
 .contact_surname {
-  width: 300px;
+  width: 290px;
   height: 35px;
 }
 .contact_name input,
@@ -2494,7 +2541,7 @@ header ul li:nth-of-type(3):hover .dropdown {
   font-weight: 300;
 }
 .contact_iframe {
-  width: 600px;
+  width: 100%;
   height: 450px;
   margin: 0 auto;
   margin-top: 35px;
@@ -2627,6 +2674,155 @@ header ul li:nth-of-type(3):hover .dropdown {
   font-weight: 500;
   margin-top: 10px;
 }
+.login {
+  min-height: 250px;
+  padding: 170px 0 100px 0;
+}
+.login .login_user,
+.login .register_user {
+  width: 500px;
+  min-height: 250px;
+  border: 1px solid #d5d3d3;
+  border-radius: 5px;
+  padding: 30px 50px 20px 50px;
+}
+.login .login_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.login .login_user .title,
+.login .register_user p:first-of-type {
+  font-size: 16px;
+  font-weight: 500px;
+  text-transform: uppercase;
+}
+.login .login_user .descr,
+.login .register_user p:last-of-type {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.login .login_user_name,
+.login .login_user_password {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+}
+.login .alarm {
+  font-size: 12px !important;
+  color: rgb(236, 69, 69);
+  font-weight: 300;
+  margin-top: 10px !important;
+}
+
+.login .login_user_name input,
+.login .login_user_password input {
+  width: 100%;
+  height: 100%;
+  padding: 0 7px;
+  outline: none;
+}
+.login .login_user_name input::placeholder,
+.login .login_user_password input::placeholder {
+  font-size: 13px;
+  font-weight: 300;
+}
+.login .login_user button,
+.login .register_user button {
+  height: 30px;
+  background-color: var(--main-color);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.login .login_user button {
+  font-size: 14px;
+  width: 100px;
+}
+.login .login_user button:disabled {
+  filter: grayscale(100%);
+}
+.login .register_user button {
+  font-size: 12px;
+  width: 150px;
+}
+.login .register_user button a {
+  color: #fff;
+}
+.registration {
+  min-height: 250px;
+  padding: 170px 0 100px 0;
+}
+.registration_form {
+  width: 700px;
+  text-align: center;
+  padding: 30px 50px;
+  margin: 0 auto;
+}
+.registration_name,
+.registration_surname,
+.registration_email,
+.registration_password {
+  width: 600px;
+  height: 35px;
+  margin-top: 15px;
+}
+.registration_name input,
+.registration_surname input,
+.registration_email input,
+.registration_password input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 5px;
+}
+.registration_name input::placeholder,
+.registration_surname input::placeholder,
+.registration_email input::placeholder,
+.registration_password input::placeholder {
+  padding: 0 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.registration_form button {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--main-color);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 15px 0 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.registration_form p:first-of-type {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.registration_form p:not(:first-of-type) {
+  font-size: 12px;
+  color: rgb(255, 41, 41);
+  font-weight: 300;
+  margin-top: 10px;
+}
+.registration_form a button {
+  background-color: #7a7a7a;
+}
+.registration_form button:last-of-type a {
+  color: #fff;
+}
+
 @media only screen and (max-width: 1400px) {
   .container {
     width: 1150px;
