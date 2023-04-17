@@ -11,9 +11,9 @@
   list-style: none;
   font-family: "Roboto";
 }
-body {
+/* body {
   background-color: #fff;
-}
+} */
 .container {
   width: 1350px;
   margin: 0 auto;
