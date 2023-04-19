@@ -11,9 +11,6 @@
   list-style: none;
   font-family: "Roboto";
 }
-/* body {
-  background-color: #fff;
-} */
 .container {
   width: 1350px;
   margin: 0 auto;
@@ -334,15 +331,6 @@ header ul li:nth-of-type(3):hover .dropdown {
   opacity: 1;
   visibility: visible;
 }
-/* .home_promo {
-  height: 800px;
-  background-image: url(/images/prime.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-top: 100px;
-} */
 .home_promo .swiper .swiper-slide:first-of-type {
   background-image: url(/images/prime.jpg);
   background-position: center;
@@ -360,8 +348,6 @@ header ul li:nth-of-type(3):hover .dropdown {
   position: relative;
   padding-top: 100px;
   height: 800px;
-}
-.home_promo .swiper {
 }
 .home_promo .promo {
   position: relative;
