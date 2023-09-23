@@ -1,0 +1,1425 @@
+@media screen and (max-width: 1440px) {
+    .end__banner {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 1340px) {
+    .nav a:not(.dropdown-menu a) {
+        padding: 26px 10px;
+    }
+    .nav a {
+        font-size: 15px;
+    }
+    .corporative__edu {
+        gap: 120px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .news__description__image {
+        width: 45%;
+    }
+    .news__description__text {
+        width: 45%;
+    }
+    .corporative__scholarship .meet__us__image {
+        height: auto;
+    }
+    .corporative__scholarship .meet__us__text {
+        padding: 24px;
+    }
+    .testimonial-text {
+        width: 600px;
+    }
+    .nav a:not(.dropdown-menu a) {
+        padding: 26px 4px;
+    }
+    .course__information img {
+        width: 350px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .course__banner {
+        height: 190px;
+    }
+    .corporative__edu {
+        gap: 40px;
+        padding: 32px;
+    }
+}
+@media screen and (max-width: 1036px) {
+    .desktop__incubation__list {
+        display: none;
+    }
+    .mobile__incubation__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .mobile__incubation__list img {
+        width: 100%;
+    }
+    .mobile__incubation__list .incubation__text {
+        width: 100%;
+        padding: 32px 24px !important;
+    }
+    .projects__description__text {
+        padding: 8px;
+        width: 45%;
+    }
+    .projects__description__image {
+        width: 50%;
+    }
+    .projects__description__image img {
+        width: 100%;
+    }
+    .proj__desc {
+        padding: 0 32px;
+    }
+    .vacancies__entry .about__entry {
+        padding: 0 20px;
+    }
+    .about__gradient .about__entry {
+        padding: 0 20px;
+    }
+    .about__gradient .about__entry__text {
+        width: 40%;
+    }
+    .testimonial-item {
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .about__information__text {
+        width: 48%;
+    }
+    .about__information {
+        gap: 0;
+        justify-content: space-between;
+    }
+    .coders__club__information h2 {
+        text-align: left;
+    }
+    .coders__club__information.new {
+        padding: 40px 0;
+        border-radius: 0 0 20px 20px;
+    }
+    .coders__club__information ul {
+        gap: 0;
+        justify-content: space-between;
+    }
+    .club__cafe__text,
+    .networking__text {
+        padding: 100px;
+    }
+    .student__support p {
+        width: 100%;
+    }
+    .incubation__text {
+        padding: 105px 24px !important;
+    }
+    .lab__info {
+        margin-top: 40px;
+    }
+    .lab__info__text {
+        padding: 32px 24px;
+    }
+    .roadmap li h4 {
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .models {
+        padding: 32px 24px;
+    }
+    .roadmap__text {
+        padding: 24px;
+    }
+    .programs__container ul li {
+        padding: 14px;
+    }
+    .gradient__container {
+        gap: 60px;
+    }
+    .gradient__container {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .corporate__gradient__image,
+    .corporate__gradient__text {
+        width: 100%;
+    }
+    .hero-text h1 {
+        color: #fff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .testimonials {
+        padding: 36px;
+    }
+    .testimonial-text {
+        width: 75%;
+    }
+    .catalog h5 {
+        width: 100%;
+    }
+    .coders__new__inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .header__container {
+        padding: 0;
+        border-bottom: 0;
+    }
+    header {
+        padding: 0 40px;
+        border-radius: 0px 0px 15px 15px;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .hero-text {
+        margin-left: 85px;
+    }
+    .hero,
+    .slider-container {
+        margin-bottom: 80px;
+    }
+    .banner {
+        padding-right: 65px;
+    }
+    .left_border_vector,
+    .right_border_vector {
+        width: 190px;
+    }
+    .online__banner {
+        flex-wrap: wrap-reverse;
+    }
+    .online__banner__image,
+    .online__banner__text {
+        width: 100%;
+    }
+    .online__banner__text {
+        padding: 32px;
+    }
+    .online__banner__text p {
+        margin-top: 16px;
+    }
+    .work__information__list li {
+        width: calc((100% / 2) - (40px / 2));
+    }
+    .course__inner {
+        display: block;
+        margin-top: 20px;
+    }
+    .course__inner aside {
+        position: relative;
+        top: 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .not__found {
+        padding: 20px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .not__found .btn {
+        margin-top: 8px;
+    }
+    .not__found img {
+        margin-top: 20px;
+        width: 90%;
+        height: 60%;
+    }
+    .not__found h2 {
+        margin: 8px 0;
+    }
+    .alumni__entry__text h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+    }
+    .alumni__entry__text p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .alumni.lightgray {
+        padding: 80px 30px;
+    }
+    .corporative__banner__text h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 100%;
+        margin-bottom: 16px;
+    }
+    .corporative__banner__text p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .corporative__banner__inner {
+        padding: 40px;
+    }
+    .meet__us__text p {
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 10px;
+    }
+    .scholarships__list li::after {
+        height: 67px;
+        bottom: -43px;
+    }
+    .scrolarships {
+        margin-top: 80px;
+        overflow: hidden;
+        padding: 32px;
+    }
+    .how__to__qualify__image {
+        display: none;
+    }
+    .how__to__qualify__data {
+        width: 100%;
+        padding: 60px 90px;
+    }
+    .enroll__online {
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+    .enroll__online__text,
+    .enroll__online__form {
+        width: 100%;
+    }
+    .lab__members__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about__banner h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+    }
+    .about__banner p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .coders__club__end__text p {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+    .coders__club__end {
+        padding: 90px 40px;
+    }
+    .footer__container {
+        margin-top: 60px;
+    }
+    .percentages {
+        width: 80%;
+    }
+    .text__slider__information {
+        padding: 20px 40px;
+    }
+    .worklife table th,
+    .worklife table td {
+        padding: 12px;
+    }
+    .footer__right {
+        gap: 40px;
+        padding-left: 40px;
+    }
+    .footer__left {
+        padding-left: 70px;
+    }
+    .hero {
+        height: 600px;
+    }
+    .slider__full__width .swiper {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .events__container {
+        padding: 0 22px;
+    }
+    .about__gradient .about__entry__text {
+        width: 100%;
+    }
+    .slider__full__width .swiper-slide {
+        width: 100%;
+    }
+    .single__event .event__detail > img {
+        display: none;
+    }
+    .event__description .events__heading {
+        font-size: 26px;
+    }
+    .news__description__text ul:not(.share ul) li {
+        padding: 0 8px;
+        font-size: 14px;
+    }
+    .news__description__text ul:not(.share ul) {
+        flex-wrap: wrap;
+    }
+    .news__description__text h1 {
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .news__description .news__body {
+        margin-top: 32px;
+    }
+    .news__description .read__next .news__list {
+        padding: 0;
+        row-gap: 24px;
+    }
+    .news__description__inner .share > p {
+        margin-top: 40px;
+    }
+    .news__description__image {
+        margin-top: 40px;
+    }
+    .news__description__inner {
+        flex-direction: column;
+        margin-top: 64px;
+    }
+    .news__page .news__list {
+        gap: 24px;
+    }
+    .coders__club .bg__gradient {
+        margin-top: 33px;
+    }
+    .news__description__image,
+    .news__description__text {
+        width: 100%;
+    }
+    .club__cafe__text,
+    .club__cafe__image {
+        width: 100%;
+    }
+    .club__cafe__image img {
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .club__cafe {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .resources {
+        margin-top: 40px;
+        height: 567px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .resources__text {
+        padding: 32px 24px;
+        width: 100%;
+    }
+    .networking__image,
+    .networking__text {
+        width: 100%;
+    }
+    .networking {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+    .student__support img {
+        height: 225px;
+    }
+    .student__support {
+        margin-top: 40px;
+        padding: 32px 24px;
+    }
+
+    .lab__members__list {
+        padding: 0 !important;
+        margin-top: 30px;
+        gap: 25px;
+    }
+    .lab__info__image img {
+        border-radius: 20px 20px 0 0;
+    }
+    .lab__info__image,
+    .lab__info__text {
+        width: 100%;
+    }
+    .lab__info {
+        flex-direction: column-reverse;
+    }
+    .roadmap li {
+        flex-direction: column !important;
+    }
+    .roadmap__image,
+    .roadmap__text {
+        width: 100%;
+    }
+    .roadmap__image img {
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .models .model__ul li p {
+        width: 100%;
+    }
+    .models {
+        margin-top: 40px;
+    }
+    .models .model__ul {
+        grid-template-columns: 1fr;
+    }
+    .work__information__moduls__accordion .accordion__item p {
+        padding: 16px;
+    }
+    .corporative__scholarship .work__information__moduls {
+        margin-top: 40px;
+    }
+    .programs__container ul li {
+        padding: 32px 24px;
+    }
+    .sponsors {
+        margin-top: 40px;
+    }
+    .programs__container {
+        margin-top: 40px;
+    }
+    .corporative__scholarship .meet__us__text {
+        padding: 40px 24px;
+    }
+    .meet__us__text p {
+        color: #707070;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: normal;
+    }
+    .corporative__scholarship .meet__us {
+        margin-top: 40px;
+    }
+    .work__information__moduls__accordion li {
+        width: 100%;
+    }
+    .work__information__moduls__accordion {
+        flex-direction: column;
+    }
+    .sponsors ul li {
+        width: calc(100% / 2 - (20px - 20px / 2));
+        padding: 60px 40px;
+    }
+    .programs__container ul {
+        flex-direction: column;
+    }
+    .corp .meet__us.last {
+        margin-top: 40px;
+        gap: 32px;
+    }
+    .corp .last .meet__us__text {
+        border-radius: 20px;
+    }
+    .corp .last .meet__us__text.bg__dark p {
+        margin-top: 24px;
+    }
+    .corp .bg__gradient {
+        padding-top: 24px;
+        padding-bottom: 32px;
+        margin-top: 40px;
+    }
+    .corp .meet__us__image img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .corp .meet__us {
+        gap: 0;
+    }
+    .corp .meet__us__text {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-top: 32px;
+    }
+    .corporative__edu__image,
+    .corporative__edu__text {
+        width: 100%;
+    }
+    .corporative__edu {
+        flex-direction: column;
+        gap: 32px;
+        padding: 32px 24px;
+        margin-top: 40px;
+    }
+    .projects__list {
+        flex-direction: column;
+    }
+    .projects__description {
+        flex-direction: column;
+        margin: 40px auto;
+    }
+    .projects__description__text {
+        width: 100%;
+        padding: 24px;
+        padding-top: 0;
+    }
+    .projects__description__image {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .footer__container {
+        margin-top: 64px !important;
+    }
+    .vacancies__list .tags {
+        flex-wrap: wrap;
+    }
+    .vacancies__pagination {
+        margin-top: 40px;
+    }
+    .vacancy__desc div {
+        padding-left: 0;
+        border-right: 0;
+    }
+    .vacancies__list li a {
+        padding: 32px 24px;
+    }
+    .vacancy__desc {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .vacancies {
+        padding: 0 !important;
+    }
+    .vacancies__entry {
+        margin-top: 40px;
+    }
+    .vacancies__entry .about__entry__image {
+        width: 100%;
+        height: 208px;
+    }
+    .about__entry.row__reverse .about__entry__text {
+        width: 100%;
+    }
+    .about__information {
+        gap: 32px;
+    }
+    .about__entry__text {
+        text-align: left;
+    }
+    .about__banner {
+        height: 530px;
+        padding: 0;
+    }
+    .about__banner p {
+        width: 100%;
+        margin-top: 16px;
+        color: #fff;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .about__banner h1 {
+        width: 100%;
+        color: #fff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .mobile__navbar__heading .btn {
+        border-radius: 0;
+    }
+    .apply__bootcamp form button {
+        display: block;
+        width: 100%;
+        padding: 14px 0;
+    }
+    .apply__bootcamp form input {
+        width: 100%;
+    }
+    .apply__bootcamp {
+        padding: 32px 24px;
+    }
+    .testimonial-text p {
+        margin-top: 13px;
+    }
+    .container {
+        padding: 0 32px;
+        max-width: 100%;
+    }
+    .testimonials {
+        padding: 40px 24px;
+    }
+    .testimonial-text {
+        width: 100%;
+    }
+    .testimonial-item {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .testimonial-image {
+        width: 100%;
+        height: 175px;
+    }
+    .course__technologies {
+        padding: 32px 24px;
+    }
+    .banner__text p {
+        color: #cdcdcd;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: normal;
+    }
+    .meet__us__text {
+        padding-top: 74px;
+        padding-bottom: 40px;
+        padding-inline: 24px;
+    }
+    .meet__us {
+        padding: 0;
+    }
+    .edited .slider-container {
+        margin-bottom: 64px;
+    }
+    .coders__news__heading {
+        margin-bottom: 49px;
+    }
+    .coders__new__inner .news {
+        filter: none;
+    }
+    .coders__new__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__left {
+        padding-left: 0;
+    }
+    .meet__us {
+        margin-top: 80px;
+    }
+    .coders__news .news__text h2 {
+        font-size: 16px;
+    }
+    .coders__news .news__text p {
+        font-size: 14px;
+    }
+    .coders__news .news__text {
+        padding: 10px;
+    }
+    .features {
+        flex-wrap: wrap;
+    }
+    .feature {
+        width: 50%;
+        height: 300px;
+    }
+    .feature img {
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .news__col {
+        width: 100%;
+    }
+
+    .left_border_vector,
+    .right_border_vector {
+        display: none;
+    }
+    .banner {
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+    .banner__image {
+        height: 550px;
+    }
+    .banner__image img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .banner__image,
+    .banner__text {
+        width: 100%;
+    }
+    .banner__text {
+        padding: 30px;
+    }
+    .end__banner {
+        flex-wrap: wrap;
+    }
+    .end__banner__image,
+    .end__banner__text {
+        width: 100%;
+    }
+    .end__banner__text {
+        text-align: left;
+        padding: 32px 22px;
+    }
+    .end__banner__text p {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .footer__left,
+    .footer__right {
+        width: 100%;
+    }
+    .footer__left {
+        text-align: center;
+    }
+    .contact__details li a,
+    .social__media {
+        justify-content: center;
+    }
+    .social__media {
+        margin-top: 30px;
+    }
+    .footer__right {
+        margin-top: 60px;
+        flex-wrap: wrap;
+    }
+    .footer__right > ul,
+    .footer__right .column {
+        width: 41%;
+        margin-bottom: 40px;
+    }
+    .footer__right .column {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 50px;
+    }
+    .footer__right .column ul:last-of-type {
+        margin-top: 0;
+    }
+    .mobile__news__link {
+        display: block;
+    }
+    .coders__news__link_mob {
+        display: block;
+    }
+    .course__heading {
+        flex-wrap: wrap-reverse;
+    }
+    .course__heading__text,
+    .course__heading__image {
+        width: 100%;
+    }
+    .course__heading__image {
+        height: 420px;
+        margin-bottom: 40px;
+    }
+    .p__40 {
+        padding: 20px 0;
+    }
+    .about__entry {
+        flex-wrap: wrap-reverse;
+        margin-top: 60px;
+        justify-content: center;
+        text-align: center;
+    }
+    .about__entry__text,
+    .about__entry__image {
+        width: 100%;
+    }
+    .about__entry__image {
+        height: auto;
+        margin-bottom: 32px;
+    }
+    .about__icons {
+        flex-wrap: wrap;
+        margin-top: 60px;
+        gap: 40px;
+    }
+    .meet__us__text p {
+        margin-top: 10px;
+    }
+    .instructor__slider {
+        margin-top: 60px;
+    }
+    .about__icons li {
+        width: 100%;
+        justify-content: center;
+    }
+    .about__information {
+        flex-wrap: wrap;
+        margin-top: 64px;
+        padding: 0;
+    }
+    .about__information__image,
+    .about__information__text {
+        width: 100%;
+    }
+    .about__information__image {
+        padding: 32px 24px;
+        padding-bottom: 0;
+    }
+    .about__information__text {
+        padding: 32px 24px;
+        padding-top: 0;
+    }
+    .about__gradient {
+        margin-bottom: 60px;
+    }
+    .about__entry {
+        margin-top: 0;
+        padding: 0 !important;
+    }
+    .instructor__slider .slider-container {
+        margin-bottom: 40px;
+    }
+    .about__gradient {
+        padding: 40px 32px;
+    }
+    .about__information__text h1 {
+        text-align: left;
+    }
+    .about__information__text p {
+        text-align: left;
+    }
+    .meet__us {
+        flex-wrap: wrap-reverse;
+        height: auto;
+    }
+    .meet__us__text {
+        width: 100%;
+        margin-top: 0;
+    }
+    .meet__us__image {
+        position: relative;
+        width: 100%;
+    }
+    .course__information {
+        flex-direction: column-reverse;
+        padding: 24px;
+        margin-top: 40px;
+        gap: 24px;
+    }
+    .course__technologies ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .course__information__text p {
+        margin-top: 16px;
+    }
+    .course__information__image,
+    .course__information img {
+        width: 100%;
+    }
+    .end__banner {
+        margin-top: 60px;
+    }
+    .about__entry.row__reverse .about__entry__text {
+        text-align: left;
+    }
+    .vacancies {
+        padding-left: 0;
+    }
+    .projects__entry__text {
+        margin-top: 60px;
+        text-align: left;
+        padding: 0 32px;
+    }
+    .end__banner {
+        padding: 0;
+    }
+    .projects__list {
+        align-items: center;
+        margin-top: 20px;
+    }
+    .projects__list li {
+        width: 100%;
+        flex-direction: column;
+    }
+    .project__image,
+    .project__text {
+        width: 100%;
+    }
+    .project__text {
+        padding: 28px;
+    }
+    .alumni__entry {
+        flex-wrap: wrap-reverse;
+    }
+    .alumni__entry__text,
+    .alumni__entry__image {
+        width: 100%;
+    }
+    .alumni__entry__text {
+        margin-top: 42px;
+    }
+    .alumni__entry {
+        padding-top: 30px;
+    }
+    .alumni__entry__text h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+    }
+    .counters ul {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .counters ul li {
+        width: 100%;
+    }
+    .alumni__triple {
+        flex-wrap: wrap;
+        padding: 0 32px;
+    }
+    .alumni__entry {
+        padding: 32px;
+    }
+    .alumni__triple li {
+        width: 100%;
+    }
+    .alumni__banner {
+        flex-wrap: wrap-reverse;
+    }
+    .alumni__banner__text,
+    .alumni__banner__image {
+        width: 100%;
+    }
+    .alumni__banner__text {
+        margin-top: 70px;
+    }
+    .alumni__list li {
+        width: calc(100% / 2 - (22px - 22px / 2));
+    }
+    .corporative__banner {
+        height: auto;
+    }
+    .corporative__banner__inner {
+        flex-wrap: wrap;
+        gap: 32px;
+        padding: 76px 32px;
+    }
+    .corporative__banner__text,
+    .corporative__banner__form {
+        width: 100%;
+    }
+    .scholarships__list li {
+        flex-wrap: wrap;
+        padding: 32px;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .how__to__qualify__data {
+        padding: 32px;
+    }
+    .student__life__content:nth-of-type(even) {
+        flex-direction: row;
+    }
+    .student__life__content {
+        flex-wrap: wrap-reverse;
+        padding: 32px;
+    }
+    .has__linear__bottom__line::before {
+        width: calc(100% - 64px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .student__life__content__text,
+    .student__life__content__image {
+        width: 100%;
+    }
+    .student__life__content__text {
+        margin-top: 32px;
+    }
+    .enroll__online {
+        padding: 32px;
+    }
+    .lab__members__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .member__image {
+        height: 240px;
+    }
+    .incubation__gallery img:nth-of-type(1) {
+        width: 41%;
+        height: 138px;
+    }
+    .incubation__gallery img:nth-of-type(2) {
+        width: 59%;
+        height: 138px;
+    }
+    .incubation__gallery img:nth-of-type(3) {
+        width: 39%;
+        height: 93px;
+    }
+    .incubation__gallery img:nth-of-type(4) {
+        width: 33%;
+        height: 93px;
+    }
+    .incubation__gallery img:nth-of-type(5) {
+        width: 28%;
+        height: 93px;
+    }
+    .incubation__gallery img:nth-of-type(6) {
+        width: 60.5%;
+        height: 141px;
+    }
+    .incubation__gallery img:nth-of-type(7) {
+        width: 39.5%;
+        height: 141px;
+    }
+    .incubation__gallery img:nth-of-type(8) {
+        width: 63%;
+        height: 128px;
+    }
+    .incubation__gallery img:nth-of-type(9) {
+        width: 37%;
+        height: 128px;
+    }
+    .incubation__gallery {
+        margin-top: 60px;
+    }
+    .coders__club__end {
+        flex-wrap: wrap;
+        padding: 32px;
+    }
+    .coders__club__end__image,
+    .coders__club__end__text {
+        width: 100%;
+        max-width: 100%;
+    }
+    .coders__club__end__text {
+        margin-top: 40px;
+        text-align: left;
+    }
+    .footer__container {
+        margin-top: 30px;
+    }
+    .coders__club__information {
+        padding: 32px;
+    }
+    .coders__club__information ul {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .coders__club__information ul li {
+        width: 100%;
+    }
+    .percentages {
+        width: 100%;
+        padding: 32px;
+    }
+    .percentages ul {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .percentages ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .worklife .table__container {
+        overflow: auto;
+    }
+    .worklife .table__container::-webkit-scrollbar {
+        display: none;
+    }
+    .worklife table {
+        width: 900px;
+    }
+    .text__slider__banner {
+        flex-wrap: wrap-reverse;
+    }
+    .text__slider__information,
+    .text__slider__image {
+        width: 100%;
+    }
+    .event__decription__inner {
+        margin-top: 64px;
+        flex-wrap: wrap;
+        padding: 0 32px;
+    }
+    .event__decription__text {
+        width: 100%;
+    }
+    .event__decription__image {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .event__decription__text h1 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .event__decription__text p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 32px;
+    }
+    .event__content {
+        margin-top: 32px;
+        max-width: 100%;
+        padding: 0 32px;
+    }
+    .news__list {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 40px;
+    }
+    .hero {
+        height: 550px;
+    }
+}
+@media screen and (max-width: 662px) {
+    .footer__right.desktop {
+        display: none;
+    }
+    .footer__right.mobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer__right.mobile .col {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .club__cafe__text,
+    .networking__text {
+        padding: 32px 24px;
+    }
+    .slider__full__width .swiper-slide:not(.storyy .swiper-slide) {
+        width: 395px !important;
+    }
+    .alumni__banner__text h5 {
+        padding-right: 45px;
+    }
+    .alumni__banner__text p {
+        margin-top: 16px;
+    }
+    .download__pdf.padding__button {
+        margin-top: 32px !important;
+    }
+    .alumni__banner__image img {
+        height: 229px;
+    }
+    .alumni.lightgray {
+        padding: 32px 0;
+        margin-top: 10px;
+    }
+    .alumnis__list.projects__list {
+        padding: 40px 0;
+    }
+    .counters {
+        padding: 64px 0;
+    }
+    .alumni__entry__text {
+        padding-bottom: 57px;
+    }
+    .alumni__entry__image img {
+        height: 208px;
+        object-fit: cover;
+    }
+    .alumni__entry {
+        padding: 0;
+        margin-top: 110px;
+    }
+    .alumni__entry__text {
+        margin-top: 64px;
+    }
+    .course__technologies ul {
+        grid-template-columns: 1fr;
+    }
+    .work__information__list li {
+        width: 100%;
+    }
+    .work__information__heading .work li {
+        width: 100%;
+    }
+    .form__group.half {
+        width: 100%;
+    }
+    .form__row {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .single__event ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .apply__form {
+        padding: 20px;
+    }
+    .footer__right > ul,
+    .footer__right .column {
+        width: 48%;
+        flex: unset;
+    }
+    .footer__right {
+        padding: 40px 32px;
+        gap: 0;
+    }
+}
+@media screen and (max-width: 475px) {
+    .member__image {
+        height: 198px;
+    }
+    .sponsors ul {
+        flex-direction: column;
+    }
+    .sponsors ul li {
+        width: 100%;
+    }
+    .coders__new__inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .coders__new__inner .news {
+        overflow: hidden;
+    }
+    .coders__new__inner .news:not(:first-of-type) .news__image {
+        display: none;
+    }
+    .about__entry,
+    .about__icons {
+        padding: 0 32px;
+    }
+    header {
+        padding: 0 20px;
+    }
+    .features {
+        display: none;
+    }
+    .news__row .news {
+        width: 100%;
+    }
+    .news__col {
+        flex-wrap: wrap;
+    }
+    .banner__image {
+        height: 300px;
+    }
+    .banner__text p {
+        margin-bottom: 32px;
+    }
+    .meet__us {
+        margin-top: 64px;
+    }
+    .meet__us__text {
+        width: 100%;
+    }
+    .meet__us__text p {
+        color: #707070;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: normal;
+    }
+    .hero-text {
+        margin-left: 0;
+        padding: 0 32px;
+    }
+    .online__banner {
+        margin-top: 64px;
+    }
+    .end__banner__text p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .partners h1 {
+        margin-left: 32px;
+    }
+    .partners {
+        margin-top: 64px;
+    }
+    .coders__news {
+        padding: 0 32px;
+    }
+    .hero {
+        height: 540px;
+    }
+    .slider-info {
+        padding: 32px 24px;
+    }
+    .slider-container,
+    .coders__news {
+        margin-bottom: 64px;
+    }
+    .footer__right {
+        padding: 32px;
+    }
+    .footer__left {
+        text-align: left;
+        padding: 0 32px;
+    }
+    .contact__details li a,
+    .social__media {
+        justify-content: flex-start;
+    }
+    .coders__news .news__col:first-of-type .news .news__text {
+        background-color: #fff;
+        color: #000;
+    }
+    .vacancies {
+        padding: 32px;
+    }
+    .counters ul li {
+        width: 100%;
+    }
+    .alumni__list {
+        padding: 0 20px;
+    }
+    .alumni__list li {
+        width: 100%;
+    }
+    .vacancies__pagination.alumni {
+        margin-top: 60px;
+        padding-left: 32px;
+    }
+    .alumni__list__text h3 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .alumni__list__text {
+        font-size: 14px;
+    }
+    .enroll__online__form h1 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+    }
+    .enroll__online__text p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .lab__members__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .lab__members {
+        margin-top: 40px;
+    }
+    .percentages ul li {
+        text-align: left;
+    }
+    .news__item .news__item__image {
+        display: none;
+    }
+    .news__list {
+        grid-template-columns: 1fr;
+        padding: 0 32px;
+    }
+    .news__item .news__item__details {
+        border-top-left-radius: 15px;
+    }
+    .scrolarships {
+        margin-top: 30px;
+    }
+    .scholarships__heading h1 {
+        text-align: left;
+    }
+    .scholarships__list {
+        margin-top: 40px;
+    }
+    .mobile__navbar__bottom ul {
+        gap: 6px;
+    }
+    .mobile__navbar__heading .btn {
+        padding: 8px 12px;
+    }
+}

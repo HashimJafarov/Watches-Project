@@ -5,11 +5,7 @@ AOS.init();
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-function ProductBasket({
-  products,
-  basket,
-  setAsidebasket = { setAsidebasket },
-}) {
+function ProductBasket({ products, basket, setAsidebasket }) {
   const total = basket.length
     ? basket.reduce(
         (acc, item) =>

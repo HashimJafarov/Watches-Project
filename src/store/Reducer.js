@@ -1,6 +1,11 @@
 const localBasket = localStorage.getItem("basket");
 const localFavorite = localStorage.getItem("favorite");
 const init = {
+  asidebasket: false,
+  navMenu: false,
+  showPicture: false,
+  user: null,
+  admin: null,
   products: [],
   category: [],
   company: [],
@@ -17,6 +22,16 @@ export default function Reducer(state = init, action) {
   switch (action.type) {
     case "SET_PRODUCTS":
       return { ...state, products: action.payload };
+    case "asideBasket":
+      return { ...state, asidebasket: action.payload };
+    case "navMenu":
+      return { ...state, navMenu: action.payload };
+    case "showPicture":
+      return { ...state, showPicture: action.payload };
+    case "SET_USER":
+      return { ...state, user: action.payload };
+    case "SET_ADMIN":
+      return { ...state, admin: action.payload };
     case "SET_CATEGORY":
       return { ...state, category: action.payload };
     case "SET_COMPANY":

@@ -16,9 +16,9 @@ import "swiper/css/thumbs";
 
 // import required modules
 import { FreeMode, Thumbs } from "swiper";
-import PictureModal from "../components//PictureModal";
+import PictureModal from "../components/PictureModal";
 import Swal from "sweetalert2";
-import StarRatings from "../components//StarRatings";
+import StarRatings from "../components/StarRatings";
 import { animate, AnimatePresence, motion } from "framer-motion";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/all";
 import ProductStarRating from "../components/ProductStarRating";
