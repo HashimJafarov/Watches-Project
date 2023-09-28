@@ -1,0 +1,17 @@
+.mb {
+  margin-bottom: 1rem !important;
+  flex: 0 0 auto;
+  width: 16.66666667%;
+  position: relative;
+}
+.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: gray;
+  opacity: 0.5;
+}

@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Pagination from "../components/Pagination";
 import Swal from "sweetalert2";
+import styles from "./ProductsStyle.module.css";
 function ProductByName({
   asidebasket,
   navMenu,
@@ -115,7 +116,7 @@ function ProductByName({
               key={a.id}
               className="probynamebg"
               style={{
-                backgroundImage: `url(${a.bgimage})`,
+                backgroundImage: `url(${a.image})`,
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
@@ -126,9 +127,9 @@ function ProductByName({
         );
       })}
       {!loading ? (
-        <section className="menwatches">
+        <section className={styles.menwatches}>
           <div className="container">
-            <div className="menwatches_wrapper">
+            <div className={styles.menwatches_wrapper}>
               {filteredProducts.length ? (
                 filteredProducts
                   .slice(
@@ -144,8 +145,8 @@ function ProductByName({
                       (f) => f.id === product.id
                     );
                     return (
-                      <div className="product" key={product.id}>
-                        <div className="product_img">
+                      <div className={styles.product} key={product.id}>
+                        <div className={styles.product_img}>
                           <div
                             style={
                               navMenu
@@ -154,9 +155,9 @@ function ProductByName({
                                 ? { zIndex: "-1" }
                                 : { zIndex: "1" }
                             }
-                            className="front_img"
+                            className={styles.front_img}
                           >
-                            <img src={product.frontimage} alt="" />
+                            <img src={product.images[0].image} alt="" />
                           </div>
                           <div
                             style={
@@ -166,11 +167,11 @@ function ProductByName({
                                 ? { zIndex: "-1" }
                                 : { zIndex: "1" }
                             }
-                            className="side_img"
+                            className={styles.side_img}
                           >
-                            <img src={product.sideimage} alt="" />
+                            <img src={product.images[1].image} alt="" />
                           </div>
-                          <div className="product_img_btns">
+                          <div className={styles.product_img_btns}>
                             {!checkFavorite ? (
                               <button onClick={() => addFavorite(product.id)}>
                                 <i className="fa-regular fa-heart"></i>
@@ -198,7 +199,7 @@ function ProductByName({
                             </button>
                           </div>
                         </div>
-                        <div className="product_descr">
+                        <div className={styles.product_descr}>
                           <h2>{comp && comp.name}</h2>
                           <p>
                             {product.title && product.title.slice(0, 35)}

@@ -1,6 +1,12 @@
 const localBasket = localStorage.getItem("basket");
 const localFavorite = localStorage.getItem("favorite");
+
 const init = {
+  API_CATEGORY: `http://127.0.0.1:8000/api/control/categories`,
+  API_COMPANY: `http://127.0.0.1:8000/api/control/companies`,
+  API_MOVEMENT: `http://127.0.0.1:8000/api/control/movements`,
+  API_FUNCTIONALITY: `http://127.0.0.1:8000/api/control/functionalities`,
+  API_WATCHES: `http://127.0.0.1:8000/api/control/watches`,
   asidebasket: false,
   navMenu: false,
   showPicture: false,
@@ -16,7 +22,7 @@ const init = {
   customers: [],
   subcustomers: [],
   basket: localBasket ? JSON.parse(localBasket) : [],
-  favorite: localBasket ? JSON.parse(localFavorite) : [],
+  favorite: localFavorite ? JSON.parse(localFavorite) : [],
 };
 export default function Reducer(state = init, action) {
   switch (action.type) {

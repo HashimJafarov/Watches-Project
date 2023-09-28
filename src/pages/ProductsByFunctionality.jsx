@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Pagination from "../components/Pagination";
 import Swal from "sweetalert2";
+import styles from "./ProductsStyle.module.css";
 function ProductsByFunctionality({
   asidebasket,
   navMenu,
@@ -107,6 +108,7 @@ function ProductsByFunctionality({
       title: "Məhsul sevimlilərdən silindi",
     });
   };
+
   return (
     <>
       {functionality.map((a) => {
@@ -117,7 +119,7 @@ function ProductsByFunctionality({
               key={a.id}
               className="probynamebg"
               style={{
-                backgroundImage: `url(${a.bgimage})`,
+                backgroundImage: `url(${a.image})`,
                 backgroundPosition: "bottom",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
@@ -129,9 +131,9 @@ function ProductsByFunctionality({
         );
       })}
       {!loading ? (
-        <section className="menwatches">
+        <section className={styles.menwatches}>
           <div className="container">
-            <div className="menwatches_wrapper">
+            <div className={styles.menwatches_wrapper}>
               {filteredFunc.length ? (
                 filteredFunc
                   .slice(
@@ -139,16 +141,13 @@ function ProductsByFunctionality({
                     itemPerPage * (page - 1) + itemPerPage
                   )
                   .map((product) => {
-                    const comp = company.find(
-                      (c) => c.id === product.company_id
-                    );
                     const checkBasket = basket.find((t) => t.id === product.id);
                     const checkFavorite = favorite.find(
                       (f) => f.id === product.id
                     );
                     return (
-                      <div className="product" key={product.id}>
-                        <div className="product_img">
+                      <div className={styles.product} key={product.id}>
+                        <div className={styles.product_img}>
                           <div
                             style={
                               navMenu
@@ -157,9 +156,9 @@ function ProductsByFunctionality({
                                 ? { zIndex: "-1" }
                                 : { zIndex: "1" }
                             }
-                            className="front_img"
+                            className={styles.front_img}
                           >
-                            <img src={product.frontimage} alt="" />
+                            <img src={product.images[0].image} alt="" />
                           </div>
                           <div
                             style={
@@ -169,11 +168,11 @@ function ProductsByFunctionality({
                                 ? { zIndex: "-1" }
                                 : { zIndex: "1" }
                             }
-                            className="side_img"
+                            className={styles.side_img}
                           >
-                            <img src={product.sideimage} alt="" />
+                            <img src={product.images[0].image} alt="" />
                           </div>
-                          <div className="product_img_btns">
+                          <div className={styles.product_img_btns}>
                             {!checkFavorite ? (
                               <button onClick={() => addFavorite(product.id)}>
                                 <i className="fa-regular fa-heart"></i>
@@ -201,8 +200,8 @@ function ProductsByFunctionality({
                             </button>
                           </div>
                         </div>
-                        <div className="product_descr">
-                          <h2>{comp && comp.name}</h2>
+                        <div className={styles.product_descr}>
+                          <h2>{product.companies.name}</h2>
                           <p>
                             {product.title && product.title.slice(0, 35)}
                             ...

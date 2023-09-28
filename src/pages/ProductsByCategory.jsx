@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Pagination from "../components/Pagination";
 import Swal from "sweetalert2";
-
+import styles from "./ProductsStyle.module.css";
 AOS.init();
 function Blog({
   asidebasket,
@@ -141,16 +141,16 @@ function Blog({
       {+category_id === 1 ? <Mensbg /> : null}
       {+category_id === 2 ? <Womenbg /> : null}
       {!loading ? (
-        <section className="menwatches">
+        <section className={styles.menwatches}>
           <div className="container">
-            <div className="filter_wrapper">
-              <div className="btn">
+            <div className={styles.filter_wrapper}>
+              <div className={styles.btn}>
                 <button onClick={() => setInputSearch(!inputSearch)}>
                   <i className="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
               {inputSearch && (
-                <div data-aos="fade-rigth" className="input">
+                <div data-aos="fade-rigth" className={styles.input}>
                   <input
                     onChange={(e) =>
                       setInputValue({
@@ -180,7 +180,7 @@ function Blog({
                 </div>
               )}
             </div>
-            <div className="menwatches_wrapper">
+            <div className={styles.menwatches_wrapper}>
               {products.length ? (
                 filteredProducts.length ? (
                   filteredProducts
@@ -199,8 +199,8 @@ function Blog({
                         (f) => f.id === product.id
                       );
                       return (
-                        <div className="product" key={product.id}>
-                          <div className="product_img">
+                        <div className={styles.product} key={product.id}>
+                          <div className={styles.product_img}>
                             <div
                               style={
                                 navMenu
@@ -209,9 +209,9 @@ function Blog({
                                   ? { zIndex: "-1" }
                                   : { zIndex: "1" }
                               }
-                              className="front_img"
+                              className={styles.front_img}
                             >
-                              <img src={product.frontimage} alt="" />
+                              <img src={product.images[0].image} alt="" />
                             </div>
                             <div
                               style={
@@ -221,11 +221,11 @@ function Blog({
                                   ? { zIndex: "-1" }
                                   : { zIndex: "1" }
                               }
-                              className="side_img"
+                              className={styles.side_img}
                             >
-                              <img src={product.sideimage} alt="" />
+                              <img src={product.images[1].image} alt="" />
                             </div>
-                            <div className="product_img_btns">
+                            <div className={styles.product_img_btns}>
                               {!checkFavorite ? (
                                 <button onClick={() => addFavorite(product.id)}>
                                   <i className="fa-regular fa-heart"></i>
@@ -255,7 +255,7 @@ function Blog({
                               </button>
                             </div>
                           </div>
-                          <div className="product_descr">
+                          <div className={styles.product_descr}>
                             <h2>{comp && comp.name}</h2>
                             <p>
                               {product.title && product.title.slice(0, 35)}

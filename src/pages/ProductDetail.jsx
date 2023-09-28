@@ -1,10 +1,8 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect, lazy, Suspense } from "react";
+import { useParams, Link } from "react-router-dom";
 import { connect } from "react-redux";
-import Mensbg from "../components/Mensbg";
-import Womenbg from "../components/Womenbg";
+const Mensbg = lazy(() => import("../components/Mensbg"));
+const Womenbg = lazy(() => import("../components/Womenbg"));
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -35,6 +33,7 @@ function Product({
   showPicture,
   products,
   category,
+  API_WATCHES,
   blog,
   comments,
 }) {
@@ -57,32 +56,30 @@ function Product({
       "https://www.gravatar.com/avatar/e647b85d28047927c3259f77bc48e16c?d=identicon&s=30",
     status: 0,
   });
+  console.log(product);
   useEffect(() => {
-    fetch(`http://localhost:1225/products/${id}`)
+    setLoading(true);
+    fetch(`${API_WATCHES}/${id}`, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        "Content-type": "application/json",
+        Authorization: `Bearer ${window.localStorage.getItem("token")}`,
+      },
+    })
       .then((a) => a.json())
       .then((a) => {
         setProduct(a);
         setLoading(false);
       });
-  }, []);
+  }, [id]);
 
-  const updatePage = (id) => {
-    useEffect(() => {
-      fetch(`http://localhost:1225/products/${id}`)
-        .then((a) => a.json())
-        .then((a) => {
-          setProduct(a);
-          setLoading(false);
-        });
-    }, []);
-  };
   const checkDisabled =
     newComment.name.length < 5 ||
     newComment.comment.length < 5 ||
     newComment.email.length < 5;
   const handleChange = (e) => {
     setNewComment({ ...newComment, [e.target.name]: e.target.value });
-    console.log(newComment);
   };
 
   const handleRate = (currentValue) => {
@@ -171,9 +168,6 @@ function Product({
     console.log(a);
   };
   const check = basket.find((a) => a.id === +id);
-  const findMovement = movement.find((a) => a.id === product.movement_id);
-  const findFunc = functionality.find((a) => a.id === product.functionality_id);
-  const findCategory = category.find((a) => a.id === product.category_id);
   const checkAnotherProducts = products.filter(
     (a) => a.id !== +id && a.category_id === product.category_id
   );
@@ -212,31 +206,16 @@ function Product({
                         onClick={() => setShowPicture(true)}
                         spaceBetween={10}
                         navigation={true}
-                        thumbs={{ swiper: thumbsSwiper }}
+                        // thumbs={{ swiper: thumbsSwiper }}
                         modules={[FreeMode, Thumbs]}
                         onSlideChange={detectChange}
                         className="details_swiper_up"
                       >
-                        {product.frontimage ? (
-                          <SwiperSlide>
-                            <img src={product.frontimage} />
+                        {product?.images?.map((image) => (
+                          <SwiperSlide key={image.id}>
+                            <img src={image.image} alt="" />
                           </SwiperSlide>
-                        ) : null}
-                        {product.sideimage ? (
-                          <SwiperSlide>
-                            <img src={product.sideimage} />
-                          </SwiperSlide>
-                        ) : null}
-                        {product.backimage ? (
-                          <SwiperSlide>
-                            <img src={product.backimage} />
-                          </SwiperSlide>
-                        ) : null}
-                        {product.handimage ? (
-                          <SwiperSlide>
-                            <img src={product.handimage} />
-                          </SwiperSlide>
-                        ) : null}
+                        ))}
                       </Swiper>
                       <Swiper
                         onSwiper={setThumbsSwiper}
@@ -247,51 +226,26 @@ function Product({
                         modules={[FreeMode, Thumbs]}
                         className="details_swiper_down"
                       >
-                        {product.frontimage ? (
-                          <SwiperSlide>
-                            <img src={product.frontimage} />
+                        {product?.images?.map((image) => (
+                          <SwiperSlide key={image.id}>
+                            <img src={image.image} alt="" />
                           </SwiperSlide>
-                        ) : null}
-                        {product.sideimage ? (
-                          <SwiperSlide>
-                            <img src={product.sideimage} />
-                          </SwiperSlide>
-                        ) : null}
-                        {product.backimage ? (
-                          <SwiperSlide>
-                            <img src={product.backimage} />
-                          </SwiperSlide>
-                        ) : null}
-                        {product.handimage ? (
-                          <SwiperSlide>
-                            <img src={product.handimage} />
-                          </SwiperSlide>
-                        ) : null}
+                        ))}
                       </Swiper>
                     </div>
                     <div className="details_specifications">
-                      {product.video ? (
-                        <div className="details_video">
-                          <video
-                            src={product.video}
-                            muted
-                            controls
-                            autoPlay
-                            loop
-                            width="350"
-                            height="200"
-                          ></video>
-                        </div>
-                      ) : null}
                       <div className="details_operations">
                         <div className="details_operation_titles">
                           <h2>{product.title}</h2>
                           {/* <StarRatings /> */}
                           <ProductStarRating id={id} />
                           <h3>
-                            {product.price}{" "}
+                            {product.price}
                             <i className="fa-solid fa-manat-sign"></i>
                           </h3>
+                          <p style={{ fontSize: "18px" }}>
+                            Discount: {product.discount}%
+                          </p>
                         </div>
                         <div className="details_operations_wrap">
                           <div className="details_operations_input">
@@ -394,9 +348,10 @@ function Product({
                                   Model: <span>{product.model}</span>
                                 </p>
                               ) : null}
-                              {findCategory ? (
+                              {product.categories ? (
                                 <p>
-                                  Kateqoriya: <span>{findCategory.title}</span>
+                                  Kateqoriya:{" "}
+                                  <span>{product.categories.name}</span>
                                 </p>
                               ) : null}
                               {product.case_material ? (
@@ -431,14 +386,16 @@ function Product({
                                   Siferblatın Rəngi: <span>{product.dial}</span>{" "}
                                 </p>
                               ) : null}
-                              {findMovement ? (
+                              {product.movements ? (
                                 <p>
-                                  Mexanizm: <span>{findMovement.title}</span>{" "}
+                                  Mexanizm:{" "}
+                                  <span>{product.movements.name}</span>{" "}
                                 </p>
                               ) : null}
-                              {findFunc ? (
+                              {product.functionalities ? (
                                 <p>
-                                  Funksionallıq: <span>{findFunc.title}</span>{" "}
+                                  Funksionallıq:{" "}
+                                  <span>{product.functionalities.name}</span>
                                 </p>
                               ) : null}
                             </div>
@@ -517,20 +474,22 @@ function Product({
                     <p>Oxşar məhsullar</p>
                     <div className="details_another_products_wrap">
                       {checkAnotherProducts
-                        .slice(0, 16)
+                        .slice(0, 8)
                         .map((anotherproducts) => {
                           return (
                             <Link
-                              onClick={() => updatePage(anotherproducts.id)}
                               to={`/product/${anotherproducts.id}`}
                               className="details_another_product"
                               key={anotherproducts.id}
                             >
                               <div className="details_another_img">
-                                <img src={anotherproducts.frontimage} alt="" />
+                                <img
+                                  src={anotherproducts.images[0].image}
+                                  alt=""
+                                />
                               </div>
                               <div className="details_another_titles">
-                                <p>{anotherproducts.title}</p>
+                                <p>{anotherproducts.title.slice(0, 25)}...</p>
                                 <p>
                                   <i className="fa-solid fa-manat-sign"></i>{" "}
                                   {anotherproducts.price}
@@ -635,9 +594,9 @@ function Product({
                   </div>
                 </div>
                 <div className="details_blog">
-                  <p>
+                  {/* <p>
                     <span>Saatlar</span> Haqqında
-                  </p>
+                  </p> */}
                   {blog.map((a) => (
                     <Link
                       to={`/blog/${a.id}`}

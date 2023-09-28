@@ -7,11 +7,17 @@ import { connect } from "react-redux";
 
 function ProductBasket({ products, basket, setAsidebasket }) {
   const total = basket.length
-    ? basket.reduce(
-        (acc, item) =>
-          acc + products.find((a) => a.id === item.id)?.price * item.count,
-        0
-      )
+    ? basket.reduce((acc, item) => {
+        const productPrice = products.find((a) => a.id === item.id)?.price;
+        const productDiscount = products.find(
+          (a) => a.id === item.id
+        )?.discount;
+        return (
+          acc +
+          productPrice -
+          ((productPrice * productDiscount) / 100) * item.count
+        );
+      }, 0)
     : null;
   return (
     <>
@@ -33,7 +39,7 @@ function ProductBasket({ products, basket, setAsidebasket }) {
                   <>
                     <div className="basket_product" key={a.id}>
                       <div className="basket_img">
-                        <img src={product?.frontimage} alt="" />
+                        <img src={product?.images[0].image} alt="" />
                       </div>
                       <div className="basket_titles">
                         <p>{product?.title.slice(0, 45)}...</p>
@@ -45,6 +51,7 @@ function ProductBasket({ products, basket, setAsidebasket }) {
                             {product?.price * a.count}{" "}
                             <i className="fa-solid fa-manat-sign"></i>
                           </p>
+                          <p>Discount {product?.discount}%</p>
                         </div>
                       </div>
                     </div>

@@ -10,6 +10,7 @@ import { Navigation } from "swiper";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Swal from "sweetalert2";
+import styles from "./ProductsStyle.module.css";
 function Home({
   category,
   products,
@@ -20,7 +21,7 @@ function Home({
   basket,
   dispatch,
 }) {
-  const featuredProducts = products.filter((t) => t.featured === true);
+  const featuredProducts = products.filter((t) => t.featured === 1);
   const addBasket = (id) => {
     dispatch({
       type: "SET_BASKET",
@@ -199,7 +200,7 @@ function Home({
                 key={a.id}
               >
                 <img src={a.image} alt="" />
-                <h2>{a.title}</h2>
+                <h2>{a.name}</h2>
               </Link>
             ))}
           </div>
@@ -250,7 +251,7 @@ function Home({
           </div>
         </div>
       </section>
-      <section className="menwatches" id="feature">
+      <section className={styles.menwatches} id="feature">
         <div className="container">
           <div id="feature_titles">
             <h2>Feature Product</h2>
@@ -259,21 +260,21 @@ function Home({
               give to friends and relatives
             </p>
           </div>
-          <div className="menwatches_wrapper">
+          <div className={styles.menwatches_wrapper}>
             {featuredProducts.map((product) => {
               const comp = company.find((c) => product.company_id === c.id);
               const checkBasket = basket.find((t) => t.id === product.id);
               const checkFavorite = favorite.find((f) => f.id === product.id);
               return (
-                <div className="product" key={product.id}>
-                  <div className="product_img">
-                    <div className="front_img">
-                      <img src={product.frontimage} alt="" />
+                <div className={styles.product} key={product.id}>
+                  <div className={styles.product_img}>
+                    <div className={styles.front_img}>
+                      <img src={product.images[0].image} alt="" />
                     </div>
-                    <div className="side_img">
-                      <img src={product.sideimage} alt="" />
+                    <div className={styles.side_img}>
+                      <img src={product.images[1].image} alt="" />
                     </div>
-                    <div className="product_img_btns">
+                    <div className={styles.product_img_btns}>
                       {!checkFavorite ? (
                         <button onClick={() => addFavorite(product.id)}>
                           <i className="fa-regular fa-heart"></i>
@@ -299,7 +300,7 @@ function Home({
                       </button>
                     </div>
                   </div>
-                  <div className="product_descr">
+                  <div className={styles.product_descr}>
                     <h2>{comp && comp.name}</h2>
                     <p>
                       {product.title && product.title.slice(0, 35)}

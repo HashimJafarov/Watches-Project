@@ -1,13 +1,14 @@
+import React from "react";
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-function Home() {
+function AdminFunctionality() {
   const [loading, setLoading] = useState(true);
-  const [watches, setWatches] = useState([]);
-  const nav = useNavigate();
-  const API_WATCHES = `http://127.0.0.1:8000/api/control/watches`;
+  const [functionality, setFunctionality] = useState([]);
+  const API_FUNCTIONALITY = `http://127.0.0.1:8000/api/control/functionalities`;
+
   useEffect(() => {
-    fetch(`${API_WATCHES}`, {
+    fetch(`${API_FUNCTIONALITY}`, {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -17,11 +18,11 @@ function Home() {
     })
       .then((a) => a.json())
       .then((a) => {
-        setWatches(a);
+        setFunctionality(a);
         setLoading(false);
       });
   }, []);
-  const deleteProduct = (id) => {
+  const deleteFunctionality = (id) => {
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -33,25 +34,24 @@ function Home() {
     }).then((result) => {
       if (result.isConfirmed) {
         setLoading(true);
-        fetch(`${API_WATCHES}/${id}`, {
+        fetch(`${API_FUNCTIONALITY}/${id}`, {
           method: "DELETE",
           headers: {
             Accept: "Application/json",
             Authorization: `Bearer ${window.localStorage.getItem("token")}`,
           },
-          // body: formData,
         })
           .then((a) => {
             setLoading(false);
             if (a.status === 201) {
               Swal.fire({
                 icon: "success",
-                title: "Product Deleted",
+                title: "Functionality Deleted",
                 showConfirmButton: false,
                 timer: 1000,
               }).then(() => {
                 window.location.reload();
-                nav("/control/watches");
+                nav("/control/functionality");
               });
             }
             return a.json();
@@ -73,58 +73,65 @@ function Home() {
               nav("/control/login");
             }
           });
-        // Swal.fire(
-        //   'Deleted!',
-        //   'Your file has been deleted.',
-        //   'success'
-        // )
       }
     });
   };
   return (
     <>
       <h4>
-        Watches
+        Functionality
         <Link to="add" className="btn btn-success ms-2">
-          Add New Watch
+          Add New Functionality
         </Link>
       </h4>
-      <div className="row row-cols-1 row-cols-md-4 g-4 mb-5">
-        {loading ? (
-          <div className="spinner-border text-primary" role="status"></div>
-        ) : watches.length ? (
-          watches.map((a) => (
-            <div className="col" key={a.id}>
-              <div className="card h-100">
-                <img
-                  className="card-img-top"
-                  src={a.images[0]?.image}
-                  alt="Card image cap"
-                  style={{ height: "300px", objectFit: "contain" }}
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{a.title}</h5>
-                  <p style={{ height: 100 }} className="card-text"></p>
+      {loading ? (
+        <div className="spinner-border text-primary" role="status"></div>
+      ) : functionality.length ? (
+        <table className="table">
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>Name</td>
+              <td>Background Image</td>
+              <td>Operations</td>
+            </tr>
+          </thead>
+          <tbody>
+            {functionality.map((a) => (
+              <tr key={a.id}>
+                <td>{a.id}</td>
+                <td>{a.name}</td>
+                <td>
+                  <img
+                    src={a.image}
+                    alt=""
+                    style={{
+                      width: "150px",
+                      height: "100px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </td>
+                <td>
                   <Link to={`edit/${a.id}`} className="btn btn-warning ">
                     Edit
                   </Link>
                   <button
-                    onClick={() => deleteProduct(a.id)}
-                    to="#"
-                    className="btn btn-danger ms-3"
+                    onClick={() => deleteFunctionality(a.id)}
+                    className="btn btn-danger ms-3 text-white"
                   >
                     Delete
                   </button>
-                </div>
-              </div>
-            </div>
-          ))
-        ) : (
-          <h1>Watches Not Found...</h1>
-        )}
-      </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <h1>No Functionality Found...</h1>
+      )}
     </>
   );
 }
 
-export default Home;
+export default AdminFunctionality;

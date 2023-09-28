@@ -4,7 +4,6 @@ import "../admin/assets/css/theme-default.css";
 import "../admin/assets/css/demo.css";
 import "../admin/assets/css/perfect-scrollbar.css";
 import Aside from "../admin/components/Aside";
-import Navbar from "../admin/components/Navbar";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { connect } from "react-redux";
@@ -54,7 +53,6 @@ function ControlLayout({ children, dispatch, admin }) {
       <div className="layout-container">
         {admin && <Aside />}
         <div className="layout-page">
-          {/* {admin && <Navbar />} */}
           <div className="content-wrapper">
             <div className="container-xxl flex-grow-1 container-p-y">
               {!loading && children}
